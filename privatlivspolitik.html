@@ -27,7 +27,7 @@
   <p class="muted">Senest opdateret: 3. november 2026</p>
 
   <h2>Hvem står bag siden</h2>
-  <p>arneelkjaer.dk er en uafhængig informationsside om byggerådgivning og har ingen tilknytning til Arne Elkjær A/S. Den dataansvarlige kan kontaktes på <a href="mailto:forvirring-smudsigere4x@icloud.com">forvirring-smudsigere4x@icloud.com</a>.</p>
+  <p>arneelkjaer.dk er en uafhængig informationsside om byggerådgivning og har ingen tilknytning til Arne Elkjær A/S. Den dataansvarlige kan kontaktes på <a class="js-mail" data-show href="#">[aktivér JavaScript for at se e-mail]</a>.</p>
 
   <h2>Hvilke oplysninger indsamles</h2>
   <p>Siden har ingen formularer og beder dig ikke om personoplysninger. Tjeklisten på forsiden gemmes kun lokalt i din egen browser og sendes ikke til os.</p>
@@ -42,5 +42,16 @@
   <h2>Dine rettigheder</h2>
   <p>Du har ret til indsigt, berigtigelse og sletning samt til at gøre indsigelse. Skriv til e-mailen ovenfor. Du kan klage til <a href="https://www.datatilsynet.dk" rel="noopener">Datatilsynet</a>.</p>
 </div>
+<script>
+/* E-mail samles først i browseren, så spam-robotter ikke kan læse den i kildekoden */
+(function(){
+  var u=['forvirring','smudsigere4x'].join('-'), d=['icloud','com'].join('.'), m=u+String.fromCharCode(64)+d;
+  document.querySelectorAll('a.js-mail').forEach(function(a){
+    var s=a.getAttribute('data-subject');
+    a.href='mai'+'lto:'+m+(s?'?subject='+encodeURIComponent(s):'');
+    if(a.hasAttribute('data-show')) a.textContent=m;
+  });
+})();
+</script>
 </body>
 </html>

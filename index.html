@@ -288,7 +288,7 @@
     <div class="advertise">
       <h3>Annoncér på siden</h3>
       <p>Er du rådgivende virksomhed og vil nå bygherrer, der læser om byggerådgivning? Bannerpladser kan købes direkte.</p>
-      <a href="mailto:forvirring-smudsigere4x@icloud.com?subject=Annoncering%20p%C3%A5%20R%C3%A5dgiverguiden">Skriv for priser →</a>
+      <a class="js-mail" data-subject="Annoncering på Rådgiverguiden" href="#">Skriv for priser →</a>
     </div>
   </div>
 </aside>
@@ -298,7 +298,7 @@
   <div class="wrap">
     <p><strong>Om siden:</strong> arneelkjaer.dk er en uafhængig informationsside om byggerådgivning. Siden har ingen tilknytning til Arne Elkjær A/S og udfører, sælger eller formidler ikke rådgivningsydelser. Indholdet er generel vejledning og ikke professionel rådgivning.</p>
     <p><strong>Annoncer og cookies:</strong> Siden finansieres af annoncer, bl.a. fra Google AdSense, som kan bruge cookies. Læs mere i vores <a href="privatlivspolitik.html">privatlivspolitik</a> og om <a href="https://policies.google.com/technologies/ads?hl=da" rel="noopener">Googles brug af annoncecookies</a>.</p>
-    <p>Kontakt: <a href="mailto:forvirring-smudsigere4x@icloud.com">forvirring-smudsigere4x@icloud.com</a></p>
+    <p>Kontakt: <a class="js-mail" data-show href="#">[aktivér JavaScript for at se e-mail]</a></p>
   </div>
 </footer>
 
@@ -364,6 +364,17 @@
     document.getElementById('clBar').style.width=(n/items.length*100)+'%';
   }
   upd();
+})();
+</script>
+<script>
+/* E-mail samles først i browseren, så spam-robotter ikke kan læse den i kildekoden */
+(function(){
+  var u=['forvirring','smudsigere4x'].join('-'), d=['icloud','com'].join('.'), m=u+String.fromCharCode(64)+d;
+  document.querySelectorAll('a.js-mail').forEach(function(a){
+    var s=a.getAttribute('data-subject');
+    a.href='mai'+'lto:'+m+(s?'?subject='+encodeURIComponent(s):'');
+    if(a.hasAttribute('data-show')) a.textContent=m;
+  });
 })();
 </script>
 </body>
