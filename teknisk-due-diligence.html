@@ -21,6 +21,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/article.css">
+<link rel="stylesheet" href="/assets/ui.css">
 
 <script type="application/ld+json">
 {
@@ -42,6 +43,7 @@
 </script>
 </head>
 <body>
+<a class="skip" href="#indhold">Spring til indhold</a>
 
 <div class="topbar">
   <div class="wrap">
@@ -60,7 +62,7 @@
     <div class="kicker">Artikel · Køb af ejendom</div>
     <h1>Teknisk due diligence: kend ejendommen, før du køber den</h1>
     <p class="lead">Et ejendomskøb er en stor investering, og de største risici gemmer sig ofte i tagkonstruktionen, kælderen eller i en glemt byggesag. En teknisk due diligence giver dig overblikket, før du skriver under.</p>
-    <p class="meta">Opdateret 3. november 2026 · Ca. 12 minutters læsning</p>
+    <p class="meta" style="display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center"><span style="display:inline-flex;gap:6px;align-items:center"><svg class="ico ico-sm" aria-hidden="true"><use href="/assets/icons.svg#i-calendar"/></svg>Opdateret 3. november 2026</span><span style="display:inline-flex;gap:6px;align-items:center"><svg class="ico ico-sm" aria-hidden="true"><use href="/assets/icons.svg#i-clock"/></svg>Ca. 12 minutters læsning</span></p>
   </div>
 </header>
 
@@ -73,17 +75,14 @@
 </div>
 
 <div class="wrap layout">
-<article>
+<article id="indhold" tabindex="-1">
 
   <h2 id="hvad">Hvad er teknisk due diligence?</h2>
   <p>Due diligence betyder "rettidig omhu" og dækker over den grundige undersøgelse, en køber foretager, før en handel gennemføres. Ved ejendomshandler består den typisk af flere dele: en juridisk, en finansiel, en miljømæssig og en teknisk. Den tekniske due diligence, ofte forkortet TDD, handler om ejendommens fysiske tilstand: bygningernes konstruktioner, klimaskærm, installationer og overholdelse af myndighedskrav.</p>
   <p>Formålet er at give køberen et retvisende billede af, hvad han eller hun køber. Hvilke skader og mangler har ejendommen? Hvad vil det koste at udbedre dem? Hvilke større udskiftninger venter de kommende år? Og er der forhold, som kan påvirke ejendommens værdi, anvendelse eller finansiering? Med svarene i hånden kan køberen beslutte, om handlen skal gennemføres, om prisen skal justeres, eller om der skal stilles krav til sælger.</p>
   <p>Teknisk due diligence bruges især ved køb af erhvervsejendomme, udlejningsejendomme, boligforeningsbyggerier og større porteføljer. Långivere stiller ofte krav om en TDD, før de vil finansiere et køb, og investorer bruger den til at vurdere afkast og risiko.</p>
 
-  <div class="callout">
-    <strong>Kort fortalt</strong>
-    <p>En teknisk due diligence oversætter ejendommens tekniske stand til kroner og risici, så køber kan træffe en informeret beslutning og forhandle på et fagligt grundlag.</p>
-  </div>
+  <div class="callout"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-info"/></svg><div><strong>Kort fortalt</strong><p>En teknisk due diligence oversætter ejendommens tekniske stand til kroner og risici, så køber kan træffe en informeret beslutning og forhandle på et fagligt grundlag.</p></div></div>
 
   <h2 id="tilstandsrapport">Forskellen på TDD og tilstandsrapport</h2>
   <p>Mange kender tilstandsrapporten fra handel med private boliger. Den udarbejdes af en beskikket byggesagkyndig efter faste regler i huseftersynsordningen og registrerer synlige skader og tegn på skader på en standardiseret måde. Tilstandsrapporten er et godt værktøj til sit formål, men den er bevidst afgrænset.</p>
@@ -92,22 +91,22 @@
   <h2 id="indhold">Hvad undersøges?</h2>
   <p>Omfanget varierer, men en grundig teknisk due diligence kommer typisk omkring følgende områder.</p>
 
-  <h3>Bygningens konstruktioner og klimaskærm</h3>
+  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-roof"/></svg></span>Bygningens konstruktioner og klimaskærm</h3>
   <p>Rådgiveren gennemgår fundamenter, bærende vægge, dæk, tag og facader og ser efter revner, sætningsskader, fugt, råd og korrosion. Klimaskærmen, altså tag, facader, vinduer og døre, får særlig opmærksomhed, fordi skader her ofte fører til følgeskader inde i bygningen. Tagets restlevetid og stand er et af de punkter, der hyppigst giver store udgifter efter et køb.</p>
 
-  <h3>Tekniske installationer</h3>
+  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-pipe"/></svg></span>Tekniske installationer</h3>
   <p>Varmeanlæg, ventilation, køling, vand og afløb, el, elevatorer og CTS-anlæg vurderes for stand, alder og forventet restlevetid. Ældre installationer kan fungere fint i dag, men stå over for udskiftning inden for få år. Det er vigtig viden, når den samlede investering skal vurderes.</p>
 
-  <h3>Brand og sikkerhed</h3>
+  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flame"/></svg></span>Brand og sikkerhed</h3>
   <p>Brandsikringen kontrolleres: flugtveje, brandadskillelser, brandalarmer, sprinkling og nødbelysning. Mangler på dette område kan være både dyre og kritiske, fordi de kan påvirke ejendommens lovlige anvendelse.</p>
 
-  <h3>Myndighedsforhold og dokumentation</h3>
+  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-folder"/></svg></span>Myndighedsforhold og dokumentation</h3>
   <p>En stor del af arbejdet foregår ved skrivebordet. Rådgiveren gennemgår ejendommens byggesager i kommunen, BBR-oplysninger, lokalplaner, servitutter, ibrugtagningstilladelser, tegninger og drift- og vedligeholdelsesdokumentation. Formålet er at afdække, om bygningerne er opført og anvendt lovligt, og om der er uafsluttede sager eller påbud. Det sker overraskende ofte, at ombygninger aldrig er blevet godkendt eller færdigmeldt.</p>
 
-  <h3>Miljø og skadelige stoffer</h3>
+  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flask"/></svg></span>Miljø og skadelige stoffer</h3>
   <p>Ved ældre bygninger er der særlig opmærksomhed på skadelige stoffer som asbest, PCB, bly og tungmetaller, der kan findes i byggematerialer fra bestemte perioder. Desuden undersøges, om grunden er kortlagt som forurenet. Miljøforhold udgør ofte en selvstændig miljømæssig due diligence, men grænsefladen til den tekniske gennemgang skal være klar.</p>
 
-  <h3>Energi og bæredygtighed</h3>
+  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-leaf"/></svg></span>Energi og bæredygtighed</h3>
   <p>Energimærket og det faktiske energiforbrug gennemgås, og der peges på muligheder for forbedringer. For investorer bliver bæredygtighed stadig vigtigere, fordi krav fra lejere, långivere og regler om bæredygtighedsrapportering påvirker ejendommens værdi og udlejningsevne.</p>
 
   <div class="ad">
@@ -157,8 +156,8 @@
 
   <h2 id="laes-ogsaa">Læs også</h2>
   <div class="related">
-    <a href="/commissioning.html"><strong>Commissioning</strong><span>Sådan sikrer du, at bygningen virker som bestilt</span></a>
-    <a href="/#aftale"><strong>Rådgiveraftalen</strong><span>Det skal aftalen med din rådgiver indeholde</span></a>
+    <a href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><strong>Commissioning</strong><span>Sådan sikrer du, at bygningen virker som bestilt</span></a>
+    <a href="/#aftale"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-contract"/></svg></span><strong>Rådgiveraftalen</strong><span>Det skal aftalen med din rådgiver indeholde</span></a>
   </div>
 
 </article>

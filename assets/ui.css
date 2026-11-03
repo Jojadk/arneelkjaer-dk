@@ -1,0 +1,44 @@
+/* Fælles brugervenlighed for alle sider */
+.ico{width:24px;height:24px;flex:none;vertical-align:middle}
+.ico-sm{width:18px;height:18px}
+.ico-badge{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;
+  background:var(--accent-soft);color:var(--accent-ink);flex:none}
+.ico-badge .ico{width:24px;height:24px}
+
+/* Spring-til-indhold for tastatur og skærmlæsere */
+.skip{position:absolute;left:16px;top:-60px;z-index:100;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+.skip:focus{top:12px;color:#fff}
+
+/* Tydelig fokus ved tastaturnavigation */
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,[tabindex]:focus-visible{
+  outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+
+/* Menu på én linje, der kan skubbes vandret på mobil */
+@media (max-width:700px){
+  .topbar .wrap{flex-wrap:nowrap;gap:8px}
+  .brand{white-space:nowrap}
+  .nav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;mask-image:linear-gradient(90deg,#000 85%,transparent)}
+  .nav::-webkit-scrollbar{display:none}
+  .nav a{white-space:nowrap;min-height:44px;display:flex;align-items:center}
+  section,article h2{scroll-margin-top:72px !important}
+}
+
+/* Læse-fremskridt øverst */
+.readbar{position:fixed;left:0;top:0;height:3px;width:0;background:var(--accent);z-index:20;transition:width .1s linear}
+
+/* Til toppen-knap */
+.totop{position:fixed;right:16px;bottom:16px;z-index:20;width:48px;height:48px;border-radius:50%;border:1px solid var(--line);
+  background:#fff;color:var(--ink);display:flex;align-items:center;justify-content:center;cursor:pointer;
+  box-shadow:0 4px 14px rgba(16,24,40,.12);opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .2s,transform .2s}
+.totop.show{opacity:1;pointer-events:auto;transform:none}
+.totop:hover{border-color:var(--accent);color:var(--accent-ink)}
+
+/* Overskrift med ikon */
+.h-ico{display:flex;align-items:center;gap:12px}
+.h-ico .ico-badge{width:40px;height:40px;border-radius:10px}
+
+/* Info-boks med ikon */
+.callout{display:flex;gap:14px;align-items:flex-start}
+.callout > .ico{color:var(--accent-ink);margin-top:3px}
+
+@media (prefers-reduced-motion:reduce){*{transition:none !important;scroll-behavior:auto !important}}

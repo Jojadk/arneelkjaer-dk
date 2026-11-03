@@ -31,7 +31,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
-
 <style>
   :root{
     --bg:#FFFFFF; --card:#FFFFFF; --ink:#1A2332; --muted:#55606F;
@@ -123,10 +122,33 @@
   .node strong{font:600 20px/1.3 "IBM Plex Serif",Georgia,serif}
   .node span.d{font-size:15px;color:var(--muted)}
   .node span.go{margin-top:auto;padding-top:8px;font-size:14px;font-weight:600;color:var(--accent-ink)}
+  .node .ico-badge{margin-bottom:6px}
+  .card .ico-badge{margin-bottom:12px}
+  .tab{display:inline-flex;align-items:center;gap:8px}
+  .tab .ico{width:20px;height:20px}
+  .tabpanel .h-ico{margin-bottom:8px}
+  .tabpanel .h-ico h3{margin:0}
+  ol.steps li{padding-left:64px}
+  ol.steps li::before{content:none}
+  ol.steps li::after{left:21px;top:50px}
+  ol.steps .step-ico{position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;background:var(--accent-soft);color:var(--accent-ink);display:flex;align-items:center;justify-content:center}
+  ol.steps h3::before{content:"Trin " counter(s);display:block;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink)}
+  .ilist{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+  .ilist li{display:flex;gap:14px;align-items:flex-start}
+  .ilist p{margin:2px 0 0;color:var(--muted);font-size:15px}
+  summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:28px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:22px;font-weight:400;color:var(--accent-ink);line-height:1}
+  details[open] summary::after{content:"−"}
+  .hero-points{display:flex;flex-wrap:wrap;gap:10px 22px;margin:24px 0 0;padding:0;list-style:none;font-size:15px;color:var(--muted)}
+  .hero-points li{display:flex;align-items:center;gap:8px}
+  .hero-points .ico{color:var(--accent-ink);width:20px;height:20px}
   footer{background:var(--tint);border-top:1px solid var(--line);padding:32px 0 48px;font-size:14px;color:var(--muted)}
 </style>
+<link rel="stylesheet" href="/assets/ui.css">
 </head>
 <body>
+<a class="skip" href="#indhold">Spring til indhold</a>
 
 <div class="topbar">
   <div class="wrap">
@@ -145,6 +167,11 @@
     <div class="kicker">Uafhængig guide · Byggeri og rådgivning</div>
     <h1>Guide til byggerådgivning</h1>
     <p class="lead">Hvilke rådgivere findes der, hvad laver de, og hvordan foregår et godt rådgiverforløb fra idé til færdigt byggeri? Her er overblikket.</p>
+    <ul class="hero-points">
+      <li><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg>6 rådgivertyper forklaret</li>
+      <li><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-list"/></svg>Forløbet trin for trin</li>
+      <li><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-contract"/></svg>Artikler om Cx og TDD</li>
+    </ul>
     <p class="indep">Uafhængig guide · ikke tilknyttet Arne Elkjær A/S</p>
   </div>
 </header>
@@ -159,16 +186,16 @@
 </div>
 
 <div class="wrap layout">
-<main>
+<main id="indhold" tabindex="-1">
 
   <section id="emner">
     <h2>Emner i guiden</h2>
     <p class="sub">Vælg et emne, eller læs videre om byggerådgivning generelt herunder.</p>
     <div class="nodes">
-      <a class="node" href="#raadgivere"><span class="tagline">Overblik</span><strong>De vigtigste rådgivere</strong><span class="d">Ingeniør, arkitekt, bygningskonstruktør, landinspektør og flere.</span><span class="go">Se rådgiverne →</span></a>
-      <a class="node" href="/commissioning.html"><span class="tagline">Artikel · Kvalitet og drift</span><strong>Commissioning</strong><span class="d">Sådan sikrer du, at bygningen faktisk virker som bestilt.</span><span class="go">Læs artiklen →</span></a>
-      <a class="node" href="/teknisk-due-diligence.html"><span class="tagline">Artikel · Køb af ejendom</span><strong>Teknisk due diligence</strong><span class="d">Kend ejendommens stand og risici, før du køber.</span><span class="go">Læs artiklen →</span></a>
-      <a class="node" href="#aftale"><span class="tagline">Overblik</span><strong>Rådgiveraftalen</strong><span class="d">Ydelser, honorar, tidsplan og ansvar.</span><span class="go">Se aftalen →</span></a>
+      <a class="node" href="#raadgivere"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg></span><span class="tagline">Overblik</span><strong>De vigtigste rådgivere</strong><span class="d">Ingeniør, arkitekt, bygningskonstruktør, landinspektør og flere.</span><span class="go">Se rådgiverne</span></a>
+      <a class="node" href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><span class="tagline">Artikel · Kvalitet og drift</span><strong>Commissioning</strong><span class="d">Sådan sikrer du, at bygningen faktisk virker som bestilt.</span><span class="go">Læs artiklen</span></a>
+      <a class="node" href="/teknisk-due-diligence.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-search"/></svg></span><span class="tagline">Artikel · Køb af ejendom</span><strong>Teknisk due diligence</strong><span class="d">Kend ejendommens stand og risici, før du køber.</span><span class="go">Læs artiklen</span></a>
+      <a class="node" href="#aftale"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-contract"/></svg></span><span class="tagline">Overblik</span><strong>Rådgiveraftalen</strong><span class="d">Ydelser, honorar, tidsplan og ansvar.</span><span class="go">Se aftalen</span></a>
     </div>
   </section>
 
@@ -200,12 +227,12 @@
     <h2>Rådgiverforløbet trin for trin</h2>
     <p class="sub">De fleste byggesager følger de samme faser. Hvor meget rådgiveren er med i hver fase, aftales fra start.</p>
     <ol class="steps">
-      <li><h3>Idé og program</h3><p>Behov, ønsker, budget og tidsplan beskrives. Ved større byggerier samles det i et byggeprogram.</p></li>
-      <li><h3>Dispositionsforslag</h3><p>De første skitser viser løsninger og giver et overslag over økonomien.</p></li>
-      <li><h3>Projektforslag og myndigheder</h3><p>Løsningen fastlægges, og der søges byggetilladelse med den nødvendige dokumentation.</p></li>
-      <li><h3>Hovedprojekt og udbud</h3><p>Tegninger og beskrivelser gøres så detaljerede, at entreprenører kan give pris på samme grundlag.</p></li>
-      <li><h3>Udførelse og tilsyn</h3><p>Byggeriet udføres, og rådgiveren kan føre tilsyn med kvalitet, tid og økonomi.</p></li>
-      <li><h3>Aflevering og drift</h3><p>Mangler gennemgås, byggeriet færdigmeldes, og der følges op ved et-års- og femårseftersyn ved større byggerier.</p></li>
+      <li><span class="step-ico"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-bulb"/></svg></span><h3>Idé og program</h3><p>Behov, ønsker, budget og tidsplan beskrives. Ved større byggerier samles det i et byggeprogram.</p></li>
+      <li><span class="step-ico"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-sketch"/></svg></span><h3>Dispositionsforslag</h3><p>De første skitser viser løsninger og giver et overslag over økonomien.</p></li>
+      <li><span class="step-ico"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-stamp"/></svg></span><h3>Projektforslag og myndigheder</h3><p>Løsningen fastlægges, og der søges byggetilladelse med den nødvendige dokumentation.</p></li>
+      <li><span class="step-ico"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-blueprint"/></svg></span><h3>Hovedprojekt og udbud</h3><p>Tegninger og beskrivelser gøres så detaljerede, at entreprenører kan give pris på samme grundlag.</p></li>
+      <li><span class="step-ico"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-crane"/></svg></span><h3>Udførelse og tilsyn</h3><p>Byggeriet udføres, og rådgiveren kan føre tilsyn med kvalitet, tid og økonomi.</p></li>
+      <li><span class="step-ico"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-key"/></svg></span><h3>Aflevering og drift</h3><p>Mangler gennemgås, byggeriet færdigmeldes, og der følges op ved et-års- og femårseftersyn ved større byggerier.</p></li>
     </ol>
   </section>
 
@@ -214,16 +241,16 @@
     <h2>Rådgiveraftalen</h2>
     <p class="sub">En klar aftale er den bedste forsikring mod misforståelser. I Danmark bruges ofte branchens standardvilkår ABR 18 for teknisk rådgivning, og ydelserne beskrives ud fra branchens ydelsesbeskrivelser.</p>
     <div class="grid">
-      <div class="card"><div class="num">Ydelser</div><p>Hvilke faser og opgaver rådgiveren løser, og hvad der ikke er med.</p></div>
-      <div class="card"><div class="num">Honorar</div><p>Fast pris, timepris med loft eller procent af byggesum, og hvordan ekstraarbejde afregnes.</p></div>
-      <div class="card"><div class="num">Tidsplan</div><p>Milepæle for tegninger, ansøgninger og udbud.</p></div>
-      <div class="card"><div class="num">Ansvar</div><p>Rådgiverens ansvarsforsikring og eventuel begrænsning af ansvaret.</p></div>
+      <div class="card"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-list"/></svg></span><div class="num">Ydelser</div><p>Hvilke faser og opgaver rådgiveren løser, og hvad der ikke er med.</p></div>
+      <div class="card"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-coins"/></svg></span><div class="num">Honorar</div><p>Fast pris, timepris med loft eller procent af byggesum, og hvordan ekstraarbejde afregnes.</p></div>
+      <div class="card"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-calendar"/></svg></span><div class="num">Tidsplan</div><p>Milepæle for tegninger, ansøgninger og udbud.</p></div>
+      <div class="card"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-shield"/></svg></span><div class="num">Ansvar</div><p>Rådgiverens ansvarsforsikring og eventuel begrænsning af ansvaret.</p></div>
     </div>
   </section>
 
   <!-- Bæredygtighed -->
   <section id="baeredygtighed">
-    <h2>Bæredygtighed og klimakrav</h2>
+    <h2 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-leaf"/></svg></span>Bæredygtighed og klimakrav</h2>
     <p>Klimahensyn fylder stadig mere i byggeriet. Bygningsreglementet stiller krav om livscyklusvurdering (LCA) af nybyggeri, og mange bygherrer ønsker desuden certificering eller dokumenteret lavt energiforbrug. Rådgivere med speciale i energi og bæredygtighed kan regne på materialevalg, energiforbrug og drift, så projektet både lever op til kravene og bliver billigere at drive.</p>
   </section>
 
@@ -238,13 +265,7 @@
   <section id="vaelg">
     <h2>Sådan vælger du rådgiver</h2>
     <div class="panel">
-      <ul class="check">
-        <li><strong>Relevant erfaring:</strong> spørg efter referencer fra lignende projekter.</li>
-        <li><strong>De rette kompetencer:</strong> fx certificeret statiker, hvis projektets konstruktionsklasse kræver det.</li>
-        <li><strong>Samme grundlag:</strong> send den samme beskrivelse til flere rådgivere, så tilbuddene kan sammenlignes.</li>
-        <li><strong>Forsikring:</strong> bed om dokumentation for ansvarsforsikring.</li>
-        <li><strong>Kemi:</strong> du skal samarbejde tæt i lang tid, så tillid og kommunikation betyder meget.</li>
-      </ul>
+      <ul class="ilist"><li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg></span><div><strong>Relevant erfaring</strong><p>Spørg efter referencer fra lignende projekter.</p></div></li><li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-stamp"/></svg></span><div><strong>De rette kompetencer</strong><p>Fx certificeret statiker, hvis projektets konstruktionsklasse kræver det.</p></div></li><li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-list"/></svg></span><div><strong>Samme grundlag</strong><p>Send den samme beskrivelse til flere rådgivere, så tilbuddene kan sammenlignes.</p></div></li><li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-shield"/></svg></span><div><strong>Forsikring</strong><p>Bed om dokumentation for ansvarsforsikring.</p></div></li><li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-bulb"/></svg></span><div><strong>Kemi</strong><p>I skal samarbejde tæt i lang tid, så tillid og kommunikation betyder meget.</p></div></li></ul>
     </div>
   </section>
 
@@ -341,36 +362,37 @@
 (function(){
   /* ---------- Rådgivertyper ---------- */
   var areas = [
-    {t:'Ingeniør', h:'Rådgivende ingeniør', p:'Står for de tekniske løsninger: konstruktioner, installationer, energi, brand og indeklima.',
+    {ic:'i-beam',t:'Ingeniør', h:'Rådgivende ingeniør', p:'Står for de tekniske løsninger: konstruktioner, installationer, energi, brand og indeklima.',
      what:['Statiske beregninger og konstruktioner','VVS, ventilation og el','Energi- og klimaberegninger','Brandteknisk dimensionering'],
      when:['Ombygning af bærende dele','Nybyggeri og tilbygning','Energirenovering','Større renoveringer']},
-    {t:'Arkitekt', h:'Arkitekt', p:'Former byggeriet: planløsning, udseende, lys, materialer og samspillet med omgivelserne.',
+    {ic:'i-compass',t:'Arkitekt', h:'Arkitekt', p:'Former byggeriet: planløsning, udseende, lys, materialer og samspillet med omgivelserne.',
      what:['Skitser og planløsninger','Tegninger til byggetilladelse','Materiale- og farvevalg','Lokalplaner og arkitektonisk kvalitet'],
      when:['Nyt hus eller tilbygning','Ændring af facader','Større indretningsprojekter','Projekter i bevaringsværdige områder']},
-    {t:'Bygningskonstruktør', h:'Bygningskonstruktør', p:'Bindeleddet mellem tegnebord og byggeplads, med fokus på detaljer og praktisk udførelse.',
+    {ic:'i-helmet',t:'Bygningskonstruktør', h:'Bygningskonstruktør', p:'Bindeleddet mellem tegnebord og byggeplads, med fokus på detaljer og praktisk udførelse.',
      what:['Detailtegninger og beskrivelser','Byggeledelse og tilsyn','Udbud og tilbudsindhentning','Økonomistyring'],
      when:['Mindre ombygninger','Renovering af boliger','Tilsyn med håndværkere','Projekter, der skal i udbud']},
-    {t:'Landinspektør', h:'Landinspektør', p:'Ekspert i grunde, skel og matrikler.',
+    {ic:'i-pin',t:'Landinspektør', h:'Landinspektør', p:'Ekspert i grunde, skel og matrikler.',
      what:['Skelafsætning og opmåling','Udstykning og sammenlægning','Servitutter og tinglysning','Afsætning af byggeriet på grunden'],
      when:['Byggeri tæt på skel','Udstykning af grund','Tvivl om skellets placering','Nybyggeri på ny grund']},
-    {t:'Energi', h:'Energi- og bæredygtighedsrådgiver', p:'Regner på energiforbrug, klimaaftryk og driftsøkonomi.',
+    {ic:'i-leaf',t:'Energi', h:'Energi- og bæredygtighedsrådgiver', p:'Regner på energiforbrug, klimaaftryk og driftsøkonomi.',
      what:['Energimærkning','Livscyklusvurdering (LCA)','Valg af varmekilde','Bæredygtighedscertificering'],
      when:['Nybyggeri med klimakrav','Energirenovering','Salg af bolig (energimærke)','Ønske om lavere driftsudgifter']},
-    {t:'Bygherrerådgiver', h:'Bygherrerådgiver', p:'Varetager bygherrens interesser og styrer projektet på bygherrens vegne, især ved større byggerier.',
+    {ic:'i-briefcase',t:'Bygherrerådgiver', h:'Bygherrerådgiver', p:'Varetager bygherrens interesser og styrer projektet på bygherrens vegne, især ved større byggerier.',
      what:['Byggeprogram og behovsanalyse','Valg og udbud af rådgivere','Projekt- og økonomistyring','Kvalitetssikring'],
      when:['Større eller komplekse projekter','Offentlige byggerier','Bygherrer uden byggefaglig erfaring','Projekter med mange parter']}
   ];
   var tabs=document.getElementById('tabs'), panel=document.getElementById('tabpanel');
+  function svg(id){return '<svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#'+id+'"/></svg>';}
   function li(a){return a.map(function(x){return '<li>'+x+'</li>';}).join('');}
   function showTab(i){
     Array.prototype.forEach.call(tabs.children,function(b,j){ b.setAttribute('aria-selected', j===i?'true':'false'); b.tabIndex = j===i?0:-1; });
     var a=areas[i];
-    panel.innerHTML='<h3>'+a.h+'</h3><p style="margin:0;color:var(--muted)">'+a.p+'</p>'+
+    panel.innerHTML='<div class="h-ico"><span class="ico-badge">'+svg(a.ic)+'</span><h3>'+a.h+'</h3></div><p style="margin:0;color:var(--muted)">'+a.p+'</p>'+
       '<div class="two"><div><div class="lbl">Typiske opgaver</div><ul>'+li(a.what)+'</ul></div>'+
       '<div><div class="lbl">Relevant ved</div><ul>'+li(a.when)+'</ul></div></div>';
   }
   areas.forEach(function(a,i){
-    var b=document.createElement('button'); b.className='tab'; b.type='button'; b.setAttribute('role','tab'); b.textContent=a.t;
+    var b=document.createElement('button'); b.className='tab'; b.type='button'; b.setAttribute('role','tab'); b.innerHTML=svg(a.ic)+'<span>'+a.t+'</span>';
     b.addEventListener('click',function(){showTab(i);});
     b.addEventListener('keydown',function(e){
       if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ var n=(i+(e.key==='ArrowRight'?1:-1)+areas.length)%areas.length; showTab(n); tabs.children[n].focus(); }

@@ -14,6 +14,27 @@
     try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
   });
 
+  /* Til toppen-knap og læse-fremskridt */
+  var top = document.createElement('button');
+  top.className = 'totop'; top.type = 'button'; top.setAttribute('aria-label', 'Til toppen af siden');
+  top.innerHTML = '<svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-up"/></svg>';
+  top.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  document.body.appendChild(top);
+  var bar = null;
+  if (document.querySelector('article')) {
+    bar = document.createElement('div'); bar.className = 'readbar'; bar.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(bar);
+  }
+  var ticking = false;
+  function onScroll() {
+    var y = window.scrollY, h = document.documentElement.scrollHeight - window.innerHeight;
+    top.classList.toggle('show', y > 600);
+    if (bar && h > 0) bar.style.width = Math.min(100, y / h * 100) + '%';
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+  onScroll();
+
   /* Marker aktivt afsnit i indholdsfortegnelsen */
   var links = document.querySelectorAll('.toc a[href^="#"]');
   if (!links.length || !('IntersectionObserver' in window)) return;
