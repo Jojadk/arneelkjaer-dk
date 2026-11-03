@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commissioning i byggeriet – guide til Cx-processen og DS 3090</title>
+<meta name="description" content="Hvad er commissioning (Cx), hvordan foregår processen efter DS 3090, hvem gør hvad, og hvad koster det? En grundig guide til bygherrer og driftsorganisationer.">
+<link rel="canonical" href="https://arneelkjaer.dk/commissioning.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Commissioning i byggeriet – guide til Cx-processen">
+<meta property="og:description" content="Sådan sikrer commissioning, at bygningen faktisk virker som bestilt – fra program til drift.">
+<meta property="og:url" content="https://arneelkjaer.dk/commissioning.html">
+<meta property="og:locale" content="da_DK">
+
+<script src="/assets/analytics.js"></script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2586811473480237"
+     crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/article.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"Article","headline":"Commissioning i byggeriet – guide til Cx-processen og DS 3090","inLanguage":"da-DK",
+     "datePublished":"2026-11-03","dateModified":"2026-11-03","mainEntityOfPage":"https://arneelkjaer.dk/commissioning.html",
+     "author":{"@type":"Organization","name":"Rådgiverguiden"},"publisher":{"@type":"Organization","name":"Rådgiverguiden"}},
+    {"@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Rådgiverguiden","item":"https://arneelkjaer.dk/"},
+      {"@type":"ListItem","position":2,"name":"Commissioning","item":"https://arneelkjaer.dk/commissioning.html"}]},
+    {"@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"Er commissioning lovpligtigt?","acceptedAnswer":{"@type":"Answer","text":"Nej, ikke generelt. Commissioning er et frivilligt kvalitetsværktøj, men mange offentlige og professionelle bygherrer stiller krav om det, og det indgår i flere bæredygtighedscertificeringer."}},
+      {"@type":"Question","name":"Hvad er forskellen på commissioning og almindelig kvalitetssikring?","acceptedAnswer":{"@type":"Answer","text":"Almindelig kvalitetssikring kontrollerer, at hver part leverer sin del. Commissioning kontrollerer, at helheden – de samlede tekniske systemer – fungerer sammen og opfylder bygherrens krav i praksis."}},
+      {"@type":"Question","name":"Hvornår skal commissioning starte?","acceptedAnswer":{"@type":"Answer","text":"Så tidligt som muligt, helst allerede i programfasen, hvor bygherrens krav formuleres. Jo senere processen starter, jo dyrere er det at rette fejl."}}
+    ]}
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/">Rådgiver<span>guiden</span></a>
+    <nav class="nav" aria-label="Hovedmenu">
+      <a href="/">Forside</a>
+      <a href="/commissioning.html" aria-current="page">Commissioning</a>
+      <a href="/teknisk-due-diligence.html">Teknisk due diligence</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Rådgiverguiden</a> › Commissioning</p>
+    <div class="kicker">Artikel · Kvalitet og drift</div>
+    <h1>Commissioning: sådan sikrer du, at bygningen virker som bestilt</h1>
+    <p class="lead">Mange nye bygninger lever ikke op til forventningerne, når de tages i brug. Ventilationen larmer, rummene er for varme, og energiforbruget er højere end beregnet. Commissioning er den systematiske proces, der skal forhindre det.</p>
+    <p class="meta">Opdateret 3. november 2026 · Ca. 12 minutters læsning</p>
+  </div>
+</header>
+
+<div class="wrap" style="padding-top:24px">
+  <div class="ad" style="margin:0;min-height:100px">
+    <div class="ad-label">Annonce</div>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+         data-ad-slot="DIT-SLOT-ID" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  </div>
+</div>
+
+<div class="wrap layout">
+<article>
+
+  <h2 id="hvad">Hvad er commissioning?</h2>
+  <p>Commissioning, ofte forkortet Cx, er en kvalitetssikringsproces, der skal sikre, at en bygnings tekniske systemer bliver planlagt, projekteret, installeret, afprøvet og overdraget, så de fungerer efter bygherrens krav. Ordet kommer fra skibsfarten, hvor et skib "commissiones", når det efter grundig afprøvning sættes i tjeneste. I byggeriet er tanken den samme: bygningen skal ikke bare være færdigbygget, den skal være klar til brug og virke efter hensigten.</p>
+  <p>Det, der adskiller commissioning fra traditionel kvalitetssikring, er fokus på helheden. I et almindeligt byggeri kontrollerer hver entreprenør sit eget arbejde: ventilationsmontøren tjekker ventilationsanlægget, elinstallatøren tjekker el og belysning, og automatikleverandøren tjekker styringen. Men de fleste problemer i nye bygninger opstår netop i samspillet mellem systemerne. Ventilationen og varmen arbejder mod hinanden, solafskærmningen reagerer ikke på temperaturen, eller CTS-anlægget (det centrale tekniske styringssystem) er indstillet efter standardværdier i stedet for den faktiske brug. Commissioning sætter fokus på netop disse grænseflader.</p>
+  <p>I Danmark beskrives processen i standarden <strong>DS 3090 "Commissioning-processen for bygninger"</strong>, som fastlægger faser, roller og dokumentation. Standarden er ikke lovpligtig, men den giver bygherrer, rådgivere og entreprenører et fælles sprog og en fælles ramme for arbejdet.</p>
+
+  <div class="callout">
+    <strong>Kort fortalt</strong>
+    <p>Commissioning er bygherrens sikkerhed for, at det, der blev bestilt, også er det, der bliver leveret, og at det virker i praksis, ikke kun på papiret.</p>
+  </div>
+
+  <h2 id="hvorfor">Hvorfor commissioning betaler sig</h2>
+  <p>Erfaringer fra både Danmark og udlandet viser, at nye bygninger ofte bruger mere energi end beregnet, og at brugerne oplever problemer med indeklimaet i de første driftsår. Årsagerne er sjældent store fejl i projektet. Det er derimod mange små ting: en føler, der sidder forkert, et spjæld, der ikke lukker helt, en driftstid, der aldrig blev tilpasset, eller en driftsorganisation, der ikke har fået den nødvendige oplæring.</p>
+  <p>Hver for sig koster disse fejl ikke meget at rette, hvis de opdages tidligt. Men opdages de først, når bygningen er i drift, bliver de dyre. Dels fordi der skal kaldes folk ud og findes årsager, dels fordi fejlene i mellemtiden har kostet energi, komfort og produktivitet. En undervisningsbygning med for høj CO₂-koncentration i klasselokalerne eller et kontor, hvor medarbejderne klager over træk, er ikke bare et teknisk problem, men også et økonomisk og menneskeligt.</p>
+  <p>Commissioning flytter fejlfindingen frem i processen. Ved at formulere klare krav tidligt, gennemgå projektet med driftsbriller og afprøve systemerne grundigt før aflevering, reduceres antallet af fejl og mangler, og overgangen til drift bliver glidende. Gevinsterne viser sig typisk som:</p>
+  <ul>
+    <li>Lavere energiforbrug i driften, fordi anlæggene er indreguleret og styret efter den faktiske brug.</li>
+    <li>Bedre indeklima og færre klager fra brugerne.</li>
+    <li>Færre mangler ved aflevering og en kortere mangelperiode.</li>
+    <li>En driftsorganisation, der kender bygningen og har den rette dokumentation fra dag ét.</li>
+    <li>Længere levetid for de tekniske anlæg, fordi de ikke kører forkert eller unødigt.</li>
+  </ul>
+
+  <h2 id="faser">Faserne i commissioning-processen</h2>
+  <p>Commissioning følger byggeriets almindelige faser, men tilføjer en række aktiviteter i hver af dem. Pointen er, at processen begynder længe før den første skovl kommer i jorden, og slutter et stykke tid efter, at bygningen er taget i brug.</p>
+
+  <h3>1. Programfasen: krav, der kan måles</h3>
+  <p>Alt begynder med bygherrens krav. Her formuleres, hvad bygningen skal kunne: hvilke temperaturer, luftmængder og lysniveauer der ønskes, hvor meget energi bygningen må bruge, hvordan driften skal organiseres, og hvilke krav der stilles til dokumentation. Kravene skal være konkrete og målbare. "Godt indeklima" er ikke et krav, man kan afprøve, mens "temperaturen i kontorerne må højst overstige 26 °C i et bestemt antal timer om året" er.</p>
+  <p>I denne fase udarbejdes også en commissioning-plan, der beskriver, hvilke systemer der er omfattet, hvem der gør hvad, og hvordan resultaterne dokumenteres. Det er her, man beslutter, hvor omfattende processen skal være. Et mindre byggeri behøver ikke samme detaljeringsgrad som et hospital.</p>
+
+  <h3>2. Projekteringsfasen: projektgennemgang med driftsbriller</h3>
+  <p>Mens rådgiverne projekterer, gennemgår commissioning-lederen projektet med særligt fokus på, om bygherrens krav bliver indfriet, og om løsningerne kan afprøves, drives og vedligeholdes. Typiske spørgsmål er: Kan teknikerne komme til at udskifte filtre? Er der målepunkter, så man kan kontrollere luftmængderne? Er styringsstrategien beskrevet, så automatikleverandøren ved, hvad anlæggene skal gøre i alle driftssituationer?</p>
+  <p>Samtidig fastlægges de funktionsafprøvninger, der skal gennemføres senere. Kravene til afprøvning skrives ind i udbudsmaterialet, så entreprenørerne fra starten ved, hvad de skal dokumentere, og kan prissætte det.</p>
+
+  <h3>3. Udførelsesfasen: kontrol undervejs</h3>
+  <p>På byggepladsen følger commissioning-lederen op på, at installationerne udføres som projekteret. Der gennemføres kontrol af montage, fx at følere sidder korrekt, at kanaler er tætte, og at komponenter er mærkede. Entreprenørerne udfører deres egne afprøvninger af de enkelte komponenter og anlæg og dokumenterer resultaterne.</p>
+
+  <h3>4. Afleveringsfasen: integrerede tests</h3>
+  <p>Her ligger kernen i commissioning. Når de enkelte anlæg er afprøvet hver for sig, gennemføres <strong>integrerede systemtests</strong>, hvor man afprøver, om anlæggene spiller sammen. Hvad sker der, når solen varmer et rum op? Øger ventilationen, kører solafskærmningen ned, og lukker radiatorventilerne? Hvad sker der ved strømsvigt eller brandalarm? Starter anlæggene korrekt op igen bagefter?</p>
+  <p>Samtidig oplæres driftspersonalet, og der overdrages en drifts- og vedligeholdelsesdokumentation, som driftsorganisationen kan bruge i praksis. Bygningen bør først afleveres, når de væsentlige tests er bestået.</p>
+
+  <h3>5. Driftsfasen: opfølgning og sæsontest</h3>
+  <p>Mange systemer kan ikke afprøves fuldt ud ved aflevering. Køleanlægget kan ikke testes ordentligt i januar, og varmeanlægget kan ikke testes i juli. Derfor gennemføres der sæsontests og opfølgning i det første driftsår. Energiforbrug og indeklima måles og sammenlignes med kravene, og afvigelser rettes. Commissioning afsluttes typisk med en slutrapport og en erfaringsopsamling til fremtidige projekter.</p>
+
+  <div class="ad">
+    <div class="ad-label">Annonce</div>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+         data-ad-slot="DIT-SLOT-ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <h2 id="roller">Roller og ansvar</h2>
+  <p>Commissioning er et samarbejde, men nogen skal lede det. Den vigtigste rolle er commissioning-lederen, som bør være uafhængig af de rådgivere og entreprenører, der projekterer og udfører anlæggene. Uafhængigheden er pointen: den, der kontrollerer, skal ikke kontrollere sit eget arbejde.</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th scope="col">Rolle</th><th scope="col">Typisk ansvar</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Bygherre</strong></td><td>Formulerer krav, beslutter omfanget af commissioning og godkender resultaterne.</td></tr>
+        <tr><td><strong>Commissioning-leder</strong></td><td>Planlægger og leder processen, gennemgår projektet, overvåger tests og rapporterer til bygherren.</td></tr>
+        <tr><td><strong>Rådgivere</strong></td><td>Projekterer løsninger, der opfylder kravene og kan afprøves, og beskriver styringsstrategier.</td></tr>
+        <tr><td><strong>Entreprenører</strong></td><td>Udfører, afprøver og dokumenterer deres anlæg og deltager i integrerede tests.</td></tr>
+        <tr><td><strong>Driftsorganisation</strong></td><td>Deltager tidligt, stiller krav til driftsvenlighed og overtager bygningen efter oplæring.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="dokumenter">De vigtigste dokumenter</h2>
+  <p>Commissioning skaber en række dokumenter, der tilsammen giver et sporbart billede af, om kravene er opfyldt. De vigtigste er:</p>
+  <ul>
+    <li><strong>Bygherrens krav</strong>, der beskriver de funktionelle og målbare krav til bygningen.</li>
+    <li><strong>Commissioning-planen</strong>, der fastlægger omfang, organisering, tidsplan og metoder.</li>
+    <li><strong>Projektgennemgangsrapporter</strong> med bemærkninger og opfølgning fra projekteringen.</li>
+    <li><strong>Afprøvningsprocedurer og testskemaer</strong>, der beskriver, hvordan hvert system testes, og hvad resultatet skal være.</li>
+    <li><strong>Afvigelseslog</strong>, hvor alle fundne fejl registreres, tildeles en ansvarlig og følges, til de er lukket.</li>
+    <li><strong>Commissioning-rapport</strong>, der opsummerer forløb, resultater og eventuelle udestående punkter.</li>
+  </ul>
+
+  <h2 id="hvornaar">Hvornår giver commissioning mening?</h2>
+  <p>Commissioning er mest værdifuldt i byggerier med komplekse tekniske installationer, hvor mange systemer skal arbejde sammen. Det gælder fx hospitaler, laboratorier, skoler, kontorbyggerier, datacentre og bygninger med høje krav til energi og indeklima. Også i større renoveringer, hvor gamle og nye anlæg skal spille sammen, kan processen spare mange problemer.</p>
+  <p>I mindre byggerier som enfamiliehuse er en fuld commissioning-proces sjældent nødvendig. Men tankegangen kan stadig bruges: formulér klare krav, få varmepumpen og ventilationen indreguleret ordentligt, og få en grundig gennemgang af, hvordan anlæggene skal betjenes.</p>
+  <p>Commissioning indgår desuden som et kriterium i flere bæredygtighedscertificeringer, herunder DGNB, som er udbredt i Danmark. Ønsker bygherren en certificering, er commissioning derfor ofte en naturlig del af projektet.</p>
+
+  <h2 id="pris">Hvad koster commissioning?</h2>
+  <p>Prisen afhænger af byggeriets størrelse, kompleksitet og hvor omfattende processen skal være. Udgiften bør ses i forhold til de omkostninger, den kan spare: færre mangler, lavere energiforbrug og mindre tid brugt på fejlfinding i driften. Den største besparelse opnås, når processen starter tidligt, fordi det er langt billigere at rette en fejl på tegnebordet end i en færdig bygning.</p>
+  <p>Bed om et tilbud, der tydeligt beskriver, hvilke faser og systemer der er omfattet, og hvilken dokumentation der leveres. Så kan forskellige tilbud sammenlignes på et ensartet grundlag.</p>
+
+  <h2 id="faq">Ofte stillede spørgsmål</h2>
+  <details><summary>Er commissioning lovpligtigt?</summary><p>Nej, ikke generelt. Commissioning er et frivilligt kvalitetsværktøj, men mange offentlige og professionelle bygherrer stiller krav om det, og det indgår i flere bæredygtighedscertificeringer.</p></details>
+  <details><summary>Hvad er forskellen på commissioning og almindelig kvalitetssikring?</summary><p>Almindelig kvalitetssikring kontrollerer, at hver part leverer sin del. Commissioning kontrollerer, at helheden, de samlede tekniske systemer, fungerer sammen og opfylder bygherrens krav i praksis.</p></details>
+  <details><summary>Hvornår skal commissioning starte?</summary><p>Så tidligt som muligt, helst allerede i programfasen, hvor bygherrens krav formuleres. Jo senere processen starter, jo dyrere er det at rette fejl.</p></details>
+  <details><summary>Kan commissioning bruges på eksisterende bygninger?</summary><p>Ja. Det kaldes ofte retro-commissioning eller re-commissioning, hvor en eksisterende bygnings anlæg gennemgås, afprøves og indreguleres på ny. Det er en effektiv måde at finde energibesparelser og indeklimaproblemer i bygninger, der har været i drift i flere år.</p></details>
+
+  <h2 id="laes-ogsaa">Læs også</h2>
+  <div class="related">
+    <a href="/teknisk-due-diligence.html"><strong>Teknisk due diligence</strong><span>Sådan undersøger du en ejendom før køb</span></a>
+    <a href="/#raadgivere"><strong>De vigtigste rådgivere</strong><span>Ingeniør, arkitekt, bygherrerådgiver og flere</span></a>
+  </div>
+
+</article>
+
+<aside>
+  <div class="sticky">
+    <div class="panel">
+      <h3 style="font-size:15px;margin:0 0 4px">I artiklen</h3>
+      <ul class="toc">
+        <li><a href="#hvad">Hvad er commissioning?</a></li>
+        <li><a href="#hvorfor">Hvorfor det betaler sig</a></li>
+        <li><a href="#faser">Faserne</a></li>
+        <li><a href="#roller">Roller og ansvar</a></li>
+        <li><a href="#dokumenter">Dokumenter</a></li>
+        <li><a href="#hvornaar">Hvornår giver det mening?</a></li>
+        <li><a href="#pris">Pris</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="ad" style="margin:0">
+      <div class="ad-label">Annonce</div>
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+           data-ad-slot="DIT-SLOT-ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Om siden:</strong> arneelkjaer.dk er en uafhængig informationsside om byggerådgivning. Siden har ingen tilknytning til Arne Elkjær A/S og udfører, sælger eller formidler ikke rådgivningsydelser. Indholdet er generel vejledning og ikke professionel rådgivning.</p>
+    <p><strong>Annoncer og cookies:</strong> Siden finansieres af annoncer, bl.a. fra Google AdSense, som kan bruge cookies. Læs mere i vores <a href="/privatlivspolitik.html">privatlivspolitik</a>.</p>
+    <p>Kontakt: <a class="js-mail" data-show href="#">[aktivér JavaScript for at se e-mail]</a></p>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

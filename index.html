@@ -6,6 +6,24 @@
 <title>Guide til byggerådgivning – ingeniør, arkitekt og rådgiver</title>
 <meta name="description" content="Uafhængig guide til byggerådgivning: hvilke rådgivere findes, hvornår skal du bruge dem, hvordan foregår et rådgiverforløb, og hvad skal en rådgiveraftale indeholde.">
 
+<link rel="canonical" href="https://arneelkjaer.dk/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rådgiverguiden – uafhængig guide til byggerådgivning">
+<meta property="og:description" content="Overblik over rådgivere, rådgiverforløb, rådgiveraftaler, commissioning og teknisk due diligence.">
+<meta property="og:url" content="https://arneelkjaer.dk/">
+<meta property="og:locale" content="da_DK">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebSite","name":"Rådgiverguiden","url":"https://arneelkjaer.dk/","inLanguage":"da-DK"},
+ {"@type":"FAQPage","mainEntity":[
+  {"@type":"Question","name":"Hvad er forskellen på en ingeniør og en arkitekt?","acceptedAnswer":{"@type":"Answer","text":"Arkitekten former byggeriet, rummene og udtrykket. Ingeniøren sørger for, at det kan bære, holde tæt og fungere teknisk."}},
+  {"@type":"Question","name":"Hvad er en totalrådgiver?","acceptedAnswer":{"@type":"Answer","text":"En rådgiver, der påtager sig hele rådgivningen, fx både arkitekt- og ingeniørdelen, så bygherren kun har én kontrakt."}},
+  {"@type":"Question","name":"Hvad koster rådgivning?","acceptedAnswer":{"@type":"Answer","text":"Det afhænger af opgavens omfang. Mindre opgaver laves ofte til fast pris, større projekter afregnes efter timer eller som procent af byggesummen."}}
+ ]}
+]}
+</script>
+
+<script src="/assets/analytics.js"></script>
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2586811473480237"
      crossorigin="anonymous"></script>
@@ -98,6 +116,13 @@
   .advertise p{margin:0 0 14px;color:#C9D2DE;font-size:15px}
   .advertise a{color:#fff;font-weight:600}
 
+  .nodes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  .node{display:flex;flex-direction:column;gap:6px;border:1px solid var(--line);border-radius:14px;padding:20px;text-decoration:none;color:var(--ink);background:#fff;box-shadow:0 1px 3px rgba(16,24,40,.06);transition:border-color .15s,transform .15s}
+  .node:hover{border-color:var(--accent);transform:translateY(-2px);color:var(--ink)}
+  .node .tagline{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink)}
+  .node strong{font:600 20px/1.3 "IBM Plex Serif",Georgia,serif}
+  .node span.d{font-size:15px;color:var(--muted)}
+  .node span.go{margin-top:auto;padding-top:8px;font-size:14px;font-weight:600;color:var(--accent-ink)}
   footer{background:var(--tint);border-top:1px solid var(--line);padding:32px 0 48px;font-size:14px;color:var(--muted)}
 </style>
 </head>
@@ -108,8 +133,8 @@
     <a class="brand" href="#top">Rådgiver<span>guiden</span></a>
     <nav class="nav" aria-label="Indhold">
       <a href="#raadgivere">Rådgivere</a>
-      <a href="#forloeb">Forløbet</a>
-      <a href="#aftale">Aftalen</a>
+      <a href="/commissioning.html">Commissioning</a>
+      <a href="/teknisk-due-diligence.html">Teknisk due diligence</a>
       <a href="#faq">FAQ</a>
     </nav>
   </div>
@@ -130,12 +155,22 @@
     <div class="ad-label">Annonce</div>
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
          data-ad-slot="DIT-SLOT-ID" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 </div>
 
 <div class="wrap layout">
 <main>
+
+  <section id="emner">
+    <h2>Emner i guiden</h2>
+    <p class="sub">Vælg et emne, eller læs videre om byggerådgivning generelt herunder.</p>
+    <div class="nodes">
+      <a class="node" href="#raadgivere"><span class="tagline">Overblik</span><strong>De vigtigste rådgivere</strong><span class="d">Ingeniør, arkitekt, bygningskonstruktør, landinspektør og flere.</span><span class="go">Se rådgiverne →</span></a>
+      <a class="node" href="/commissioning.html"><span class="tagline">Artikel · Kvalitet og drift</span><strong>Commissioning</strong><span class="d">Sådan sikrer du, at bygningen faktisk virker som bestilt.</span><span class="go">Læs artiklen →</span></a>
+      <a class="node" href="/teknisk-due-diligence.html"><span class="tagline">Artikel · Køb af ejendom</span><strong>Teknisk due diligence</strong><span class="d">Kend ejendommens stand og risici, før du køber.</span><span class="go">Læs artiklen →</span></a>
+      <a class="node" href="#aftale"><span class="tagline">Overblik</span><strong>Rådgiveraftalen</strong><span class="d">Ydelser, honorar, tidsplan og ansvar.</span><span class="go">Se aftalen →</span></a>
+    </div>
+  </section>
 
   <section id="hvad">
     <h2>Hvad er byggerådgivning?</h2>
@@ -158,7 +193,6 @@
     <div class="ad-label">Annonce</div>
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
          data-ad-slot="DIT-SLOT-ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
   <!-- Forløb -->
@@ -198,7 +232,6 @@
     <div class="ad-label">Annonce</div>
     <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
          data-ad-slot="DIT-SLOT-ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
   <!-- Valg af rådgiver -->
@@ -266,7 +299,10 @@
     <div class="panel" style="padding:16px">
       <h3 style="font-size:15px;margin:0 0 4px">På denne side</h3>
       <ul class="toc">
+        <li><a href="#emner">Emner</a></li>
         <li><a href="#hvad">Hvad er byggerådgivning?</a></li>
+        <li><a href="/commissioning.html">Commissioning ↗</a></li>
+        <li><a href="/teknisk-due-diligence.html">Teknisk due diligence ↗</a></li>
         <li><a href="#raadgivere">Rådgiverne</a></li>
         <li><a href="#forloeb">Forløbet</a></li>
         <li><a href="#aftale">Rådgiveraftalen</a></li>
@@ -282,7 +318,6 @@
       <div class="ad-label">Annonce</div>
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
            data-ad-slot="DIT-SLOT-ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
-      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </div>
 
     <div class="advertise">
@@ -297,7 +332,7 @@
 <footer>
   <div class="wrap">
     <p><strong>Om siden:</strong> arneelkjaer.dk er en uafhængig informationsside om byggerådgivning. Siden har ingen tilknytning til Arne Elkjær A/S og udfører, sælger eller formidler ikke rådgivningsydelser. Indholdet er generel vejledning og ikke professionel rådgivning.</p>
-    <p><strong>Annoncer og cookies:</strong> Siden finansieres af annoncer, bl.a. fra Google AdSense, som kan bruge cookies. Læs mere i vores <a href="privatlivspolitik.html">privatlivspolitik</a> og om <a href="https://policies.google.com/technologies/ads?hl=da" rel="noopener">Googles brug af annoncecookies</a>.</p>
+    <p><strong>Annoncer og cookies:</strong> Siden finansieres af annoncer, bl.a. fra Google AdSense, som kan bruge cookies. Læs mere i vores <a href="/privatlivspolitik.html">privatlivspolitik</a> og om <a href="https://policies.google.com/technologies/ads?hl=da" rel="noopener">Googles brug af annoncecookies</a>.</p>
     <p>Kontakt: <a class="js-mail" data-show href="#">[aktivér JavaScript for at se e-mail]</a></p>
   </div>
 </footer>
@@ -366,16 +401,6 @@
   upd();
 })();
 </script>
-<script>
-/* E-mail samles først i browseren, så spam-robotter ikke kan læse den i kildekoden */
-(function(){
-  var u=['forvirring','smudsigere4x'].join('-'), d=['icloud','com'].join('.'), m=u+String.fromCharCode(64)+d;
-  document.querySelectorAll('a.js-mail').forEach(function(a){
-    var s=a.getAttribute('data-subject');
-    a.href='mai'+'lto:'+m+(s?'?subject='+encodeURIComponent(s):'');
-    if(a.hasAttribute('data-show')) a.textContent=m;
-  });
-})();
-</script>
+<script src="/assets/site.js"></script>
 </body>
 </html>
