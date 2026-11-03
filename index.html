@@ -51,10 +51,11 @@
   .btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
   .btn-ghost:hover{border-color:var(--accent);color:var(--ink)}
 
-  .layout{display:flex;flex-wrap:wrap;gap:40px;padding:48px 0 64px}
+  .layout{display:flex;flex-wrap:wrap;gap:40px;padding:48px 16px 64px}
   main{flex:999 1 600px;min-width:0}
   aside{flex:1 1 260px;min-width:0}
   section{margin-bottom:64px;scroll-margin-top:72px}
+  @media (max-width:600px){section{scroll-margin-top:112px}.sticky{position:static}}
 
   .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:0 1px 3px rgba(16,24,40,.06)}
   .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
