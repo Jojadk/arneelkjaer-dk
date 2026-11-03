@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ingeniørguiden Aarhus</title>
+<meta name="description" content="Uafhængig, interaktiv guide til at finde og vælge rådgivende ingeniør til byggeri, ombygning og renovering i Aarhus og Østjylland.">
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2586811473480237"
+     crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#FFFFFF; --card:#FFFFFF; --ink:#1A2332; --muted:#55606F;
+    --line:#E4E8EE; --accent:#1D6FD8; --accent-ink:#1559B3; --accent-soft:#EAF2FD; --tint:#F4F7FB;
+    --yes:#0F7A4A; --yes-soft:#E6F4EC; --maybe:#9A5B00; --maybe-soft:#FFF3E0; --no:#55606F; --no-soft:#EEF1F5;
+  }
+  html{color-scheme:light;scroll-behavior:smooth}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+  a{color:var(--accent-ink)} a:hover{color:var(--ink)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+
+  /* top bar */
+  .topbar{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;flex-wrap:wrap}
+  .brand{font:600 18px/1 "IBM Plex Serif",Georgia,serif;color:var(--ink);text-decoration:none}
+  .brand span{color:var(--accent)}
+  .nav{display:flex;gap:4px;flex-wrap:wrap}
+  .nav a{font-size:14px;text-decoration:none;color:var(--muted);padding:8px 10px;border-radius:8px}
+  .nav a:hover{background:var(--tint);color:var(--ink)}
+
+  header.hero{padding:56px 0 48px;background:var(--tint);border-bottom:1px solid var(--line)}
+  .kicker{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink)}
+  h1{font:600 clamp(32px,5vw,52px)/1.1 "IBM Plex Serif",Georgia,serif;margin:12px 0 16px;max-width:18ch}
+  h2{font:600 clamp(24px,3vw,30px)/1.25 "IBM Plex Serif",Georgia,serif;margin:0 0 10px}
+  h3{font-size:18px;margin:0 0 6px}
+  .lead{font-size:19px;color:var(--muted);max-width:60ch;margin:0}
+  .sub{color:var(--muted);margin:0 0 20px;max-width:65ch}
+  .indep{margin:18px 0 0;font-size:13px;color:var(--muted)}
+  .hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 20px;border-radius:10px;
+       font:600 16px "IBM Plex Sans",sans-serif;text-decoration:none;cursor:pointer;border:1px solid transparent}
+  .btn-primary{background:var(--accent);color:#fff}
+  .btn-primary:hover{background:var(--accent-ink);color:#fff}
+  .btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--ink)}
+
+  .layout{display:flex;flex-wrap:wrap;gap:40px;padding:48px 0 64px}
+  main{flex:999 1 600px;min-width:0}
+  aside{flex:1 1 260px;min-width:0}
+  section{margin-bottom:64px;scroll-margin-top:72px}
+
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:0 1px 3px rgba(16,24,40,.06)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:0 1px 3px rgba(16,24,40,.06)}
+  .card p{margin:0;color:var(--muted);font-size:15px}
+
+  /* checker */
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+  .chip{position:relative}
+  .chip input{position:absolute;opacity:0;width:1px;height:1px}
+  .chip label{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid var(--line);border-radius:999px;
+              cursor:pointer;font-size:15px;background:#fff;user-select:none}
+  .chip input:checked + label{background:var(--accent);border-color:var(--accent);color:#fff}
+  .chip input:focus-visible + label{outline:3px solid var(--accent-soft);outline-offset:2px}
+  .result{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  .res{border-radius:12px;padding:16px;border:1px solid var(--line)}
+  .res .lbl{font-size:13px;color:var(--muted);margin-bottom:4px}
+  .res .val{font-weight:600;font-size:20px}
+  .res.yes{background:var(--yes-soft);border-color:#BFE3CF}.res.yes .val{color:var(--yes)}
+  .res.maybe{background:var(--maybe-soft);border-color:#F5D7A8}.res.maybe .val{color:var(--maybe)}
+  .res.no{background:var(--no-soft)}.res.no .val{color:var(--no)}
+  .advice{margin:16px 0 0;padding:0;list-style:none}
+  .advice li{padding:10px 0;border-top:1px solid var(--line);font-size:15px}
+  .empty{color:var(--muted);font-size:15px;margin:0}
+
+  /* tabs */
+  .tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+  .tab{min-height:44px;padding:0 16px;border-radius:10px;border:1px solid var(--line);background:#fff;font:500 15px "IBM Plex Sans",sans-serif;cursor:pointer;color:var(--ink)}
+  .tab[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .tabpanel h3{font-size:20px}
+  .tabpanel ul{padding-left:20px;margin:8px 0 0}
+  .tabpanel li{margin-bottom:6px}
+
+  /* klasser */
+  .kk{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+  .kk .card .num{font:600 13px "IBM Plex Sans";color:var(--accent-ink);letter-spacing:.06em;text-transform:uppercase}
+  .tag{display:inline-block;margin-top:10px;font-size:12px;font-weight:600;padding:4px 8px;border-radius:6px;background:var(--maybe-soft);color:var(--maybe)}
+
+  /* process */
+  ol.steps{padding:0;margin:0;list-style:none;counter-reset:s}
+  ol.steps li{counter-increment:s;position:relative;padding:0 0 22px 56px}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;
+    background:var(--accent-soft);color:var(--accent-ink);font-weight:600;display:flex;align-items:center;justify-content:center}
+  ol.steps li::after{content:"";position:absolute;left:18px;top:42px;bottom:4px;width:2px;background:var(--line)}
+  ol.steps li:last-child::after{display:none}
+  ol.steps p{margin:0;color:var(--muted)}
+
+
+  /* checklist */
+  .progress{height:10px;background:var(--no-soft);border-radius:999px;overflow:hidden;margin:6px 0 16px}
+  .progress div{height:100%;background:var(--accent);width:0;transition:width .25s}
+  .cl{list-style:none;padding:0;margin:0}
+  .cl li{border-top:1px solid var(--line)}
+  .cl label{display:flex;gap:12px;align-items:flex-start;padding:12px 0;cursor:pointer;font-size:15px}
+  .cl input{width:20px;height:20px;margin-top:2px;accent-color:var(--accent);flex:none}
+
+  details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+  summary{font-weight:600;cursor:pointer}
+  details p{margin:10px 0 0;color:var(--muted)}
+
+  .toc{list-style:none;padding:0;margin:8px 0 0;font-size:15px}
+  .toc li{margin:0}
+  .toc a{display:block;padding:8px 10px;border-radius:8px;text-decoration:none;color:var(--muted)}
+  .toc a:hover{background:var(--tint);color:var(--ink)}
+  .sticky{position:sticky;top:76px;display:flex;flex-direction:column;gap:16px}
+
+  .ad{margin:32px 0;min-height:120px;text-align:center;border:1px dashed var(--line);border-radius:12px;padding:8px}
+  .ad-label{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+
+  footer{background:var(--tint);border-top:1px solid var(--line);padding:32px 0 48px;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">Ingeniør<span>guiden</span> Aarhus</a>
+    <nav class="nav" aria-label="Indhold">
+      <a href="#tjek">Behovstjek</a>
+      <a href="#fag">Fagområder</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="kicker">Uafhængig byggeguide · Aarhus og Østjylland</div>
+    <h1>Find ud af, om du skal bruge en rådgivende ingeniør</h1>
+    <p class="lead">Tjek dit projekt på 30 sekunder, lær hvad de forskellige fagområder dækker, og få overblik over forløbet, før du går i gang.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#tjek">Start behovstjekket</a>
+      <a class="btn btn-ghost" href="#fag">Se fagområderne</a>
+    </div>
+    <p class="indep">Uafhængig guide · ikke tilknyttet Arne Elkjær A/S</p>
+  </div>
+</header>
+
+<div class="wrap layout">
+<main>
+
+  <!-- 1. Behovstjek -->
+  <section id="tjek">
+    <h2>Behovstjek: hvad kræver dit projekt?</h2>
+    <p class="sub">Vælg det, du planlægger. Svaret er en tommelfingerregel, ikke en afgørelse, så tjek altid med Aarhus Kommune.</p>
+    <div class="panel">
+      <div class="chips" role="group" aria-label="Vælg projekttyper" id="chips"></div>
+      <div id="checkerOut"><p class="empty">Vælg et eller flere projekter for at se resultatet.</p></div>
+    </div>
+  </section>
+
+  <!-- Annonceplads 1: erstat DIT-SLOT-ID med ID fra AdSense -->
+  <div class="ad">
+    <div class="ad-label">Annonce</div>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+         data-ad-slot="DIT-SLOT-ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- 2. Fagområder -->
+  <section id="fag">
+    <h2>Fagområder forklaret</h2>
+    <p class="sub">En rådgivende ingeniør beregner, projekterer og kontrollerer de tekniske dele af et byggeri. Vælg et område for at se, hvad det dækker.</p>
+    <div class="panel">
+      <div class="tabs" role="tablist" aria-label="Fagområder" id="tabs"></div>
+      <div class="tabpanel" role="tabpanel" id="tabpanel" tabindex="0"></div>
+    </div>
+  </section>
+
+  <!-- 3. Konstruktionsklasser -->
+  <section id="klasser">
+    <h2>Konstruktionsklasser i BR18</h2>
+    <p class="sub">Bygningsreglementet inddeler byggerier i fire konstruktionsklasser efter, hvor komplekse og kritiske de bærende konstruktioner er. Klassen bestemmer, hvor grundig den statiske dokumentation skal være.</p>
+    <div class="kk">
+      <div class="card"><div class="num">Klasse 1</div><h3>Enkle byggerier</h3><p>Fx mindre, simple bygninger med begrænsede krav til dokumentation.</p></div>
+      <div class="card"><div class="num">Klasse 2</div><h3>Almindelige byggerier</h3><p>Mange almindelige boliger og ombygninger med standardkonstruktioner.</p></div>
+      <div class="card"><div class="num">Klasse 3</div><h3>Komplekse byggerier</h3><p>Større eller mere krævende konstruktioner.</p><span class="tag">Certificeret statiker</span></div>
+      <div class="card"><div class="num">Klasse 4</div><h3>Meget komplekse</h3><p>Fx store eller særligt kritiske bygværker.</p><span class="tag">Certificeret statiker</span></div>
+    </div>
+    <p class="note">Det er den statisk ansvarlige, der fastlægger klassen for det konkrete projekt.</p>
+  </section>
+
+  <!-- 4. Proces -->
+  <section id="proces">
+    <h2>Forløbet fra idé til færdigt byggeri</h2>
+    <ol class="steps">
+      <li><h3>Idé og afklaring</h3><p>Beskriv, hvad du vil, og find tegninger og BBR-oplysninger frem.</p></li>
+      <li><h3>Indhent tilbud</h3><p>Send samme beskrivelse til 2–3 rådgivere, så tilbuddene kan sammenlignes.</p></li>
+      <li><h3>Projektering</h3><p>Ingeniøren laver beregninger og tegninger og fastlægger konstruktionsklassen.</p></li>
+      <li><h3>Byggetilladelse</h3><p>Ansøgningen sendes via Byg og Miljø med den nødvendige dokumentation.</p></li>
+      <li><h3>Udførelse og tilsyn</h3><p>Håndværkerne bygger, og rådgiveren kan føre tilsyn med kvaliteten.</p></li>
+      <li><h3>Færdigmelding</h3><p>Byggeriet færdigmeldes til kommunen, og BBR opdateres.</p></li>
+    </ol>
+  </section>
+
+  <!-- Annonceplads 2: erstat DIT-SLOT-ID med ID fra AdSense -->
+  <div class="ad">
+    <div class="ad-label">Annonce</div>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+         data-ad-slot="DIT-SLOT-ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+
+  <!-- 6. Tjekliste -->
+  <section id="tjekliste">
+    <h2>Din tjekliste</h2>
+    <p class="sub">Sæt flueben, efterhånden som du er klar. Listen huskes i din browser.</p>
+    <div class="panel">
+      <div style="display:flex;justify-content:space-between;font-size:14px;color:var(--muted)"><span>Fremskridt</span><span id="clCount">0 af 0</span></div>
+      <div class="progress" aria-hidden="true"><div id="clBar"></div></div>
+      <ul class="cl" id="cl"></ul>
+    </div>
+  </section>
+
+  <!-- 7. FAQ -->
+  <section id="faq">
+    <h2>Ofte stillede spørgsmål</h2>
+    <details>
+      <summary>Hvad er en certificeret statiker?</summary>
+      <p>En ingeniør, der er certificeret til at udarbejde eller kontrollere statisk dokumentation. Efter BR18 kræves det ved konstruktionsklasse 3 og 4.</p>
+    </details>
+    <details>
+      <summary>Hvad koster en rådgivende ingeniør?</summary>
+      <p>Det afhænger af opgavens omfang. Mange tager timepris, men til mindre opgaver kan du ofte få en fast pris. Bed altid om et skriftligt tilbud.</p>
+    </details>
+    <details>
+      <summary>Skal jeg søge byggetilladelse for at fjerne en væg?</summary>
+      <p>Er væggen bærende, kræver det typisk statisk dokumentation og ofte byggetilladelse. Er den ikke bærende, er det sjældent nødvendigt. Få en ingeniør til at vurdere væggen først.</p>
+    </details>
+    <details>
+      <summary>Hvad er forskellen på en ingeniør og en arkitekt?</summary>
+      <p>Arkitekten former byggeriet og indretningen. Ingeniøren sørger for, at det kan bære, holde tæt og fungere teknisk. Til større projekter arbejder de typisk sammen.</p>
+    </details>
+    <details>
+      <summary>Hvor finder jeg rådgivende ingeniører?</summary>
+      <p>Brancheforeningen FRI har en oversigt over medlemsvirksomheder. Du kan også spørge kommunen, naboer eller dit forsikringsselskab om erfaringer.</p>
+    </details>
+    <details>
+      <summary>Hvor søger jeg byggetilladelse?</summary>
+      <p>Digitalt via <a href="https://bygogmiljoe.dk" rel="noopener">Byg og Miljø</a>. Aarhus Kommunes byggesagsafdeling kan svare på, hvad dit projekt kræver.</p>
+    </details>
+  </section>
+
+</main>
+
+<aside>
+  <div class="sticky">
+    <div class="panel" style="padding:16px">
+      <h3 style="font-size:15px;margin:0 0 4px">På denne side</h3>
+      <ul class="toc">
+        <li><a href="#tjek">Behovstjek</a></li>
+        <li><a href="#fag">Fagområder</a></li>
+        <li><a href="#klasser">Konstruktionsklasser</a></li>
+        <li><a href="#proces">Forløbet</a></li>
+        <li><a href="#tjekliste">Tjekliste</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+
+    <!-- Annonceplads 3: erstat DIT-SLOT-ID med ID fra AdSense -->
+    <div class="ad" style="margin:0">
+      <div class="ad-label">Annonce</div>
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+           data-ad-slot="DIT-SLOT-ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Om siden:</strong> arneelkjaer.dk er en uafhængig informationsside om byggerådgivning. Siden har ingen tilknytning til Arne Elkjær A/S og udfører, sælger eller formidler ikke ingeniørydelser. Indholdet er generel vejledning og ikke professionel rådgivning.</p>
+    <p><strong>Annoncer og cookies:</strong> Siden finansieres af annoncer fra Google AdSense, som kan bruge cookies. Læs mere i vores <a href="privatlivspolitik.html">privatlivspolitik</a> og om <a href="https://policies.google.com/technologies/ads?hl=da" rel="noopener">Googles brug af annoncecookies</a>.</p>
+    <p>Kontakt: <a href="mailto:forvirring-smudsigere4x@icloud.com">forvirring-smudsigere4x@icloud.com</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* ---------- Behovstjek ---------- */
+  // eng / til: 2 = ja, 1 = måske, 0 = sjældent
+  var projects = [
+    {id:'vaeg',  name:'Fjerne bærende væg',       eng:2, til:1, kk:true,  tip:'Få en ingeniør til at vurdere væggen og beregne en ny bjælke, før du river noget ned.'},
+    {id:'tilb',  name:'Tilbygning',               eng:2, til:2, kk:true,  tip:'Tilbygninger kræver typisk byggetilladelse og statisk dokumentation.'},
+    {id:'tag',   name:'Udnytte tagetagen',        eng:2, til:2, kk:true,  tip:'Bjælkelag, trappe og brandforhold skal ofte dokumenteres.'},
+    {id:'nyt',   name:'Bygge nyt hus',            eng:2, til:2, kk:true,  tip:'Statik, energiramme og installationer skal projekteres og dokumenteres.'},
+    {id:'energi',name:'Energirenovering',         eng:1, til:1, kk:false, tip:'En energiberegning kan vise, hvilke tiltag der giver mest for pengene.'},
+    {id:'fugt',  name:'Fugt, skimmel eller revner',eng:2, til:0, kk:false, tip:'Årsagen skal findes før udbedring, ellers kommer skaden ofte igen.'},
+    {id:'bad',   name:'Nyt badeværelse',          eng:1, til:0, kk:false, tip:'Følg vådrumsreglerne. Ingeniør er relevant ved ændring af bærende dele eller ventilation.'},
+    {id:'carport',name:'Carport eller udhus',     eng:0, til:1, kk:false, tip:'Mindre bygninger er ofte undtaget fra byggetilladelse, men skal overholde afstande og højder.'}
+  ];
+  var sel = {};
+  var chips = document.getElementById('chips');
+  projects.forEach(function(p){
+    var w=document.createElement('div'); w.className='chip';
+    var i=document.createElement('input'); i.type='checkbox'; i.id='p_'+p.id;
+    var l=document.createElement('label'); l.htmlFor=i.id; l.textContent=p.name;
+    i.addEventListener('change',function(){ sel[p.id]=i.checked; renderChecker(); });
+    w.appendChild(i); w.appendChild(l); chips.appendChild(w);
+  });
+  function level(v){ return v===2?['yes','Ja, typisk']:v===1?['maybe','Måske']:['no','Sjældent']; }
+  function renderChecker(){
+    var chosen = projects.filter(function(p){return sel[p.id];});
+    var out = document.getElementById('checkerOut');
+    if(!chosen.length){ out.innerHTML='<p class="empty">Vælg et eller flere projekter for at se resultatet.</p>'; return; }
+    var eng=Math.max.apply(null,chosen.map(function(p){return p.eng;}));
+    var til=Math.max.apply(null,chosen.map(function(p){return p.til;}));
+    var kk=chosen.some(function(p){return p.kk;});
+    var a=level(eng), b=level(til), c=kk?['maybe','Afhænger af klassen']:['no','Sjældent'];
+    var html='<div class="result">'+
+      '<div class="res '+a[0]+'"><div class="lbl">Rådgivende ingeniør</div><div class="val">'+a[1]+'</div></div>'+
+      '<div class="res '+b[0]+'"><div class="lbl">Byggetilladelse</div><div class="val">'+b[1]+'</div></div>'+
+      '<div class="res '+c[0]+'"><div class="lbl">Certificeret statiker</div><div class="val">'+c[1]+'</div></div>'+
+      '</div><ul class="advice">';
+    chosen.forEach(function(p){ html+='<li><strong>'+p.name+':</strong> '+p.tip+'</li>'; });
+    html+='</ul>';
+    out.innerHTML=html;
+  }
+
+  /* ---------- Fagområder ---------- */
+  var areas = [
+    {t:'Statik', h:'Konstruktioner og statik', p:'Beregning af de bærende dele, så bygningen kan holde til egenvægt, sne, vind og brug.',
+     l:['Bjælker ved fjernelse af bærende vægge','Fundamenter og terrændæk','Tagkonstruktioner og bjælkelag','Statisk dokumentation til byggetilladelse']},
+    {t:'Installationer', h:'VVS, ventilation og el', p:'Projektering af de tekniske installationer, der får huset til at fungere.',
+     l:['Varmeanlæg og varmepumper','Ventilation og indeklima','Vand og afløb','El og belysning i større projekter']},
+    {t:'Energi', h:'Energi og bæredygtighed', p:'Beregninger, der viser energiforbrug og effekten af forbedringer.',
+     l:['Energirammeberegning til nybyggeri','Prioritering af energiforbedringer','Isolering og kuldebroer','Valg af varmekilde']},
+    {t:'Bygningsfysik', h:'Fugt, skimmel og skader', p:'Undersøgelse af skader og årsager, så udbedringen holder.',
+     l:['Fugtmålinger og skimmelundersøgelser','Revner og sætningsskader','Tagrum og krybekældre','Forslag til udbedring']},
+    {t:'Tilsyn', h:'Byggeledelse og tilsyn', p:'Rådgiveren følger byggeriet og sikrer, at det udføres som aftalt.',
+     l:['Kvalitetskontrol på byggepladsen','Opfølgning på tid og økonomi','Mangelgennemgang og aflevering','Dokumentation til færdigmelding']}
+  ];
+  var tabs=document.getElementById('tabs'), panel=document.getElementById('tabpanel');
+  function showTab(i){
+    Array.prototype.forEach.call(tabs.children,function(b,j){ b.setAttribute('aria-selected', j===i?'true':'false'); b.tabIndex = j===i?0:-1; });
+    var a=areas[i];
+    panel.innerHTML='<h3>'+a.h+'</h3><p style="margin:0;color:var(--muted)">'+a.p+'</p><ul>'+a.l.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul>';
+  }
+  areas.forEach(function(a,i){
+    var b=document.createElement('button'); b.className='tab'; b.type='button'; b.setAttribute('role','tab'); b.textContent=a.t;
+    b.addEventListener('click',function(){showTab(i);});
+    b.addEventListener('keydown',function(e){
+      if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ var n=(i+(e.key==='ArrowRight'?1:-1)+areas.length)%areas.length; showTab(n); tabs.children[n].focus(); }
+    });
+    tabs.appendChild(b);
+  });
+  showTab(0);
+
+
+  /* ---------- Tjekliste ---------- */
+  var items=['Adresse og BBR-oplysninger fundet','Eksisterende tegninger samlet','Billeder af det berørte område','Kort beskrivelse af projektet','Budget og ønsket tidsplan','Tilbud fra 2–3 rådgivere','Ansvarsforsikring tjekket','Aftale indgået på skrift'];
+  var KEY='ig_checklist', saved={};
+  try{ saved=JSON.parse(localStorage.getItem(KEY)||'{}')||{}; }catch(e){ saved={}; }
+  var cl=document.getElementById('cl');
+  items.forEach(function(t,i){
+    var li=document.createElement('li');
+    li.innerHTML='<label><input type="checkbox"'+(saved[i]?' checked':'')+'><span>'+t+'</span></label>';
+    li.querySelector('input').addEventListener('change',function(e){
+      saved[i]=e.target.checked; try{ localStorage.setItem(KEY,JSON.stringify(saved)); }catch(err){}
+      updCl();
+    });
+    cl.appendChild(li);
+  });
+  function updCl(){
+    var n=cl.querySelectorAll('input:checked').length;
+    document.getElementById('clCount').textContent=n+' af '+items.length;
+    document.getElementById('clBar').style.width=(n/items.length*100)+'%';
+  }
+  updCl();
+})();
+</script>
+</body>
+</html>
