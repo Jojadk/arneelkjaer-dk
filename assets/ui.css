@@ -84,3 +84,40 @@ section,article h2{scroll-margin-top:80px}
   .mn-link[aria-current="page"]{box-shadow:none;color:var(--accent-ink)}
   body.menu-open{overflow:hidden}
 }
+
+/* Annonce i sidebar: ligger over den faste indholdsfortegnelse, aldrig i en flydende boks */
+.ad-side{margin:0 0 24px}
+@media (max-width:900px){.ad-side{margin:24px 0}}
+.ad{clear:both}
+
+/* ---------- Layout-rettelser efter skærmtest ---------- */
+/* Lange danske sammensatte ord må brydes på smalle skærme */
+article, main, .nf, .panel, .card, .node, .fnode, .hub a, .smap a, .mn-item, td, th, .ilist, .milestones, .levels, .callout{overflow-wrap:break-word}
+/* Orddeling kun i smalle kolonner, ikke i brødtekst */
+td, th, .mn-item small, .smap small, .levels p, .grid6 .mini{-webkit-hyphens:auto;hyphens:auto}
+/* Gitre må aldrig blive bredere end skærmen */
+.focus{grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))}
+.nodes,.grid,.related,.hub,.kk{grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))}
+.smap{grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
+.levels,.grid6,.result{grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr))}
+.lks{grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr))}
+/* FAQ: hele overskriften er en stor trykflade */
+details{padding:0 18px}
+summary{min-height:48px;padding:12px 0}
+details[open]{padding-bottom:14px}
+details p{margin-top:0}
+/* Små skærme */
+@media (max-width:360px){
+  .wrap{padding-left:12px;padding-right:12px}
+  .layout{padding-left:12px;padding-right:12px}
+  h1{font-size:28px}
+  .fnode{padding:16px;gap:12px}
+  .brand{font-size:17px}
+  .menu-btn{padding:0 10px}
+}
+
+/* Flex-elementer må krympe, så lange ord kan brydes */
+.ilist li > div, .steps2 li > div, .milestones li > div, .mn-item > span, .smap a > span, .fnode > div, .cxtrail a > span:last-child{min-width:0}
+article, main, .nf{overflow-wrap:anywhere}
+.ilist,.steps2,.milestones{grid-template-columns:minmax(0,1fr)}
+.callout > div{min-width:0}
