@@ -116,3 +116,9 @@ details[open] summary::after{content:"−"}
 .ms-n{flex:none;width:44px;height:44px;border-radius:50%;background:var(--accent);color:#fff;font-weight:600;font-size:18px;display:flex;align-items:center;justify-content:center}
 .milestones li{position:relative;padding-bottom:4px}
 .milestones li:not(:last-child)::after{content:"";position:absolute;left:21px;top:48px;bottom:-14px;width:2px;background:var(--line)}
+.glbox{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:32px 0 0;background:var(--tint)}
+.glbox-h{display:flex;align-items:center;gap:10px;margin:0 0 10px;font-weight:600}
+.glbox-h .ico-badge{width:36px;height:36px;background:#fff}
+.glbox-l{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.glbox-l a{display:inline-flex;align-items:center;min-height:36px;padding:0 12px;border:1px solid var(--line);border-radius:999px;background:#fff;text-decoration:none;font-size:15px;color:var(--ink)}
+.glbox-l a:hover{border-color:var(--accent);color:var(--accent-ink)}
