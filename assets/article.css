@@ -78,3 +78,5 @@ details[open] summary::after{content:"−"}
 .ilist{list-style:none;padding:0;margin:8px 0 24px;display:grid;gap:16px}
 .ilist li{display:flex;gap:14px;align-items:flex-start;margin:0}
 .ilist p{margin:2px 0 0;color:var(--muted);font-size:16px}
+.grid6{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:8px 0 20px}
+.mini{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:12px;padding:12px;background:#fff;font-size:15px;line-height:1.35}

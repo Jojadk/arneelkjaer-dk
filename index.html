@@ -143,6 +143,15 @@
   .hero-points{display:flex;flex-wrap:wrap;gap:10px 22px;margin:24px 0 0;padding:0;list-style:none;font-size:15px;color:var(--muted)}
   .hero-points li{display:flex;align-items:center;gap:8px}
   .hero-points .ico{color:var(--accent-ink);width:20px;height:20px}
+  .sub-h{font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:24px 0 12px}
+  .focus{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+  .fnode{display:flex;align-items:center;gap:16px;padding:20px;border-radius:14px;text-decoration:none;color:var(--ink);background:var(--accent-soft);border:1px solid #CFE0F8;transition:border-color .15s,transform .15s}
+  .fnode:hover{border-color:var(--accent);transform:translateY(-2px);color:var(--ink)}
+  .fnode .ico-badge{background:#fff}
+  .fnode strong{display:block;font:600 20px/1.3 "IBM Plex Serif",Georgia,serif}
+  .fnode .d{display:block;font-size:15px;color:var(--muted);margin-top:2px}
+  .fnode .arr{margin-left:auto;color:var(--accent-ink)}
+  @media (max-width:420px){.focus{grid-template-columns:1fr}}
   footer{background:var(--tint);border-top:1px solid var(--line);padding:32px 0 48px;font-size:14px;color:var(--muted)}
 </style>
 <link rel="stylesheet" href="/assets/ui.css">
@@ -170,7 +179,7 @@
     <ul class="hero-points">
       <li><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg>6 rådgivertyper forklaret</li>
       <li><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-list"/></svg>Forløbet trin for trin</li>
-      <li><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-contract"/></svg>6 grundige artikler</li>
+      <li><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-contract"/></svg>8 grundige artikler</li>
       <li><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg>Ordbog over byggeord</li>
     </ul>
     <p class="indep">Uafhængig guide · ikke tilknyttet Arne Elkjær A/S</p>
@@ -192,15 +201,21 @@
   <section id="emner">
     <h2>Artikler i guiden</h2>
     <p class="sub">Grundige artikler om de vigtigste emner i byggeri og rådgivning. Vælg et emne, eller læs videre om byggerådgivning generelt herunder.</p>
+    <h3 class="sub-h">Fokusområder</h3>
+    <div class="focus">
+      <a class="fnode" href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><div><strong>Commissioning</strong><span class="d">Sådan sikrer du, at bygningens tekniske systemer virker sammen og som bestilt.</span></div><span class="arr"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"/></svg></span></a>
+      <a class="fnode" href="/bygherreraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-briefcase"/></svg></span><div><strong>Bygherrerådgivning</strong><span class="d">Din uafhængige sparringspartner fra byggeprogram til aflevering.</span></div><span class="arr"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"/></svg></span></a>
+      <a class="fnode" href="/teknisk-due-diligence.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-search"/></svg></span><div><strong>Teknisk due diligence</strong><span class="d">Kend ejendommens stand, risici og fremtidige udgifter, før du køber.</span></div><span class="arr"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"/></svg></span></a>
+      <a class="fnode" href="/eu-taksonomi.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-leaf"/></svg></span><div><strong>EU-taksonomi</strong><span class="d">Hvornår er en bygning bæredygtig i EU’s forstand, og hvorfor betyder det noget?</span></div><span class="arr"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"/></svg></span></a>
+    </div>
+    <h3 class="sub-h">Flere artikler</h3>
     <div class="nodes">
-      <a class="node" href="/klimakrav-lca.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-leaf"/></svg></span><span class="tagline">Artikel · Bæredygtighed</span><strong>Klimakrav og LCA</strong><span class="d">Grænseværdier for nybyggeri, og hvordan du når under dem.</span><span class="go">Læs artiklen</span></a>
-      <a class="node" href="/entrepriseformer.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-handshake"/></svg></span><span class="tagline">Artikel · Aftaler og udbud</span><strong>Entrepriseformer</strong><span class="d">Fag-, hoved- og totalentreprise samt AB 18 forklaret.</span><span class="go">Læs artiklen</span></a>
-      <a class="node" href="/brandraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flame"/></svg></span><span class="tagline">Artikel · Sikkerhed</span><strong>Brandrådgivning</strong><span class="d">Brandklasser og hvornår du skal bruge en certificeret brandrådgiver.</span><span class="go">Læs artiklen</span></a>
-      <a class="node" href="/bygningssyn-vedligeholdelsesplan.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-list"/></svg></span><span class="tagline">Artikel · Drift</span><strong>Bygningssyn og vedligeholdelsesplan</strong><span class="d">Undgå dyre overraskelser med planlagt vedligehold.</span><span class="go">Læs artiklen</span></a>
-      <a class="node" href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><span class="tagline">Artikel · Kvalitet og drift</span><strong>Commissioning</strong><span class="d">Sådan sikrer du, at bygningen faktisk virker som bestilt.</span><span class="go">Læs artiklen</span></a>
-      <a class="node" href="/teknisk-due-diligence.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-search"/></svg></span><span class="tagline">Artikel · Køb af ejendom</span><strong>Teknisk due diligence</strong><span class="d">Kend ejendommens stand og risici, før du køber.</span><span class="go">Læs artiklen</span></a>
-      <a class="node" href="/ordbog.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg></span><span class="tagline">Opslag</span><strong>Ordbog over byggeord</strong><span class="d">Over 45 fagudtryk og forkortelser forklaret.</span><span class="go">Åbn ordbogen</span></a>
-      <a class="node" href="#raadgivere"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg></span><span class="tagline">Overblik</span><strong>De vigtigste rådgivere</strong><span class="d">Ingeniør, arkitekt, bygningskonstruktør, landinspektør og flere.</span><span class="go">Se rådgiverne</span></a>
+      <a class="node" href="/klimakrav-lca.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-leaf"/></svg></span><span class="tagline">Bæredygtighed</span><strong>Klimakrav og LCA</strong><span class="d">Grænseværdier for nybyggeri, og hvordan du når under dem.</span><span class="go">Læs artiklen</span></a>
+      <a class="node" href="/entrepriseformer.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-handshake"/></svg></span><span class="tagline">Aftaler og udbud</span><strong>Entrepriseformer</strong><span class="d">Fag-, hoved- og totalentreprise samt AB 18 forklaret.</span><span class="go">Læs artiklen</span></a>
+      <a class="node" href="/brandraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flame"/></svg></span><span class="tagline">Sikkerhed</span><strong>Brandrådgivning</strong><span class="d">Brandklasser og certificerede brandrådgivere.</span><span class="go">Læs artiklen</span></a>
+      <a class="node" href="/bygningssyn-vedligeholdelsesplan.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-list"/></svg></span><span class="tagline">Drift</span><strong>Bygningssyn og vedligeholdelsesplan</strong><span class="d">Undgå dyre overraskelser med planlagt vedligehold.</span><span class="go">Læs artiklen</span></a>
+      <a class="node" href="/ordbog.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg></span><span class="tagline">Opslag</span><strong>Ordbog over byggeord</strong><span class="d">Over 60 fagudtryk og forkortelser fra A til Å.</span><span class="go">Åbn ordbogen</span></a>
+      <a class="node" href="#raadgivere"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg></span><span class="tagline">Overblik</span><strong>De vigtigste rådgivere</strong><span class="d">Ingeniør, arkitekt, bygningskonstruktør og flere.</span><span class="go">Se rådgiverne</span></a>
     </div>
   </section>
 
@@ -358,6 +373,7 @@
   <div class="wrap">
     <p><strong>Om siden:</strong> arneelkjaer.dk er en uafhængig informationsside om byggerådgivning. Siden har ingen tilknytning til Arne Elkjær A/S og udfører, sælger eller formidler ikke rådgivningsydelser. Indholdet er generel vejledning og ikke professionel rådgivning.</p>
     <p><strong>Annoncer og cookies:</strong> Siden finansieres af annoncer, bl.a. fra Google AdSense, som kan bruge cookies. Læs mere i vores <a href="/privatlivspolitik.html">privatlivspolitik</a> og om <a href="https://policies.google.com/technologies/ads?hl=da" rel="noopener">Googles brug af annoncecookies</a>.</p>
+    <p><strong>Om indholdet:</strong> Teksterne er skrevet med hjælp fra kunstig intelligens (AI) ud fra prompts, og siden hostes via GitHub Pages. Fejl kan forekomme, så tjek altid gældende regler hos myndighederne eller en rådgiver.</p>
     <p>Kontakt: <a class="js-mail" data-show href="#">[aktivér JavaScript for at se e-mail]</a></p>
   </div>
 </footer>
