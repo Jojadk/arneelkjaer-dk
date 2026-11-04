@@ -153,6 +153,9 @@
   .fnode .d{display:block;font-size:15px;color:var(--muted);margin-top:2px}
   .fnode .arr{margin-left:auto;color:var(--accent-ink)}
   @media (max-width:420px){.focus{grid-template-columns:1fr}}
+  .hero-cta{margin:24px 0 0}
+  .btn-cta{display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:0 20px;border-radius:12px;background:var(--accent);color:#fff;font-weight:600;text-decoration:none}
+  .btn-cta:hover{background:var(--accent-ink);color:#fff}
   footer{background:var(--tint);border-top:1px solid var(--line);padding:32px 0 48px;font-size:14px;color:var(--muted)}
 </style>
 <link rel="stylesheet" href="/assets/ui.css">
@@ -194,6 +197,8 @@
               <li><a class="mn-item" href="/raadgivning/byggemodning/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-map"/></svg></span><span><strong>Byggemodning</strong><small>Veje, kloak og forsyning</small></span></a></li>
               <li><a class="mn-item" href="/brandraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flame"/></svg></span><span><strong>Brandrådgivning</strong><small>Brandklasser og brandrådgivere</small></span></a></li>
               <li><a class="mn-item" href="/bygningssyn-vedligeholdelsesplan.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clip-check"/></svg></span><span><strong>Bygningssyn</strong><small>Vedligeholdelsesplaner</small></span></a></li>
+              <li><a class="mn-item" href="/hvad-koster-raadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-coins"/></svg></span><span><strong>Hvad koster rådgivning?</strong><small>Priser og honorarer</small></span></a></li>
+              <li><a class="mn-item" href="/karriere.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg></span><span><strong>Karriere</strong><small>Uddannelse, specialer og løn</small></span></a></li>
               </ul>
             </div>
             <div class="mn-col">
@@ -210,6 +215,7 @@
           </div>
         </li>
         <li><a class="mn-link" href="/raadgivning/"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg>Rådgivning</a></li>
+        <li><a class="mn-link mn-cta" href="/vaelg-raadgiver.html"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-compass"/></svg>Vælg rådgiver</a></li>
         <li><a class="mn-link" href="/ordbog.html"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg>Ordbog</a></li>
         <li><a class="mn-link" href="/om-os/"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-info"/></svg>Om siden</a></li>
       </ul>
@@ -222,10 +228,11 @@
     <div class="kicker">Uafhængig guide · Byggeri og rådgivning</div>
     <h1>Guide til byggerådgivning</h1>
     <p class="lead">Hvilke rådgivere findes der, hvad laver de, og hvordan foregår et godt rådgiverforløb fra idé til færdigt byggeri? Her er overblikket.</p>
+    <p class="hero-cta"><a class="btn-cta" href="/vaelg-raadgiver.html"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-compass"/></svg>Find ud af, hvilken rådgiver du skal bruge</a></p>
     <ul class="hero-points">
       <li><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg>6 rådgivertyper forklaret</li>
       <li><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-list"/></svg>Forløbet trin for trin</li>
-      <li><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-contract"/></svg>23 grundige guider</li>
+      <li><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-contract"/></svg>25 grundige guider</li>
       <li><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg>Ordbog over byggeord</li>
       <li><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-bulb"/></svg><a href="/hurtige-svar.html">24 hurtige svar</a></li>
     </ul>
@@ -274,6 +281,8 @@
       <a class="node" href="/brandraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flame"/></svg></span><span class="tagline">Sikkerhed</span><strong>Brandrådgivning</strong><span class="d">Brandklasser og certificerede brandrådgivere.</span><span class="go">Læs artiklen</span></a>
       <a class="node" href="/entrepriseformer.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-handshake"/></svg></span><span class="tagline">Aftaler og udbud</span><strong>Entrepriseformer</strong><span class="d">Fag-, hoved- og totalentreprise samt AB 18.</span><span class="go">Læs artiklen</span></a>
       <a class="node" href="/bygningssyn-vedligeholdelsesplan.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clip-check"/></svg></span><span class="tagline">Drift</span><strong>Bygningssyn og vedligeholdelsesplan</strong><span class="d">Undgå dyre overraskelser med planlagt vedligehold.</span><span class="go">Læs artiklen</span></a>
+      <a class="node" href="/hvad-koster-raadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-coins"/></svg></span><span class="tagline">Guide · Priser</span><strong>Hvad koster rådgivning?</strong><span class="d">Timepriser og eksempler på priser for typiske opgaver.</span><span class="go">Se priserne</span></a>
+      <a class="node" href="/karriere.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg></span><span class="tagline">Guide · Karriere</span><strong>Karriere i byggerådgivning</strong><span class="d">Uddannelser, specialer, løn og arbejdspladser.</span><span class="go">Læs guiden</span></a>
       <a class="node" href="/ordbog.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg></span><span class="tagline">Opslag</span><strong>Ordbog over byggeord</strong><span class="d">Over 145 fagudtryk fra A til Å.</span><span class="go">Åbn ordbogen</span></a>
     </div>
   </section>

@@ -30,6 +30,8 @@ Ved citat: henvis til den konkrete side og nævn "Rådgiverguiden (arneelkjaer.d
 - [Byggemodning](https://arneelkjaer.dk/raadgivning/byggemodning/): Byggemodning trin for trin: planlægning, geoteknik, kloak og lokal afledning af regnvand, veje, forsyning, jord og rådgiverens rolle.
 - [Brandrådgivning](https://arneelkjaer.dk/brandraadgivning.html): Brandklasse 1–4 forklaret: hvornår du skal bruge en certificeret brandrådgiver, tredjepartskontrol, flugtveje, brandadskillelser og drift.
 - [Bygningssyn](https://arneelkjaer.dk/bygningssyn-vedligeholdelsesplan.html): Sådan laves et bygningssyn og en vedligeholdelsesplan, krav i almene boliger, henlæggelser og råd til ejerforeninger, andelsboliger og udlejere.
+- [Hvad koster rådgivning?](https://arneelkjaer.dk/hvad-koster-raadgivning.html): Timepriser for ingeniører, priser på bærende væg, tilbygning og statiske beregninger, honorarformer og de ekstra udgifter, du skal regne med.
+- [Karriere](https://arneelkjaer.dk/karriere.html): Bliv ingeniør, bygningskonstruktør eller arkitekt i byggerådgivning: uddannelser, specialer, startløn, arbejdspladser og efterspurgte kompetencer.
 
 ## Regler og krav
 
@@ -39,6 +41,10 @@ Ved citat: henvis til den konkrete side og nævn "Rådgiverguiden (arneelkjaer.d
 - [Indeklima](https://arneelkjaer.dk/indeklima.html): Termisk, atmosfærisk, akustisk og visuelt indeklima, indeklimaklasse I–IV og BR18-krav til dagslys, temperatur, CO₂ og lyd forklaret.
 - [Klimakrav og LCA](https://arneelkjaer.dk/klimakrav-lca.html): Livscyklusvurdering forklaret: grænseværdier for nybyggeri fra 2025, hvem der har ansvaret, hvornår der skal regnes, og hvordan CO₂ kan sænkes.
 - [Entrepriseformer](https://arneelkjaer.dk/entrepriseformer.html): Forskellen på fagentreprise, hovedentreprise og totalentreprise, partnering og OPP, og hvad AB 18, ABT 18 og ABR 18 betyder for bygherren.
+
+## Værktøjer
+
+- [Hvilken rådgiver skal jeg bruge?](https://arneelkjaer.dk/vaelg-raadgiver.html): Vælg dit byggeprojekt og se, hvilke rådgivere og krav der typisk er relevante: ingeniør, arkitekt, brandrådgiver, bygherrerådgiver og mere.
 
 ## Opslag og overblik
 

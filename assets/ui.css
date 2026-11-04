@@ -121,3 +121,6 @@ details p{margin-top:0}
 article, main, .nf{overflow-wrap:anywhere}
 .ilist,.steps2,.milestones{grid-template-columns:minmax(0,1fr)}
 .callout > div{min-width:0}
+.mn-link.mn-cta{color:var(--accent-ink);font-weight:600}
+@media (min-width:861px){.mn-link.mn-cta{background:var(--accent-soft)}.mn-link.mn-cta:hover{background:#DCE9FB}}
+@media (min-width:861px) and (max-width:1060px){.mn-link .mn-ico{display:none}.mn-trigger .mn-ico{display:none}.mn-link,.mn-trigger{padding:0 9px}}
