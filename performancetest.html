@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Performancetest – Bygningsstyrelsens metode med fem milepæle</title>
+<meta name="description" content="Sådan fungerer Bygningsstyrelsens performancetest: de fem milepæle, eksempler på testprotokoller, et konkret eksempel på test af stabil regulering, milepælsbetalinger og brug i andre byggerier.">
+<link rel="canonical" href="https://arneelkjaer.dk/performancetest.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Performancetest: når kravene bliver testet og koblet til betalingen">
+<meta property="og:description" content="Sådan fungerer Bygningsstyrelsens performancetest: de fem milepæle, eksempler på testprotokoller, et konkret eksempel på test af stabil regulering, milepælsbetalinger og brug i andre byggerier.">
+<meta property="og:url" content="https://arneelkjaer.dk/performancetest.html">
+<meta property="og:locale" content="da_DK">
+
+<script src="/assets/analytics.js"></script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2586811473480237"
+     crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/article.css">
+<link rel="stylesheet" href="/assets/ui.css">
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Performancetest – Bygningsstyrelsens metode med fem milepæle",
+   "inLanguage": "da-DK",
+   "url": "https://arneelkjaer.dk/performancetest.html",
+   "datePublished": "2026-11-04",
+   "dateModified": "2026-11-04",
+   "mainEntityOfPage": "https://arneelkjaer.dk/performancetest.html",
+   "author": {
+    "@type": "Organization",
+    "name": "Rådgiverguiden"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Rådgiverguiden"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Rådgiverguiden",
+     "item": "https://arneelkjaer.dk/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Performancetest",
+     "item": "https://arneelkjaer.dk/performancetest.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Hvem har udviklet performancetesten?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Bygningsstyrelsen, der bygger og driver statens ejendomme. Metoden blev offentliggjort i 2015 og er løbende opdateret."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hvad er forskellen på performancetest og funktionsafprøvning?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Funktionsafprøvning tester, at de enkelte anlæg virker. Performancetesten er en samlet metode med faste protokoller og milepæle, der også efterprøver energieffektivitet og indeklima og er knyttet til betalingen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hvad er milepæl 4?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Milepælen for energieffektivitet, indeklima og klimaskærm samt laboratorie- og procesinstallationer. Den tester de mest komplekse sammenhænge og kan først bestås, når milepæl 1–3 er godkendt."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hvor finder jeg protokollerne?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "På Bygningsstyrelsens hjemmeside under kvalitetssikring og performancetest."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#indhold">Spring til indhold</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/">Rådgiver<span>guiden</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mainnav">
+      <span class="mb-open"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-menu"/></svg></span><span class="mb-close"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-close"/></svg></span><span class="mb-label">Menu</span>
+    </button>
+    <nav class="mainnav" id="mainnav" aria-label="Hovedmenu">
+      <ul class="mn-top">
+        <li class="has-panel">
+          <button class="mn-trigger is-active" type="button" aria-expanded="false" aria-controls="mn-emner"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-folder"/></svg>Emner<svg class="ico chev" aria-hidden="true"><use href="/assets/icons.svg#i-chev"/></svg></button>
+          <div class="mn-panel" id="mn-emner">
+            <div class="mn-col">
+              <p class="mn-h">Fokusområder</p>
+              <ul>
+              <li><a class="mn-item" href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><span><strong>Commissioning</strong><small>Bygningen virker som bestilt</small></span></a></li>
+              <li><a class="mn-item" href="/funktionsafproevning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-test"/></svg></span><span><strong>Funktionsafprøvning</strong><small>Test af installationerne</small></span></a></li>
+              <li><a class="mn-item" href="/performancetest.html" aria-current="page"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-medal"/></svg></span><span><strong>Performancetest</strong><small>Bygningsstyrelsens milepæle</small></span></a></li>
+              <li><a class="mn-item" href="/raadgivning/bygherreraadgivning/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-briefcase"/></svg></span><span><strong>Bygherrerådgivning</strong><small>Din uafhængige sparringspartner</small></span></a></li>
+              <li><a class="mn-item" href="/teknisk-due-diligence.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-search"/></svg></span><span><strong>Teknisk due diligence</strong><small>Kend ejendommen før køb</small></span></a></li>
+              <li><a class="mn-item" href="/eu-taksonomi.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-eu"/></svg></span><span><strong>EU-taksonomi</strong><small>Hvornår er en bygning grøn?</small></span></a></li>
+              </ul>
+            </div>
+            <div class="mn-col">
+              <p class="mn-h">Rådgivningsområder</p>
+              <ul>
+              <li><a class="mn-item" href="/raadgivning/konstruktioner/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-beam"/></svg></span><span><strong>Konstruktioner</strong><small>Statik og bærende dele</small></span></a></li>
+              <li><a class="mn-item" href="/raadgivning/installationsteknik/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-pipe"/></svg></span><span><strong>Installationsteknik</strong><small>Varme, ventilation, VVS og el</small></span></a></li>
+              <li><a class="mn-item" href="/raadgivning/energi-og-indeklima/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-bolt"/></svg></span><span><strong>Energi og indeklima</strong><small>Lavt forbrug, godt indeklima</small></span></a></li>
+              <li><a class="mn-item" href="/raadgivning/byggemodning/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-map"/></svg></span><span><strong>Byggemodning</strong><small>Veje, kloak og forsyning</small></span></a></li>
+              <li><a class="mn-item" href="/brandraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flame"/></svg></span><span><strong>Brandrådgivning</strong><small>Brandklasser og brandrådgivere</small></span></a></li>
+              <li><a class="mn-item" href="/bygningssyn-vedligeholdelsesplan.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clip-check"/></svg></span><span><strong>Bygningssyn</strong><small>Vedligeholdelsesplaner</small></span></a></li>
+              </ul>
+            </div>
+            <div class="mn-col">
+              <p class="mn-h">Regler og krav</p>
+              <ul>
+              <li><a class="mn-item" href="/bygningsreglementet.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-paragraph"/></svg></span><span><strong>Bygningsreglementet</strong><small>Overblik over BR18</small></span></a></li>
+              <li><a class="mn-item" href="/energimaerke.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-energy-label"/></svg></span><span><strong>Energimærke</strong><small>Skalaen fra A til G</small></span></a></li>
+              <li><a class="mn-item" href="/indeklima.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-heart"/></svg></span><span><strong>Indeklima</strong><small>Klasser og krav</small></span></a></li>
+              <li><a class="mn-item" href="/klimakrav-lca.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cycle"/></svg></span><span><strong>Klimakrav og LCA</strong><small>Grænseværdier for nybyggeri</small></span></a></li>
+              <li><a class="mn-item" href="/entrepriseformer.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-handshake"/></svg></span><span><strong>Entrepriseformer</strong><small>Aftaler og AB 18</small></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a class="mn-link" href="/raadgivning/"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg>Rådgivning</a></li>
+        <li><a class="mn-link" href="/ordbog.html"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg>Ordbog</a></li>
+        <li><a class="mn-link" href="/om-os/"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-info"/></svg>Om siden</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Rådgiverguiden</a> › Performancetest</p>
+    <div class="kicker">Fokusområde · Kvalitet og drift</div>
+    <h1>Performancetest: når kravene bliver testet og koblet til betalingen</h1>
+    <p class="lead">Bygningsstyrelsens performancetest efterprøver i fem milepæle, at bygningen lever op til kravene til energi og indeklima, og den knytter testene til entreprenørens betaling.</p>
+    <p class="meta" style="display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center"><span style="display:inline-flex;gap:6px;align-items:center"><svg class="ico ico-sm" aria-hidden="true"><use href="/assets/icons.svg#i-calendar"/></svg>Opdateret 4. november 2026</span><span style="display:inline-flex;gap:6px;align-items:center"><svg class="ico ico-sm" aria-hidden="true"><use href="/assets/icons.svg#i-clock"/></svg>Ca. 9 minutters læsning</span></p>
+    
+  </div>
+</header>
+
+<div class="wrap" style="padding-top:24px">
+  <div class="ad" style="margin:0;min-height:100px">
+    <div class="ad-label">Annonce</div>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+         data-ad-slot="DIT-SLOT-ID" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  </div>
+</div>
+
+<div class="wrap layout">
+<article id="indhold" tabindex="-1">
+
+  <nav class="cxtrail" aria-label="Kvalitetssikring af installationer">
+    <a href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><span><small>Proces</small>Commissioning</span></a>
+    <span class="cxarrow" aria-hidden="true"></span>
+    <a href="/funktionsafproevning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-test"/></svg></span><span><small>Test</small>Funktionsafprøvning</span></a>
+    <span class="cxarrow" aria-hidden="true"></span>
+    <a href="/performancetest.html" aria-current="page"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-medal"/></svg></span><span><small>Verifikation</small>Performancetest</span></a>
+  </nav>
+
+  <h2 id="hvad">Hvad er Bygningsstyrelsens performancetest?</h2>
+  <p>Bygningsstyrelsen, der bygger og driver statens ejendomme, oplevede som mange andre bygherrer, at nye bygninger ikke altid levede op til kravene, når de blev taget i brug. Energiforbruget var højere end beregnet, indeklimaet svingede, og fejl i installationerne blev først opdaget i driften. Derfor udviklede styrelsen performancetesten: en metode til at efterprøve, at bygningen teknisk fungerer og opfylder de aftalte krav, især til energi og indeklima.</p>
+  <p>Performancetesten blev offentliggjort i 2015 og er siden blevet udbygget og opdateret. Den består af en række testprotokoller, der beskriver, præcis hvordan hvert anlæg eller hver funktion testes, og hvad der skal til for at bestå. Det særlige er, at testene er bundet til faste milepæle i byggeriet og til entreprenørens betaling.</p>
+
+  <div class="callout"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-info"/></svg><div><strong>Kort fortalt</strong><p>Performancetesten er stikprøver i fem milepæle, fra de første forsyninger er tændt til prøvedrift. En del af betalingen frigives først, når milepælens test er bestået. Det gør kravene til energi og indeklima økonomisk og juridisk bindende.</p></div></div>
+
+  <h2 id="milepaele">De fem milepæle</h2>
+  <p>Testene er organiseret i fem milepæle, der følger byggeriets fremdrift. En milepæl kan først bestås, når de foregående er godkendt, fordi de senere test bygger på, at det grundlæggende er i orden.</p>
+  <ol class="milestones">
+    <li><span class="ms-n">1</span><div><strong>Aktive hovedforsyninger</strong><p>Hovedforsyningerne af el, varme, vand og ventilation er etableret og i drift.</p></div></li>
+    <li><span class="ms-n">2</span><div><strong>Mekanisk og elektrisk komplet</strong><p>Installationerne er færdigmonteret og tilsluttet, så de kan sættes i drift og afprøves.</p></div></li>
+    <li><span class="ms-n">3</span><div><strong>Brandsikkerhed, indregulering og CTS-integration</strong><p>Brandtekniske funktioner afprøves, anlæggene er indreguleret, og de er integreret i CTS-anlægget.</p></div></li>
+    <li><span class="ms-n">4</span><div><strong>Energieffektivitet, indeklima og klimaskærm</strong><p>Stikprøver på de mest komplekse og tværfaglige sammenhænge: energieffektivitet, akustik, termisk komfort, belysning og klimaskærm samt laboratorie- og procesinstallationer.</p></div></li>
+    <li><span class="ms-n">5</span><div><strong>Prøvedrift</strong><p>Bygningen drives i en periode under virkelige forhold, så det kan ses, at den præsterer som forudsat.</p></div></li>
+  </ol>
+
+  <h2 id="eksempler">Eksempler på testprotokoller</h2>
+  <p>Bygningsstyrelsen har udgivet en lang række protokoller. Nogle eksempler fra milepæl 3 og 4:</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th scope="col">Område</th><th scope="col">Eksempler på test</th></tr></thead>
+      <tbody>
+        <tr><td><strong>CTS og regulering</strong></td><td>Kontrol af CTS efter funktionsbeskrivelserne og kontrol af, at regulering af ventilation, varme og køling er stabil</td></tr>
+        <tr><td><strong>Installationer og energi</strong></td><td>Energieffektivitet af ventilation, kapacitet og energieffektivitet af varmt brugsvand og elevatorers energieffektivitet</td></tr>
+        <tr><td><strong>Indeklima</strong></td><td>Akustik, termisk komfort og belysningsanlæg</td></tr>
+        <tr><td><strong>Klimaskærm</strong></td><td>Tæthed af klimaskærmen samt kuldebroer og linjetab</td></tr>
+        <tr><td><strong>Laboratorier og proces</strong></td><td>Procesventilation i laboratorier, nødstrøm, pumpebrønde, behandlet vand, trykluft og integreret test af serverrum og proceskøl</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ad">
+    <div class="ad-label">Annonce</div>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+         data-ad-slot="DIT-SLOT-ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <h2 id="eksempel">Et eksempel: test af stabil regulering</h2>
+  <p>For at gøre metoden konkret kan man se på testen af, om regulering af ventilation, varme og køling er stabil. Ustabil regulering, hvor temperaturer og luftmængder svinger frem og tilbage, giver træk, støj og dårlig komfort og spilder energi. Testen foregår i hovedtræk sådan:</p>
+  <ul class="ilist">
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clip-check"/></svg></span><div><strong>Forudsætninger</strong><p>Anlæggene skal være mekanisk og elektrisk komplette og indregulerede. Diagrammer og funktionsbeskrivelser skal være opdaterede, rumstyringen skal være aktiv, og logning skal være sat op i CTS.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-folder"/></svg></span><div><strong>Gennemgang af dokumentation</strong><p>Bygherrens repræsentant gennemgår entreprenørens kvalitetssikring, indstillinger og logs, der viser, at fejl er fundet og rettet.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-test"/></svg></span><div><strong>Stikprøver</strong><p>Bygherrens repræsentant udvælger mindst ét anlæg pr. type. Setpunktet ændres trinvis gennem lav til fuld belastning via CTS, mens ventiler og spjæld observeres, og forløbet logges med korte intervaller.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-medal"/></svg></span><div><strong>Bedømmelse</strong><p>Testen bestås, når dokumentationen er komplet, og reguleringen falder til ro efter hver ændring uden pendling, store vedvarende afvigelser eller for lange indsvingningstider.</p></div></li>
+  </ul>
+  <p>Typiske årsager til, at testen ikke bestås, er, at anlægget meldes klar for tidligt, at målere i CTS viser forkerte værdier, fejl i indreguleringen, forkerte reguleringsparametre og følere placeret, hvor de giver urepræsentative målinger.</p>
+
+  <h2 id="betaling">Milepælsbetalinger</h2>
+  <p>Performancetesten er knyttet til entreprisekontrakten gennem milepælsbetalinger. En del af entreprenørens betaling udbetales først, når testene i den pågældende milepæl er bestået. Det giver entreprenøren et klart økonomisk incitament til at levere installationer, der virker, og det giver bygherren et redskab, der er både juridisk og økonomisk bindende, hvilket almindelig commissioning ofte mangler.</p>
+
+  <h2 id="andre">Kan andre bygherrer bruge metoden?</h2>
+  <p>Performancetesten er udviklet til statens byggeri, men protokollerne er offentligt tilgængelige, og tankegangen kan bruges af alle professionelle bygherrer. Mange kombinerer den med commissioning efter DS 3090, så commissioning-processen sikrer de rette krav og den rette organisering fra start, mens milepælene og protokollerne giver konkrete, målbare test med økonomiske konsekvenser. Det kræver, at testene og betalingsbetingelserne skrives ind i udbudsmaterialet fra begyndelsen.</p>
+
+  <h2 id="faq">Ofte stillede spørgsmål</h2>
+  <details><summary>Hvem har udviklet performancetesten?</summary><p>Bygningsstyrelsen, der bygger og driver statens ejendomme. Metoden blev offentliggjort i 2015 og er løbende opdateret.</p></details>
+  <details><summary>Hvad er forskellen på performancetest og funktionsafprøvning?</summary><p>Funktionsafprøvning tester, at de enkelte anlæg virker. Performancetesten er en samlet metode med faste protokoller og milepæle, der også efterprøver energieffektivitet og indeklima og er knyttet til betalingen.</p></details>
+  <details><summary>Hvad er milepæl 4?</summary><p>Milepælen for energieffektivitet, indeklima og klimaskærm samt laboratorie- og procesinstallationer. Den tester de mest komplekse sammenhænge og kan først bestås, når milepæl 1–3 er godkendt.</p></details>
+  <details><summary>Hvor finder jeg protokollerne?</summary><p>På Bygningsstyrelsens hjemmeside under kvalitetssikring og performancetest.</p></details>
+
+  <h2 id="laes-ogsaa">Læs også</h2>
+  <div class="related">
+    <a href="/funktionsafproevning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-test"/></svg></span><strong>Funktionsafprøvning</strong><span>Test af de enkelte anlæg</span></a>
+    <a href="/raadgivning/bygherreraadgivning/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-briefcase"/></svg></span><strong>Bygherrerådgivning</strong><span>Krav i udbudsmaterialet</span></a>
+  </div>
+
+</article>
+
+<aside>
+  <div class="sticky">
+    <div class="panel">
+      <h3 style="font-size:15px;margin:0 0 4px">I artiklen</h3>
+      <ul class="toc">
+        <li><a href="#hvad">Hvad er Bygningsstyrelsens performancetest?</a></li>
+        <li><a href="#milepaele">De fem milepæle</a></li>
+        <li><a href="#eksempler">Eksempler på testprotokoller</a></li>
+        <li><a href="#eksempel">Et eksempel: test af stabil regulering</a></li>
+        <li><a href="#betaling">Milepælsbetalinger</a></li>
+        <li><a href="#andre">Kan andre bygherrer bruge metoden?</a></li>
+        <li><a href="#faq">Ofte stillede spørgsmål</a></li>
+      </ul>
+    </div>
+    <div class="ad" style="margin:0">
+      <div class="ad-label">Annonce</div>
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+           data-ad-slot="DIT-SLOT-ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Om siden:</strong> arneelkjaer.dk er en uafhængig informationsside om byggerådgivning. Siden har ingen tilknytning til Arne Elkjær A/S og udfører, sælger eller formidler ikke rådgivningsydelser. Indholdet er generel vejledning og ikke professionel rådgivning.</p>
+    <p><strong>Annoncer og cookies:</strong> Siden finansieres af annoncer, bl.a. fra Google AdSense, som kan bruge cookies. Læs mere i vores <a href="/privatlivspolitik.html">privatlivspolitik</a>.</p>
+    <p><strong>Om indholdet:</strong> Teksterne er skrevet med hjælp fra kunstig intelligens (AI) ud fra prompts, og siden hostes via GitHub Pages. Fejl kan forekomme, så tjek altid gældende regler hos myndighederne eller en rådgiver.</p>
+    <p>Kontakt: <a class="js-mail" data-show href="#">[aktivér JavaScript for at se e-mail]</a></p>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>

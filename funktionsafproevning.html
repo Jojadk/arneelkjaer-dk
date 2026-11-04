@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Funktionsafprøvning af tekniske installationer – krav, eksempler og skemaer</title>
+<meta name="description" content="Guide til funktionsafprøvning: de tre niveauer af afprøvning, kravene i BR18 for tekniske og brandtekniske installationer, eksempler på test af ventilation, varme, CTS, belysning og brand samt dokumentation.">
+<link rel="canonical" href="https://arneelkjaer.dk/funktionsafproevning.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Funktionsafprøvning: bevis for, at installationerne virker">
+<meta property="og:description" content="Guide til funktionsafprøvning: de tre niveauer af afprøvning, kravene i BR18 for tekniske og brandtekniske installationer, eksempler på test af ventilation, varme, CTS, belysning og brand samt dokumentation.">
+<meta property="og:url" content="https://arneelkjaer.dk/funktionsafproevning.html">
+<meta property="og:locale" content="da_DK">
+
+<script src="/assets/analytics.js"></script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2586811473480237"
+     crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/article.css">
+<link rel="stylesheet" href="/assets/ui.css">
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "Funktionsafprøvning af tekniske installationer – krav, eksempler og skemaer",
+   "inLanguage": "da-DK",
+   "url": "https://arneelkjaer.dk/funktionsafproevning.html",
+   "datePublished": "2026-11-04",
+   "dateModified": "2026-11-04",
+   "mainEntityOfPage": "https://arneelkjaer.dk/funktionsafproevning.html",
+   "author": {
+    "@type": "Organization",
+    "name": "Rådgiverguiden"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Rådgiverguiden"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Rådgiverguiden",
+     "item": "https://arneelkjaer.dk/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Funktionsafprøvning",
+     "item": "https://arneelkjaer.dk/funktionsafproevning.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Hvad er forskellen på funktionsafprøvning og commissioning?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Funktionsafprøvning er selve testen af, at et anlæg fungerer. Commissioning er den samlede kvalitetsproces fra krav til drift, hvor funktionsafprøvninger og integrerede tests er en vigtig del."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Er funktionsafprøvning et lovkrav?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja, for en række tekniske installationer har der siden 2017 været krav om funktionsafprøvning før ibrugtagning, og brandtekniske installationer skal løbende funktionsafprøves."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hvem udfører funktionsafprøvningen?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Typisk entreprenøren, med deltagelse af bygherrens rådgiver eller commissioning-leder. Visse brandtekniske installationer skal kontrolleres af et akkrediteret inspektionsorgan."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hvad er en systemintegrationstest?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "En test af, at flere forbundne anlæg virker sammen som et system, fx at brandalarmen udløser de rigtige funktioner i ventilation, elevatorer og døre."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#indhold">Spring til indhold</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/">Rådgiver<span>guiden</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mainnav">
+      <span class="mb-open"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-menu"/></svg></span><span class="mb-close"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-close"/></svg></span><span class="mb-label">Menu</span>
+    </button>
+    <nav class="mainnav" id="mainnav" aria-label="Hovedmenu">
+      <ul class="mn-top">
+        <li class="has-panel">
+          <button class="mn-trigger is-active" type="button" aria-expanded="false" aria-controls="mn-emner"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-folder"/></svg>Emner<svg class="ico chev" aria-hidden="true"><use href="/assets/icons.svg#i-chev"/></svg></button>
+          <div class="mn-panel" id="mn-emner">
+            <div class="mn-col">
+              <p class="mn-h">Fokusområder</p>
+              <ul>
+              <li><a class="mn-item" href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><span><strong>Commissioning</strong><small>Bygningen virker som bestilt</small></span></a></li>
+              <li><a class="mn-item" href="/funktionsafproevning.html" aria-current="page"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-test"/></svg></span><span><strong>Funktionsafprøvning</strong><small>Test af installationerne</small></span></a></li>
+              <li><a class="mn-item" href="/performancetest.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-medal"/></svg></span><span><strong>Performancetest</strong><small>Bygningsstyrelsens milepæle</small></span></a></li>
+              <li><a class="mn-item" href="/raadgivning/bygherreraadgivning/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-briefcase"/></svg></span><span><strong>Bygherrerådgivning</strong><small>Din uafhængige sparringspartner</small></span></a></li>
+              <li><a class="mn-item" href="/teknisk-due-diligence.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-search"/></svg></span><span><strong>Teknisk due diligence</strong><small>Kend ejendommen før køb</small></span></a></li>
+              <li><a class="mn-item" href="/eu-taksonomi.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-eu"/></svg></span><span><strong>EU-taksonomi</strong><small>Hvornår er en bygning grøn?</small></span></a></li>
+              </ul>
+            </div>
+            <div class="mn-col">
+              <p class="mn-h">Rådgivningsområder</p>
+              <ul>
+              <li><a class="mn-item" href="/raadgivning/konstruktioner/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-beam"/></svg></span><span><strong>Konstruktioner</strong><small>Statik og bærende dele</small></span></a></li>
+              <li><a class="mn-item" href="/raadgivning/installationsteknik/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-pipe"/></svg></span><span><strong>Installationsteknik</strong><small>Varme, ventilation, VVS og el</small></span></a></li>
+              <li><a class="mn-item" href="/raadgivning/energi-og-indeklima/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-bolt"/></svg></span><span><strong>Energi og indeklima</strong><small>Lavt forbrug, godt indeklima</small></span></a></li>
+              <li><a class="mn-item" href="/raadgivning/byggemodning/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-map"/></svg></span><span><strong>Byggemodning</strong><small>Veje, kloak og forsyning</small></span></a></li>
+              <li><a class="mn-item" href="/brandraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flame"/></svg></span><span><strong>Brandrådgivning</strong><small>Brandklasser og brandrådgivere</small></span></a></li>
+              <li><a class="mn-item" href="/bygningssyn-vedligeholdelsesplan.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clip-check"/></svg></span><span><strong>Bygningssyn</strong><small>Vedligeholdelsesplaner</small></span></a></li>
+              </ul>
+            </div>
+            <div class="mn-col">
+              <p class="mn-h">Regler og krav</p>
+              <ul>
+              <li><a class="mn-item" href="/bygningsreglementet.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-paragraph"/></svg></span><span><strong>Bygningsreglementet</strong><small>Overblik over BR18</small></span></a></li>
+              <li><a class="mn-item" href="/energimaerke.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-energy-label"/></svg></span><span><strong>Energimærke</strong><small>Skalaen fra A til G</small></span></a></li>
+              <li><a class="mn-item" href="/indeklima.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-heart"/></svg></span><span><strong>Indeklima</strong><small>Klasser og krav</small></span></a></li>
+              <li><a class="mn-item" href="/klimakrav-lca.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cycle"/></svg></span><span><strong>Klimakrav og LCA</strong><small>Grænseværdier for nybyggeri</small></span></a></li>
+              <li><a class="mn-item" href="/entrepriseformer.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-handshake"/></svg></span><span><strong>Entrepriseformer</strong><small>Aftaler og AB 18</small></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a class="mn-link" href="/raadgivning/"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg>Rådgivning</a></li>
+        <li><a class="mn-link" href="/ordbog.html"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg>Ordbog</a></li>
+        <li><a class="mn-link" href="/om-os/"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-info"/></svg>Om siden</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Rådgiverguiden</a> › Funktionsafprøvning</p>
+    <div class="kicker">Fokusområde · Kvalitet og drift</div>
+    <h1>Funktionsafprøvning: bevis for, at installationerne virker</h1>
+    <p class="lead">Det er ikke nok, at installationerne er monteret. De skal også virke i alle driftssituationer. Funktionsafprøvning er den systematiske test, der viser det, før bygningen tages i brug.</p>
+    <p class="meta" style="display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center"><span style="display:inline-flex;gap:6px;align-items:center"><svg class="ico ico-sm" aria-hidden="true"><use href="/assets/icons.svg#i-calendar"/></svg>Opdateret 4. november 2026</span><span style="display:inline-flex;gap:6px;align-items:center"><svg class="ico ico-sm" aria-hidden="true"><use href="/assets/icons.svg#i-clock"/></svg>Ca. 9 minutters læsning</span></p>
+    
+  </div>
+</header>
+
+<div class="wrap" style="padding-top:24px">
+  <div class="ad" style="margin:0;min-height:100px">
+    <div class="ad-label">Annonce</div>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+         data-ad-slot="DIT-SLOT-ID" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  </div>
+</div>
+
+<div class="wrap layout">
+<article id="indhold" tabindex="-1">
+
+  <nav class="cxtrail" aria-label="Kvalitetssikring af installationer">
+    <a href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><span><small>Proces</small>Commissioning</span></a>
+    <span class="cxarrow" aria-hidden="true"></span>
+    <a href="/funktionsafproevning.html" aria-current="page"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-test"/></svg></span><span><small>Test</small>Funktionsafprøvning</span></a>
+    <span class="cxarrow" aria-hidden="true"></span>
+    <a href="/performancetest.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-medal"/></svg></span><span><small>Verifikation</small>Performancetest</span></a>
+  </nav>
+
+  <h2 id="hvad">Hvad er funktionsafprøvning?</h2>
+  <p>Funktionsafprøvning er en systematisk test af, om en teknisk installation fungerer, som den skal. Hvor almindelig kontrol ser på, om anlægget er monteret korrekt, afprøver funktionsafprøvningen, om det faktisk gør det, det er projekteret til: om ventilationen leverer de rigtige luftmængder, om varmen reguleres stabilt, om lyset slukker, når rummet er tomt, og om brandspjældene lukker, når brandalarmen går.</p>
+  <p>Funktionsafprøvning er en central del af <a href="/commissioning.html">commissioning</a>, men den kan også stå alene. I Danmark er der siden 2017 krav i bygningsreglementet om funktionsafprøvning af en række tekniske installationer, og der er særlige krav til afprøvning af brandtekniske installationer.</p>
+
+  <div class="callout"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-info"/></svg><div><strong>Kort fortalt</strong><p>Funktionsafprøvning er beviset på, at installationerne virker i praksis, ikke kun på tegningerne. Den udføres før ibrugtagning, dokumenteres og bør gentages, når anlæg ændres.</p></div></div>
+
+  <h2 id="niveauer">Tre niveauer af afprøvning</h2>
+  <p>Afprøvningen af installationer sker typisk i tre trin, hvor hvert trin bygger på det forrige:</p>
+  <div class="levels">
+    <div><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clip-check"/></svg></span><strong>1. Komponent og montage</strong><p>Er anlægget monteret korrekt og komplet? Er følere, ventiler og spjæld placeret rigtigt og mærket? Det er entreprenørens egenkontrol.</p></div>
+    <div><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-test"/></svg></span><strong>2. Funktionsafprøvning</strong><p>Virker det enkelte anlæg i alle driftssituationer? Luftmængder, temperaturer, tryk, styring, alarmer og nødstop afprøves.</p></div>
+    <div><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-puzzle"/></svg></span><strong>3. Systemintegrationstest</strong><p>Virker anlæggene sammen? Fx at ventilation, brandspjæld, elevatorer og døre reagerer korrekt, når brandalarmen udløses.</p></div>
+  </div>
+
+  <h2 id="krav">Krav i bygningsreglementet</h2>
+  <p>Bygningsreglementet stiller krav om funktionsafprøvning på flere områder:</p>
+  <ul class="ilist">
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cycle"/></svg></span><div><strong>Tekniske installationer og energi</strong><p>Siden 1. juli 2017 skal en række tekniske installationer, fx ventilation, varme- og køleanlæg og belysning, funktionsafprøves inden ibrugtagning. Kravet gælder både nybyggeri og ændringer, fx når der installeres et nyt mekanisk ventilationsanlæg.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-test"/></svg></span><div><strong>Bygningsautomatik</strong><p>Funktionsafprøvningen skal vise, at automatikken er korrekt installeret og reguleret og giver den forudsatte energieffektivitet.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-bolt"/></svg></span><div><strong>Vedvarende energi</strong><p>Energiproduktionsanlæg baseret på fx sol og vind skal også funktionsafprøves.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-alarm"/></svg></span><div><strong>Brandtekniske installationer</strong><p>Brandtekniske installationer skal løbende funktionsafprøves og kontrolleres. I bygninger i risikoklasse 2–4 skal en række installationer, fx automatisk brandalarm, sprinkling, røgudluftning og nødbelysning, kontrolleres af et akkrediteret inspektionsorgan efter DS/EN ISO/IEC 17020, og forbundne anlæg skal have en årlig systemintegrationstest.</p></div></li>
+  </ul>
+  <p>Resultaterne skal dokumenteres, og dokumentationen er en del af grundlaget for, at bygningen kan tages i brug. Det er bygherrens ansvar, at kravene opfyldes.</p>
+
+  <div class="ad">
+    <div class="ad-label">Annonce</div>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+         data-ad-slot="DIT-SLOT-ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <h2 id="eksempler">Eksempler på funktionsafprøvninger</h2>
+  <p>Hvad der testes, afhænger af anlægget. Her er typiske eksempler, som de ofte indgår i branchens skemaer og tjeklister:</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th scope="col">Anlæg</th><th scope="col">Hvad afprøves</th><th scope="col">Eksempel på kriterium</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Ventilation</strong></td><td>Luftmængder, behovsstyring efter CO₂ og temperatur, varmegenvinding, frostsikring, filtervagt og specifikt elforbrug (SEL)</td><td>Luftmængden i hvert rum ligger inden for den projekterede tolerance</td></tr>
+        <tr><td><strong>Varme</strong></td><td>Indregulering, fremløbstemperatur efter udetemperatur, natsænkning og rumregulering</td><td>Rumtemperaturen holdes stabilt på setpunktet uden pendling</td></tr>
+        <tr><td><strong>Køling</strong></td><td>Opstart, kapacitet, styring og samspil med varmen</td><td>Varme og køling kører ikke samtidig i samme rum</td></tr>
+        <tr><td><strong>Varmt brugsvand</strong></td><td>Temperatur, cirkulation og legionellasikring</td><td>Den krævede temperatur nås ved tapstederne inden for kort tid</td></tr>
+        <tr><td><strong>Belysning</strong></td><td>Belysningsstyrke, styring efter dagslys og tilstedeværelse</td><td>Lyset dæmpes ved tilstrækkeligt dagslys og slukker i tomme rum</td></tr>
+        <tr><td><strong>Solafskærmning</strong></td><td>Styring efter sol og temperatur, vindsikring og manuel betjening</td><td>Afskærmningen kører op ved høj vind</td></tr>
+        <tr><td><strong>CTS</strong></td><td>Følere, alarmer, logning, brugerflade og overensstemmelse med funktionsbeskrivelsen</td><td>Viste værdier stemmer med målte værdier, og alarmer når frem</td></tr>
+        <tr><td><strong>Elevatorer</strong></td><td>Drift, nødopkald, energiforbrug og brandfunktion</td><td>Elevatoren kører til udgangsetagen ved brandalarm</td></tr>
+        <tr><td><strong>Brand</strong></td><td>Brandalarm, brand- og røgspjæld, røgudluftning, dørautomatik og nødbelysning</td><td>Brandspjæld lukker, og ventilationen stopper ved alarm</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="forloeb">Sådan foregår en funktionsafprøvning</h2>
+  <ol class="steps2">
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clipboard"/></svg></span><div><strong>Plan og procedurer</strong><p>Allerede i projekteringen beskrives, hvad der skal testes, hvordan og med hvilke kriterier. Kravene skrives ind i udbudsmaterialet, så entreprenørerne kan prissætte dem.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clip-check"/></svg></span><div><strong>Forudsætninger på plads</strong><p>Anlægget skal være færdigmonteret, indreguleret, og styringen skal være aktiv. En test, der kaldes for tidligt, er en af de hyppigste årsager til, at den ikke bestås.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-test"/></svg></span><div><strong>Afprøvning</strong><p>Anlægget køres gennem de relevante driftssituationer: opstart, fuld og lav belastning, nat, alarm og nødstop. Værdier måles og logges.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-crack"/></svg></span><div><strong>Afvigelser</strong><p>Fejl registreres i en afvigelseslog med en ansvarlig og en frist, og testen gentages, når de er rettet.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-folder"/></svg></span><div><strong>Dokumentation</strong><p>Resultater, målinger, skærmbilleder og attester samles og overdrages til bygherre og drift.</p></div></li>
+  </ol>
+
+  <h2 id="dokumentation">Dokumentation og skemaer</h2>
+  <p>En god funktionsafprøvning er sporbar. Dokumentationen bør indeholde, hvilket anlæg der er testet, hvornår, af hvem, hvilke værdier der er målt, og om resultatet er godkendt. Branchen har udviklet skemaer og tjeklister, der gør det lettere: installatørernes brancheorganisation TEKNIQ har materiale om byggesagsdokumentation og færdigmelding af installationer, og Molio og Teknologisk Institut har vejledninger og kurser i funktionsafprøvning. For brandtekniske installationer findes en detaljeret vejledning til bygningsreglementet om funktionsafprøvning og systemintegrationstest.</p>
+  <p>For offentligt byggeri bruger Bygningsstyrelsen en mere omfattende metode, <a href="/performancetest.html">performancetest</a>, hvor afprøvningerne følger en fast række milepæle.</p>
+
+  <h2 id="faq">Ofte stillede spørgsmål</h2>
+  <details><summary>Hvad er forskellen på funktionsafprøvning og commissioning?</summary><p>Funktionsafprøvning er selve testen af, at et anlæg fungerer. Commissioning er den samlede kvalitetsproces fra krav til drift, hvor funktionsafprøvninger og integrerede tests er en vigtig del.</p></details>
+  <details><summary>Er funktionsafprøvning et lovkrav?</summary><p>Ja, for en række tekniske installationer har der siden 2017 været krav om funktionsafprøvning før ibrugtagning, og brandtekniske installationer skal løbende funktionsafprøves.</p></details>
+  <details><summary>Hvem udfører funktionsafprøvningen?</summary><p>Typisk entreprenøren, med deltagelse af bygherrens rådgiver eller commissioning-leder. Visse brandtekniske installationer skal kontrolleres af et akkrediteret inspektionsorgan.</p></details>
+  <details><summary>Hvad er en systemintegrationstest?</summary><p>En test af, at flere forbundne anlæg virker sammen som et system, fx at brandalarmen udløser de rigtige funktioner i ventilation, elevatorer og døre.</p></details>
+
+  <h2 id="laes-ogsaa">Læs også</h2>
+  <div class="related">
+    <a href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><strong>Commissioning</strong><span>Den samlede kvalitetsproces</span></a>
+    <a href="/performancetest.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-medal"/></svg></span><strong>Performancetest</strong><span>Bygningsstyrelsens milepælsmetode</span></a>
+  </div>
+
+</article>
+
+<aside>
+  <div class="sticky">
+    <div class="panel">
+      <h3 style="font-size:15px;margin:0 0 4px">I artiklen</h3>
+      <ul class="toc">
+        <li><a href="#hvad">Hvad er funktionsafprøvning?</a></li>
+        <li><a href="#niveauer">Tre niveauer af afprøvning</a></li>
+        <li><a href="#krav">Krav i bygningsreglementet</a></li>
+        <li><a href="#eksempler">Eksempler på funktionsafprøvninger</a></li>
+        <li><a href="#forloeb">Sådan foregår en funktionsafprøvning</a></li>
+        <li><a href="#dokumentation">Dokumentation og skemaer</a></li>
+        <li><a href="#faq">Ofte stillede spørgsmål</a></li>
+      </ul>
+    </div>
+    <div class="ad" style="margin:0">
+      <div class="ad-label">Annonce</div>
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+           data-ad-slot="DIT-SLOT-ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Om siden:</strong> arneelkjaer.dk er en uafhængig informationsside om byggerådgivning. Siden har ingen tilknytning til Arne Elkjær A/S og udfører, sælger eller formidler ikke rådgivningsydelser. Indholdet er generel vejledning og ikke professionel rådgivning.</p>
+    <p><strong>Annoncer og cookies:</strong> Siden finansieres af annoncer, bl.a. fra Google AdSense, som kan bruge cookies. Læs mere i vores <a href="/privatlivspolitik.html">privatlivspolitik</a>.</p>
+    <p><strong>Om indholdet:</strong> Teksterne er skrevet med hjælp fra kunstig intelligens (AI) ud fra prompts, og siden hostes via GitHub Pages. Fejl kan forekomme, så tjek altid gældende regler hos myndighederne eller en rådgiver.</p>
+    <p>Kontakt: <a class="js-mail" data-show href="#">[aktivér JavaScript for at se e-mail]</a></p>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>
