@@ -674,7 +674,7 @@
     {
      "@type": "DefinedTerm",
      "name": "KS-plan",
-     "description": "Entreprenørens plan for, hvilke kontroller der udføres, hvornår og hvordan de dokumenteres.",
+     "description": "Entreprenørens plan for kvalitetssikringen. Bruges ofte om det samme som kontrolplanen.",
      "url": "https://arneelkjaer.dk/ordbog.html#ks-plan"
     },
     {
@@ -682,6 +682,72 @@
      "name": "Klarmelding",
      "description": "Entreprenørens meddelelse om, at et anlæg er klar til test. En klarmelding for tidligt er en hyppig årsag til, at test ikke bestås.",
      "url": "https://arneelkjaer.dk/ordbog.html#klarmelding"
+    },
+    {
+     "@type": "DefinedTerm",
+     "name": "Udbudskontrolplan",
+     "description": "Rådgiverens beskrivelse af de kontroller, entreprenøren mindst skal udføre. Indgår i udbudsmaterialet.",
+     "url": "https://arneelkjaer.dk/ordbog.html#udbudskontrolplan"
+    },
+    {
+     "@type": "DefinedTerm",
+     "name": "Kontrolplan",
+     "description": "Entreprenørens konkrete plan for modtage-, udførelses- og slutkontrol, bygget på udbudskontrolplanen.",
+     "url": "https://arneelkjaer.dk/ordbog.html#kontrolplan"
+    },
+    {
+     "@type": "DefinedTerm",
+     "name": "Modtagekontrol",
+     "description": "Kontrol af materialer og komponenter ved levering, før de bygges ind.",
+     "url": "https://arneelkjaer.dk/ordbog.html#modtagekontrol"
+    },
+    {
+     "@type": "DefinedTerm",
+     "name": "Udførelseskontrol",
+     "description": "Kontrol af arbejdet undervejs, især det, der skjules eller har betydning for de næste fag.",
+     "url": "https://arneelkjaer.dk/ordbog.html#udfoerelseskontrol"
+    },
+    {
+     "@type": "DefinedTerm",
+     "name": "Slutkontrol",
+     "description": "Kontrol af det færdige arbejde, for installationer fx trykprøvning, indregulering og funktionsafprøvning.",
+     "url": "https://arneelkjaer.dk/ordbog.html#slutkontrol"
+    },
+    {
+     "@type": "DefinedTerm",
+     "name": "Projektgennemgang",
+     "description": "Møde før arbejdet starter, hvor rådgiver og entreprenør gennemgår projekt, kontrolplan og risici.",
+     "url": "https://arneelkjaer.dk/ordbog.html#projektgennemgang"
+    },
+    {
+     "@type": "DefinedTerm",
+     "name": "Projekteringskontrol",
+     "description": "Rådgivernes egen kontrol af projektet, fx tværfaglig koordinering og gennemgang af tegninger.",
+     "url": "https://arneelkjaer.dk/ordbog.html#projekteringskontrol"
+    },
+    {
+     "@type": "DefinedTerm",
+     "name": "Tilsynsplan",
+     "description": "Fagtilsynets plan for, hvilke stikprøver og tilsyn der føres på byggepladsen.",
+     "url": "https://arneelkjaer.dk/ordbog.html#tilsynsplan"
+    },
+    {
+     "@type": "DefinedTerm",
+     "name": "Tilsynsrapport",
+     "description": "Fagtilsynets dokumentation af en kontrol på pladsen med resultat, bemærkninger og eventuelle afvigelser.",
+     "url": "https://arneelkjaer.dk/ordbog.html#tilsynsrapport"
+    },
+    {
+     "@type": "DefinedTerm",
+     "name": "Kontrolskema",
+     "description": "Skema, hvor en kontrol registreres med nummer, placering, resultat, fotos og underskrift.",
+     "url": "https://arneelkjaer.dk/ordbog.html#kontrolskema"
+    },
+    {
+     "@type": "DefinedTerm",
+     "name": "KS-dokumentation",
+     "description": "Den samlede dokumentation for kvalitetssikringen, der overdrages ved aflevering.",
+     "url": "https://arneelkjaer.dk/ordbog.html#ks-dokumentation"
     }
    ]
   },
@@ -723,6 +789,7 @@
             <div class="mn-col">
               <p class="mn-h">Fokusområder</p>
               <ul>
+              <li><a class="mn-item" href="/kvalitetssikring.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-shield"/></svg></span><span><strong>Kvalitetssikring</strong><small>Kontrolplaner og fagtilsyn</small></span></a></li>
               <li><a class="mn-item" href="/funktionsafproevning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-test"/></svg></span><span><strong>Funktionsafprøvning</strong><small>Test af installationerne</small></span></a></li>
               <li><a class="mn-item" href="/performancetest.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-medal"/></svg></span><span><strong>Performancetest</strong><small>Bygningsstyrelsens milepæle</small></span></a></li>
               <li><a class="mn-item" href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><span><strong>Commissioning</strong><small>Bygningen virker som bestilt</small></span></a></li>
@@ -900,9 +967,20 @@
     <div class="gl-item" id="fat"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-building"/></svg></span><span class="t">FAT</span></dt><dd>Factory Acceptance Test. Test af komponenter og anlæg hos leverandøren, før de leveres til byggepladsen. <a href="/funktionsafproevning.html#niveauer">Læs mere</a></dd></div>
     <div class="gl-item" id="sat"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-helmet"/></svg></span><span class="t">SAT</span></dt><dd>Site Acceptance Test. Kontrol af et anlæg på byggepladsen, når det er monteret og tilsluttet. <a href="/funktionsafproevning.html#niveauer">Læs mere</a></dd></div>
     <div class="gl-item" id="sit"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-puzzle"/></svg></span><span class="t">SIT</span></dt><dd>System Integration Test. Test af, at forbundne anlæg virker sammen. Kaldes også systemintegrationstest. <a href="/funktionsafproevning.html#niveauer">Læs mere</a></dd></div>
-    <div class="gl-item" id="ks"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-shield"/></svg></span><span class="t">Kvalitetssikring (KS)</span></dt><dd>De systematiske aktiviteter, der skal sikre, at byggeriet lever op til kravene, fx kontroller efter en KS-plan og dokumentation af dem. <a href="/funktionsafproevning.html#kvalitetssikring">Læs mere</a></dd></div>
-    <div class="gl-item" id="ks-plan"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clipboard"/></svg></span><span class="t">KS-plan</span></dt><dd>Entreprenørens plan for, hvilke kontroller der udføres, hvornår og hvordan de dokumenteres. <a href="/funktionsafproevning.html#kvalitetssikring">Læs mere</a></dd></div>
+    <div class="gl-item" id="ks"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-shield"/></svg></span><span class="t">Kvalitetssikring (KS)</span></dt><dd>De systematiske aktiviteter, der skal sikre, at byggeriet lever op til kravene, fx kontroller efter en KS-plan og dokumentation af dem. <a href="/kvalitetssikring.html">Læs mere</a></dd></div>
+    <div class="gl-item" id="ks-plan"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clipboard"/></svg></span><span class="t">KS-plan</span></dt><dd>Entreprenørens plan for kvalitetssikringen. Bruges ofte om det samme som kontrolplanen. <a href="/kvalitetssikring.html#entreprenoer">Læs mere</a></dd></div>
     <div class="gl-item" id="klarmelding"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flag"/></svg></span><span class="t">Klarmelding</span></dt><dd>Entreprenørens meddelelse om, at et anlæg er klar til test. En klarmelding for tidligt er en hyppig årsag til, at test ikke bestås. <a href="/funktionsafproevning.html#fagtilsyn">Læs mere</a></dd></div>
+    <div class="gl-item" id="udbudskontrolplan"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-megaphone"/></svg></span><span class="t">Udbudskontrolplan</span></dt><dd>Rådgiverens beskrivelse af de kontroller, entreprenøren mindst skal udføre. Indgår i udbudsmaterialet. <a href="/kvalitetssikring.html#udbudskontrolplan">Læs mere</a></dd></div>
+    <div class="gl-item" id="kontrolplan"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clipboard"/></svg></span><span class="t">Kontrolplan</span></dt><dd>Entreprenørens konkrete plan for modtage-, udførelses- og slutkontrol, bygget på udbudskontrolplanen. <a href="/kvalitetssikring.html#entreprenoer">Læs mere</a></dd></div>
+    <div class="gl-item" id="modtagekontrol"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-key"/></svg></span><span class="t">Modtagekontrol</span></dt><dd>Kontrol af materialer og komponenter ved levering, før de bygges ind. <a href="/kvalitetssikring.html#entreprenoer">Læs mere</a></dd></div>
+    <div class="gl-item" id="udfoerelseskontrol"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-helmet"/></svg></span><span class="t">Udførelseskontrol</span></dt><dd>Kontrol af arbejdet undervejs, især det, der skjules eller har betydning for de næste fag. <a href="/kvalitetssikring.html#entreprenoer">Læs mere</a></dd></div>
+    <div class="gl-item" id="slutkontrol"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clip-check"/></svg></span><span class="t">Slutkontrol</span></dt><dd>Kontrol af det færdige arbejde, for installationer fx trykprøvning, indregulering og funktionsafprøvning. <a href="/kvalitetssikring.html#entreprenoer">Læs mere</a></dd></div>
+    <div class="gl-item" id="projektgennemgang"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg></span><span class="t">Projektgennemgang</span></dt><dd>Møde før arbejdet starter, hvor rådgiver og entreprenør gennemgår projekt, kontrolplan og risici. <a href="/kvalitetssikring.html#projektgennemgang">Læs mere</a></dd></div>
+    <div class="gl-item" id="projekteringskontrol"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-sketch"/></svg></span><span class="t">Projekteringskontrol</span></dt><dd>Rådgivernes egen kontrol af projektet, fx tværfaglig koordinering og gennemgang af tegninger. <a href="/kvalitetssikring.html#kontrolplaner">Læs mere</a></dd></div>
+    <div class="gl-item" id="tilsynsplan"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-eye"/></svg></span><span class="t">Tilsynsplan</span></dt><dd>Fagtilsynets plan for, hvilke stikprøver og tilsyn der føres på byggepladsen. <a href="/kvalitetssikring.html#kontrolplaner">Læs mere</a></dd></div>
+    <div class="gl-item" id="tilsynsrapport"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-report"/></svg></span><span class="t">Tilsynsrapport</span></dt><dd>Fagtilsynets dokumentation af en kontrol på pladsen med resultat, bemærkninger og eventuelle afvigelser. <a href="/kvalitetssikring.html#fagtilsyn">Læs mere</a></dd></div>
+    <div class="gl-item" id="kontrolskema"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-list"/></svg></span><span class="t">Kontrolskema</span></dt><dd>Skema, hvor en kontrol registreres med nummer, placering, resultat, fotos og underskrift. <a href="/kvalitetssikring.html#entreprenoer">Læs mere</a></dd></div>
+    <div class="gl-item" id="ks-dokumentation"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-folder"/></svg></span><span class="t">KS-dokumentation</span></dt><dd>Den samlede dokumentation for kvalitetssikringen, der overdrages ved aflevering. <a href="/kvalitetssikring.html#dokumentation">Læs mere</a></dd></div>
   </dl>
   <p class="gl-empty" id="glempty" hidden>Ingen ord matcher din søgning.</p>
 
