@@ -39,7 +39,9 @@ article li{margin-bottom:8px}
 .callout strong{display:block;margin-bottom:4px}
 
 .tbl{overflow-x:auto;margin:0 0 24px;border:1px solid var(--line);border-radius:12px}
-table{width:100%;border-collapse:collapse;font-size:16px;min-width:520px}
+table{width:100%;border-collapse:collapse;font-size:16px}
+table:has(th:nth-child(4)){min-width:560px}
+@media (max-width:600px){th,td{padding:10px}}
 th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
 th{background:var(--tint);font-size:14px}
 tr:last-child td{border-bottom:0}
@@ -72,3 +74,7 @@ summary{list-style:none;display:flex;justify-content:space-between;align-items:c
 summary::-webkit-details-marker{display:none}
 summary::after{content:"+";font-size:22px;font-weight:400;color:var(--accent-ink);line-height:1}
 details[open] summary::after{content:"−"}
+.note{font-size:14px;color:var(--muted);margin:-8px 0 20px}
+.ilist{list-style:none;padding:0;margin:8px 0 24px;display:grid;gap:16px}
+.ilist li{display:flex;gap:14px;align-items:flex-start;margin:0}
+.ilist p{margin:2px 0 0;color:var(--muted);font-size:16px}

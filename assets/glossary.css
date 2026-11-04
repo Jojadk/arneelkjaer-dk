@@ -1,0 +1,18 @@
+.gl-search{background:var(--tint);border:1px solid var(--line);border-radius:14px;padding:18px;margin:0 0 16px}
+.gl-search label{display:block;font-weight:600;font-size:15px;margin-bottom:8px}
+.gl-field{position:relative}
+.gl-field .ico{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.gl-field input{width:100%;min-height:50px;padding:0 14px 0 46px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:17px;background:#fff;color:var(--ink)}
+.gl-field input:focus{border-color:var(--accent)}
+.gl-count{margin:8px 0 0;font-size:14px;color:var(--muted)}
+.gl-letters{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 24px}
+.gl-letters a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;height:44px;border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--ink);font-weight:600;background:#fff}
+.gl-letters a:hover{border-color:var(--accent);color:var(--accent-ink)}
+.gl{margin:0}
+.gl-item{padding:16px 0;border-top:1px solid var(--line);scroll-margin-top:80px}
+.gl-item[data-first]::before{content:attr(data-first);display:block;font:600 28px/1 "IBM Plex Serif",Georgia,serif;color:var(--accent-ink);margin:12px 0 16px}
+.gl-item:target{background:var(--accent-soft);border-radius:10px;padding-left:12px;padding-right:12px}
+.gl dt{font-weight:600;font-size:18px}
+.gl dd{margin:4px 0 0;color:var(--muted)}
+.gl dd a{white-space:nowrap}
+.gl-empty{color:var(--muted)}
