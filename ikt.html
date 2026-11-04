@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>IKT i byggeriet – strategisk IKT på tværs af portefølje og IKT i projekter</title>
+<meta name="description" content="Guide til IKT i byggeriet: strategisk IKT på tværs af organisation og portefølje (informationskrav, standarder, klassifikation, datamodel) og den traditionelle projekt-IKT (IKT-bekendtgørelsen, IKT-aftale, IKT-specifikation, modeller og digital aflevering).">
+<link rel="canonical" href="https://arneelkjaer.dk/ikt.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IKT i byggeriet: fra strategi til projekt og drift">
+<meta property="og:description" content="Guide til IKT i byggeriet: strategisk IKT på tværs af organisation og portefølje (informationskrav, standarder, klassifikation, datamodel) og den traditionelle projekt-IKT (IKT-bekendtgørelsen, IKT-aftale, IKT-specifikation, modeller og digital aflevering).">
+<meta property="og:url" content="https://arneelkjaer.dk/ikt.html">
+<meta property="og:locale" content="da_DK">
+
+<script src="/assets/analytics.js"></script>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2586811473480237"
+     crossorigin="anonymous"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/article.css">
+<link rel="stylesheet" href="/assets/ui.css">
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Article",
+   "headline": "IKT i byggeriet – strategisk IKT på tværs af portefølje og IKT i projekter",
+   "inLanguage": "da-DK",
+   "url": "https://arneelkjaer.dk/ikt.html",
+   "datePublished": "2026-11-04",
+   "dateModified": "2026-11-04",
+   "mainEntityOfPage": "https://arneelkjaer.dk/ikt.html",
+   "author": {
+    "@type": "Organization",
+    "name": "Rådgiverguiden"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "Rådgiverguiden"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Rådgiverguiden",
+     "item": "https://arneelkjaer.dk/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "IKT",
+     "item": "https://arneelkjaer.dk/ikt.html"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Hvad er forskellen på strategisk IKT og projekt-IKT?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Strategisk IKT fastlægger organisationens og porteføljens informationsbehov og standarder på tværs af alle bygninger. Projekt-IKT er den IKT, der leveres i det enkelte projekt efter disse krav."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hvornår gælder IKT-bekendtgørelsen?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ved offentligt byggeri, når entreprisesummen er mindst 5 mio. kr. ekskl. moms for statsligt byggeri og mindst 20 mio. kr. for kommunalt og regionalt byggeri. Almene boliger har tilsvarende regler."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hvad er en IKT-specifikation?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Et bilag til aftalerne, der beskriver de konkrete IKT-krav i projektet, fx modeller, klassifikation, filformater, projektweb og digital aflevering."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Hvad er ISO 19650?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "En international standard for informationsstyring med bygningsmodeller gennem hele bygningens livscyklus, fra organisationens krav til projekt og drift."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#indhold">Spring til indhold</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/">Rådgiver<span>guiden</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mainnav">
+      <span class="mb-open"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-menu"/></svg></span><span class="mb-close"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-close"/></svg></span><span class="mb-label">Menu</span>
+    </button>
+    <nav class="mainnav" id="mainnav" aria-label="Hovedmenu">
+      <ul class="mn-top">
+        <li class="has-panel">
+          <button class="mn-trigger is-active" type="button" aria-expanded="false" aria-controls="mn-emner"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-folder"/></svg>Emner<svg class="ico chev" aria-hidden="true"><use href="/assets/icons.svg#i-chev"/></svg></button>
+          <div class="mn-panel" id="mn-emner">
+            <div class="mn-col">
+              <p class="mn-h">Fokusområder</p>
+              <ul>
+              <li><a class="mn-item" href="/kvalitetssikring.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-shield"/></svg></span><span><strong>Kvalitetssikring</strong><small>Kontrolplaner og fagtilsyn</small></span></a></li>
+              <li><a class="mn-item" href="/funktionsafproevning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-test"/></svg></span><span><strong>Funktionsafprøvning</strong><small>Test af installationerne</small></span></a></li>
+              <li><a class="mn-item" href="/performancetest.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-medal"/></svg></span><span><strong>Performancetest</strong><small>Bygningsstyrelsens milepæle</small></span></a></li>
+              <li><a class="mn-item" href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><span><strong>Commissioning</strong><small>Bygningen virker som bestilt</small></span></a></li>
+              <li><a class="mn-item" href="/aflevering.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-key"/></svg></span><span><strong>Aflevering</strong><small>Før-gennemgang og overgang til drift</small></span></a></li>
+              <li><a class="mn-item" href="/raadgivning/bygherreraadgivning/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-briefcase"/></svg></span><span><strong>Bygherrerådgivning</strong><small>Din uafhængige sparringspartner</small></span></a></li>
+              <li><a class="mn-item" href="/teknisk-due-diligence.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-search"/></svg></span><span><strong>Teknisk due diligence</strong><small>Kend ejendommen før køb</small></span></a></li>
+              <li><a class="mn-item" href="/eu-taksonomi.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-eu"/></svg></span><span><strong>EU-taksonomi</strong><small>Hvornår er en bygning grøn?</small></span></a></li>
+              </ul>
+            </div>
+            <div class="mn-col">
+              <p class="mn-h">Rådgivningsområder</p>
+              <ul>
+              <li><a class="mn-item" href="/ikt.html" aria-current="page"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cube"/></svg></span><span><strong>IKT</strong><small>Strategisk IKT og projekt-IKT</small></span></a></li>
+              <li><a class="mn-item" href="/raadgivning/konstruktioner/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-beam"/></svg></span><span><strong>Konstruktioner</strong><small>Statik og bærende dele</small></span></a></li>
+              <li><a class="mn-item" href="/raadgivning/installationsteknik/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-pipe"/></svg></span><span><strong>Installationsteknik</strong><small>Varme, ventilation, VVS og el</small></span></a></li>
+              <li><a class="mn-item" href="/raadgivning/energi-og-indeklima/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-bolt"/></svg></span><span><strong>Energi og indeklima</strong><small>Lavt forbrug, godt indeklima</small></span></a></li>
+              <li><a class="mn-item" href="/raadgivning/byggemodning/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-map"/></svg></span><span><strong>Byggemodning</strong><small>Veje, kloak og forsyning</small></span></a></li>
+              <li><a class="mn-item" href="/brandraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flame"/></svg></span><span><strong>Brandrådgivning</strong><small>Brandklasser og brandrådgivere</small></span></a></li>
+              <li><a class="mn-item" href="/bygningssyn-vedligeholdelsesplan.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clip-check"/></svg></span><span><strong>Bygningssyn</strong><small>Vedligeholdelsesplaner</small></span></a></li>
+              </ul>
+            </div>
+            <div class="mn-col">
+              <p class="mn-h">Regler og krav</p>
+              <ul>
+              <li><a class="mn-item" href="/bygningsreglementet.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-paragraph"/></svg></span><span><strong>Bygningsreglementet</strong><small>Overblik over BR18</small></span></a></li>
+              <li><a class="mn-item" href="/energimaerke.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-energy-label"/></svg></span><span><strong>Energimærke</strong><small>Skalaen fra A til G</small></span></a></li>
+              <li><a class="mn-item" href="/indeklima.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-heart"/></svg></span><span><strong>Indeklima</strong><small>Klasser og krav</small></span></a></li>
+              <li><a class="mn-item" href="/klimakrav-lca.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cycle"/></svg></span><span><strong>Klimakrav og LCA</strong><small>Grænseværdier for nybyggeri</small></span></a></li>
+              <li><a class="mn-item" href="/entrepriseformer.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-handshake"/></svg></span><span><strong>Entrepriseformer</strong><small>Aftaler og AB 18</small></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a class="mn-link" href="/raadgivning/"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg>Rådgivning</a></li>
+        <li><a class="mn-link" href="/ordbog.html"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg>Ordbog</a></li>
+        <li><a class="mn-link" href="/om-os/"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-info"/></svg>Om siden</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Rådgiverguiden</a> › IKT</p>
+    <div class="kicker">Rådgivningsområde · Data og digitalisering</div>
+    <h1>IKT i byggeriet: fra strategi til projekt og drift</h1>
+    <p class="lead">IKT handler om at have de rigtige data, i den rigtige kvalitet, når der er brug for dem. Her er forskellen på strategisk IKT på tværs af organisation og portefølje og den IKT, der leveres i projekterne.</p>
+    <p class="meta" style="display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center"><span style="display:inline-flex;gap:6px;align-items:center"><svg class="ico ico-sm" aria-hidden="true"><use href="/assets/icons.svg#i-calendar"/></svg>Opdateret 4. november 2026</span><span style="display:inline-flex;gap:6px;align-items:center"><svg class="ico ico-sm" aria-hidden="true"><use href="/assets/icons.svg#i-clock"/></svg>Ca. 10 minutters læsning</span></p>
+    
+  </div>
+</header>
+
+<div class="wrap" style="padding-top:24px">
+  <div class="ad" style="margin:0;min-height:100px">
+    <div class="ad-label">Annonce</div>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+         data-ad-slot="DIT-SLOT-ID" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  </div>
+</div>
+
+<div class="wrap layout">
+<article id="indhold" tabindex="-1">
+
+  <h2 id="hvad">Hvad er IKT i byggeriet?</h2>
+  <p>IKT står for informations- og kommunikationsteknologi. I byggeriet dækker det over den måde, information skabes, deles, kontrolleres og overdrages på: bygningsmodeller, tegninger, projektweb, digitale udbud, kvalitetssikring, aflevering og de data, der bruges til at drive bygningen bagefter. God IKT handler ikke om software, men om at de rigtige data er til stede, i den rigtige kvalitet, når der er brug for dem.</p>
+  <p>Det er nyttigt at skelne mellem to niveauer. Den <strong>traditionelle projekt-IKT</strong> er den IKT, der leveres i det enkelte byggeprojekt: IKT-aftale, IKT-specifikation, bygningsmodeller, projektweb og digital aflevering. Den <strong>strategiske IKT</strong> handler om bygherrens samlede organisation og portefølje af bygninger: hvilke data organisationen har brug for, hvordan de struktureres ens på tværs af alle ejendomme, og hvordan projekterne fodrer driften med de rigtige oplysninger.</p>
+
+  <div class="callout"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-info"/></svg><div><strong>Kort fortalt</strong><p>Strategisk IKT fastlægger organisationens og porteføljens informationsbehov én gang. Projekt-IKT leverer data efter disse krav i hvert projekt. Uden den strategiske del får bygherren mange projekter med flotte modeller, men data, der ikke kan bruges sammen i driften.</p></div></div>
+
+  <h2 id="niveauer">To niveauer af IKT</h2>
+  <div class="tbl">
+    <table>
+      <thead><tr><th scope="col">&nbsp;</th><th scope="col">Strategisk IKT</th><th scope="col">Projekt-IKT</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Fokus</strong></td><td>Organisationen og hele porteføljen af bygninger</td><td>Det enkelte byggeprojekt</td></tr>
+        <tr><td><strong>Tidshorisont</strong></td><td>Bygningernes levetid</td><td>Projektets varighed og aflevering</td></tr>
+        <tr><td><strong>Spørgsmål</strong></td><td>Hvilke data har vi brug for til at drive, vedligeholde, rapportere og beslutte?</td><td>Hvordan samarbejder og leverer vi i dette projekt?</td></tr>
+        <tr><td><strong>Typiske dokumenter</strong></td><td>IKT- eller informationsstrategi, organisationens og aktivernes informationskrav, standardbilag, klassifikation og datamodel</td><td>IKT-aftale, IKT-specifikation, plan for informationsleverancer, modelstrategi</td></tr>
+        <tr><td><strong>Ejer</strong></td><td>Bygherrens organisation, fx ejendoms- og driftsafdeling</td><td>Projektets IKT-koordinator og projekteringsleder</td></tr>
+        <tr><td><strong>Resultat</strong></td><td>Ensartede, pålidelige data på tværs af ejendommene</td><td>Koordineret projekt og en digital aflevering</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="strategisk">Strategisk IKT på tværs af organisation og portefølje</h2>
+  <p>Professionelle bygherrer med mange ejendomme, fx stat, kommuner, regioner, boligorganisationer, pensionskasser og ejendomsselskaber, har brug for at kunne sammenligne bygninger, planlægge vedligehold på tværs, følge energiforbrug og dokumentere bæredygtighed. Det kræver, at data er struktureret ens, uanset hvilket projekt eller hvilken rådgiver de kommer fra.</p>
+
+  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-target"/></svg></span>Informationskrav fra organisationen og ned</h3>
+  <p>Den internationale standard for informationsstyring med bygningsmodeller, ISO 19650, beskriver en kæde af informationskrav, som mange bygherrer bruger som ramme:</p>
+  <ol class="milestones">
+    <li><span class="ms-n">1</span><div><strong>Organisationens informationskrav</strong><p>Hvilke beslutninger skal organisationen kunne træffe, fx om vedligehold, energi, arealudnyttelse, investeringer og ESG-rapportering, og hvilke data kræver det?</p></div></li>
+    <li><span class="ms-n">2</span><div><strong>Aktivernes informationskrav</strong><p>Hvilke oplysninger skal der være om hver bygning, hvert rum og hver komponent for at kunne drive og vedligeholde dem?</p></div></li>
+    <li><span class="ms-n">3</span><div><strong>Projektets informationskrav</strong><p>Hvad skal det enkelte projekt levere for at opfylde organisationens og aktivernes krav, og hvornår?</p></div></li>
+    <li><span class="ms-n">4</span><div><strong>Krav til informationsudveksling</strong><p>De konkrete krav til, hvad hver rådgiver og entreprenør skal levere, i hvilket format og hvilken kvalitet. I Danmark typisk beskrevet i IKT-specifikationen.</p></div></li>
+  </ol>
+
+  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-database"/></svg></span>Fælles standarder for hele porteføljen</h3>
+  <p>Kernen i strategisk IKT er, at bygherren fastlægger sine krav én gang og bruger dem i alle projekter. Det sker typisk med:</p>
+  <ul class="ilist">
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg></span><div><strong>En IKT- eller informationsstrategi</strong><p>Formål, ambitionsniveau og prioriteter for digitalisering i organisationen, godkendt af ledelsen.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clipboard"/></svg></span><div><strong>Standardbilag</strong><p>En fælles IKT-håndbog eller standard for IKT-specifikationer, som indgår i alle udbud. Mange kommuner, regioner og universiteter har deres egne.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-list"/></svg></span><div><strong>Klassifikation og navngivning</strong><p>Ens klassifikation af bygningsdele, rum og komponenter, fx efter CCS, samt faste regler for navngivning, metadata og filformater.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-database"/></svg></span><div><strong>Systemlandskab og datamodel</strong><p>Hvordan data flyder mellem ejendomssystem, drifts- og vedligeholdelsessystem, CTS, energiovervågning og arkiv, og hvem der ejer hvilke data.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg></span><div><strong>Roller og governance</strong><p>Hvem i organisationen ejer kravene, opdaterer dem og kontrollerer, at projekterne leverer, fx en IKT- eller BIM-ansvarlig og dataansvarlige i driften.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-shield"/></svg></span><div><strong>Sikkerhed og rettigheder</strong><p>Informationssikkerhed, adgangsstyring, persondata og rettigheder til modeller og data.</p></div></li>
+  </ul>
+
+  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-report"/></svg></span>Hvad porteføljen får ud af det</h3>
+  <p>Når data er ensartede, kan bygherren sammenligne bygninger, prioritere vedligehold på tværs, følge energiforbrug og indeklima, planlægge renoveringer og hente data til <a href="/eu-taksonomi.html">EU-taksonomien</a>, ESG-rapportering og <a href="/klimakrav-lca.html">LCA</a> uden at starte forfra hver gang. Data fra <a href="/bygningssyn-vedligeholdelsesplan.html">bygningssyn og vedligeholdelsesplaner</a> og fra <a href="/teknisk-due-diligence.html">teknisk due diligence</a> kan samles i samme struktur.</p>
+
+  <div class="ad">
+    <div class="ad-label">Annonce</div>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+         data-ad-slot="DIT-SLOT-ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </div>
+
+  <h2 id="projekt">Den traditionelle projekt-IKT</h2>
+  <p>I det enkelte projekt omsættes bygherrens krav til konkrete aftaler og leverancer. I offentligt byggeri er der desuden krav i IKT-bekendtgørelsen.</p>
+
+  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-paragraph"/></svg></span>IKT-bekendtgørelsen</h3>
+  <p>Bekendtgørelsen om anvendelse af IKT i offentligt byggeri gælder, når staten er bygherre eller finansierer byggeriet væsentligt, og den anslåede entreprisesum er mindst 5 mio. kr. ekskl. moms, og når regioner og kommuner er bygherrer eller finansierer byggeriet væsentligt med en entreprisesum på mindst 20 mio. kr. ekskl. moms. Almene boliger er omfattet af tilsvarende regler. Ved renovering og vedligehold kan kravene fraviges, hvis udgifterne ikke står mål med gevinsterne, men kravet om digitalt udbud kan ikke fraviges.</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th scope="col">Krav</th><th scope="col">Hvad det betyder</th></tr></thead>
+      <tbody>
+        <tr><td><strong>IKT-koordinering</strong></td><td>Bygherren skal sikre, at den samlede IKT-anvendelse koordineres gennem hele byggesagen, og én part skal have ansvaret.</td></tr>
+        <tr><td><strong>Ensartet struktur</strong></td><td>Byggeobjekter skal klassificeres, navngives og identificeres ensartet.</td></tr>
+        <tr><td><strong>Digital kommunikation</strong></td><td>Al relevant information deles og arkiveres i et fælles system, fx en projektweb.</td></tr>
+        <tr><td><strong>Bygningsmodeller</strong></td><td>Projektering med objektbaserede bygningsmodeller, fag- og fællesmodeller og udveksling i det åbne IFC-format.</td></tr>
+        <tr><td><strong>Digitalt udbud</strong></td><td>Udbud og tilbud foregår via et digitalt system, og tilbudslister kan indeholde mængder udtrukket fra modellerne.</td></tr>
+        <tr><td><strong>Digital aflevering</strong></td><td>Data om det færdige byggeri afleveres digitalt til brug i driften, og mangler kan registreres digitalt.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-contract"/></svg></span>IKT-aftale og IKT-specifikation</h3>
+  <p>IKT-kravene skal indgå i aftalerne med rådgivere og entreprenører. Typisk sker det med en IKT-aftale som bilag til kontrakten og en IKT-specifikation, der beskriver de konkrete krav: modeller og informationsniveauer, klassifikation, filformater, navngivning, projektweb, mængder og digital aflevering. Branchen har udviklet paradigmer for begge dele, blandt andet hos Molio. Har bygherren en strategisk IKT-standard, bygger projektets IKT-specifikation videre på den.</p>
+
+  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cube"/></svg></span>Modeller, koordinering og roller</h3>
+  <p>Hver rådgiver udarbejder sin fagmodel, og modellerne samles i en fællesmodel, der bruges til koordinering, kollisionskontrol, simuleringer og mængdeudtræk. IKT-koordinatoren organiserer og dokumenterer IKT-anvendelsen, udarbejder IKT-specifikationerne og administrerer projektwebben. Hver virksomhed udpeger en IKT- eller modelansvarlig, og projekteringslederen har ansvaret for modellernes faglige indhold.</p>
+
+  <h2 id="sammenhaeng">Den gyldne tråd fra strategi til drift</h2>
+  <p>Den største værdi opstår, når de to niveauer hænger sammen. Strategien fastlægger, hvilke data driften har brug for. Udbudsmaterialet stiller kravene. Projekterne leverer data løbende og kontrollerer dem som en del af <a href="/kvalitetssikring.html">kvalitetssikringen</a>. Ved <a href="/aflevering.html">afleveringen</a> overføres data om rum, bygningsdele og komponenter til driftssystemerne, og <a href="/commissioning.html">commissioning</a> sikrer, at fx CTS-data, funktionsbeskrivelser og testresultater kommer med. Så kan driften bruge data fra dag ét, og næste projekt kan bygge videre på dem.</p>
+  <ul>
+    <li><strong>Tænk driften ind fra start:</strong> inddrag driftsorganisationen, når informationskravene formuleres.</li>
+    <li><strong>Kræv mindre, men rigtigt:</strong> kræv de data, der faktisk bruges, frem for alt det, der kan modelleres.</li>
+    <li><strong>Kontrollér data undervejs:</strong> lad datakvalitet indgå i kvalitetssikringen og ikke først ved afleveringen.</li>
+    <li><strong>Brug åbne formater:</strong> IFC og ensartet klassifikation gør data uafhængige af den enkelte leverandørs software.</li>
+    <li><strong>Evaluer og opdatér:</strong> brug erfaringer fra afsluttede projekter til at forbedre standarden.</li>
+  </ul>
+
+  <div class="glbox">
+    <p class="glbox-h"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg></span>Ord fra artiklen i ordbogen</p>
+    <p class="glbox-l"><a href="/ordbog.html#ikt">IKT</a> <a href="/ordbog.html#strategisk-ikt">Strategisk IKT</a> <a href="/ordbog.html#ikt-bekendtgoerelsen">IKT-bekendtgørelsen</a> <a href="/ordbog.html#ikt-aftale">IKT-aftale</a> <a href="/ordbog.html#ikt-specifikation">IKT-specifikation</a> <a href="/ordbog.html#ikt-koordinator">IKT-koordinator</a> <a href="/ordbog.html#bim">BIM</a> <a href="/ordbog.html#ifc">IFC</a> <a href="/ordbog.html#ccs">CCS</a> <a href="/ordbog.html#iso19650">ISO 19650</a> <a href="/ordbog.html#projektweb">Projektweb</a> <a href="/ordbog.html#faellesmodel">Fællesmodel</a> <a href="/ordbog.html#digital-aflevering">Digital aflevering</a></p>
+  </div>
+
+  <h2 id="faq">Ofte stillede spørgsmål</h2>
+  <details><summary>Hvad er forskellen på strategisk IKT og projekt-IKT?</summary><p>Strategisk IKT fastlægger organisationens og porteføljens informationsbehov og standarder på tværs af alle bygninger. Projekt-IKT er den IKT, der leveres i det enkelte projekt efter disse krav.</p></details>
+  <details><summary>Hvornår gælder IKT-bekendtgørelsen?</summary><p>Ved offentligt byggeri, når entreprisesummen er mindst 5 mio. kr. ekskl. moms for statsligt byggeri og mindst 20 mio. kr. for kommunalt og regionalt byggeri. Almene boliger har tilsvarende regler.</p></details>
+  <details><summary>Hvad er en IKT-specifikation?</summary><p>Et bilag til aftalerne, der beskriver de konkrete IKT-krav i projektet, fx modeller, klassifikation, filformater, projektweb og digital aflevering.</p></details>
+  <details><summary>Hvad er ISO 19650?</summary><p>En international standard for informationsstyring med bygningsmodeller gennem hele bygningens livscyklus, fra organisationens krav til projekt og drift.</p></details>
+
+  <h2 id="laes-ogsaa">Læs også</h2>
+  <div class="related">
+    <a href="/aflevering.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-key"/></svg></span><strong>Aflevering</strong><span>Digital aflevering til drift</span></a>
+    <a href="/raadgivning/bygherreraadgivning/"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-briefcase"/></svg></span><strong>Bygherrerådgivning</strong><span>Bygherrens krav i udbuddet</span></a>
+  </div>
+
+</article>
+
+<aside>
+  <div class="sticky">
+    <div class="panel">
+      <h3 style="font-size:15px;margin:0 0 4px">I artiklen</h3>
+      <ul class="toc">
+        <li><a href="#hvad">Hvad er IKT i byggeriet?</a></li>
+        <li><a href="#niveauer">To niveauer af IKT</a></li>
+        <li><a href="#strategisk">Strategisk IKT på tværs af organisation og portefølje</a></li>
+        <li><a href="#projekt">Den traditionelle projekt-IKT</a></li>
+        <li><a href="#sammenhaeng">Den gyldne tråd fra strategi til drift</a></li>
+        <li><a href="#faq">Ofte stillede spørgsmål</a></li>
+      </ul>
+    </div>
+    <div class="ad" style="margin:0">
+      <div class="ad-label">Annonce</div>
+      <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2586811473480237"
+           data-ad-slot="DIT-SLOT-ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Om siden:</strong> arneelkjaer.dk er en uafhængig informationsside om byggerådgivning. Siden har ingen tilknytning til Arne Elkjær A/S og udfører, sælger eller formidler ikke rådgivningsydelser. Indholdet er generel vejledning og ikke professionel rådgivning.</p>
+    <p><strong>Annoncer og cookies:</strong> Siden finansieres af annoncer, bl.a. fra Google AdSense, som kan bruge cookies. Læs mere i vores <a href="/privatlivspolitik.html">privatlivspolitik</a>.</p>
+    <p><strong>Om indholdet:</strong> Teksterne er skrevet med hjælp fra kunstig intelligens (AI) ud fra prompts, og siden hostes via GitHub Pages. Fejl kan forekomme, så tjek altid gældende regler hos myndighederne eller en rådgiver.</p>
+    <p>Kontakt: <a class="js-mail" data-show href="#">[aktivér JavaScript for at se e-mail]</a></p>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+</body>
+</html>
