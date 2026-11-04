@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
 <title>Entrepriseformer – fag-, hoved- og totalentreprise samt AB 18</title>
 <meta name="description" content="Forskellen på fagentreprise, hovedentreprise og totalentreprise, partnering og OPP, og hvad AB 18, ABT 18 og ABR 18 betyder for bygherren.">
 <link rel="canonical" href="https://arneelkjaer.dk/entrepriseformer.html">
@@ -105,16 +106,43 @@
 <body>
 <a class="skip" href="#indhold">Spring til indhold</a>
 
-<div class="topbar">
+<header class="topbar">
   <div class="wrap">
     <a class="brand" href="/">Rådgiver<span>guiden</span></a>
-    <nav class="nav" aria-label="Hovedmenu">
-      <a href="/">Forside</a>
-      <a href="/#emner" aria-current="page">Artikler</a>
-      <a href="/ordbog.html">Ordbog</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mainnav">
+      <span class="mb-open"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-menu"/></svg></span><span class="mb-close"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-close"/></svg></span><span class="mb-label">Menu</span>
+    </button>
+    <nav class="mainnav" id="mainnav" aria-label="Hovedmenu">
+      <ul class="mn-top">
+        <li class="has-panel">
+          <button class="mn-trigger is-active" type="button" aria-expanded="false" aria-controls="mn-emner"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-folder"/></svg>Emner<svg class="ico chev" aria-hidden="true"><use href="/assets/icons.svg#i-chev"/></svg></button>
+          <div class="mn-panel" id="mn-emner">
+            <div class="mn-col">
+              <p class="mn-h">Fokusområder</p>
+              <ul>
+              <li><a class="mn-item" href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><span><strong>Commissioning</strong><small>Bygningen virker som bestilt</small></span></a></li>
+              <li><a class="mn-item" href="/bygherreraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-briefcase"/></svg></span><span><strong>Bygherrerådgivning</strong><small>Din uafhængige sparringspartner</small></span></a></li>
+              <li><a class="mn-item" href="/teknisk-due-diligence.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-search"/></svg></span><span><strong>Teknisk due diligence</strong><small>Kend ejendommen før køb</small></span></a></li>
+              <li><a class="mn-item" href="/eu-taksonomi.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-eu"/></svg></span><span><strong>EU-taksonomi</strong><small>Hvornår er en bygning grøn?</small></span></a></li>
+              </ul>
+            </div>
+            <div class="mn-col">
+              <p class="mn-h">Flere artikler</p>
+              <ul>
+              <li><a class="mn-item" href="/klimakrav-lca.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cycle"/></svg></span><span><strong>Klimakrav og LCA</strong><small>Grænseværdier for nybyggeri</small></span></a></li>
+              <li><a class="mn-item" href="/entrepriseformer.html" aria-current="page"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-handshake"/></svg></span><span><strong>Entrepriseformer</strong><small>Fag-, hoved- og totalentreprise</small></span></a></li>
+              <li><a class="mn-item" href="/brandraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flame"/></svg></span><span><strong>Brandrådgivning</strong><small>Brandklasser og brandrådgivere</small></span></a></li>
+              <li><a class="mn-item" href="/bygningssyn-vedligeholdelsesplan.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clip-check"/></svg></span><span><strong>Bygningssyn</strong><small>Vedligeholdelsesplaner</small></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a class="mn-link" href="/ordbog.html"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg>Ordbog</a></li>
+        <li><a class="mn-link" href="/#raadgivere"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg>Rådgiverne</a></li>
+      </ul>
     </nav>
   </div>
-</div>
+</header>
 
 <header class="hero">
   <div class="wrap">
@@ -145,7 +173,7 @@
 
   <h2 id="former">De klassiske entrepriseformer</h2>
 
-  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-list"/></svg></span>Fagentreprise</h3>
+  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-tools"/></svg></span>Fagentreprise</h3>
   <p>I en fagentreprise indgår bygherren særskilte kontrakter med hver enkelt faggruppe: tømrer, murer, elektriker, VVS-installatør og så videre. Projektet er udarbejdet af bygherrens rådgivere, og bygherren eller dennes byggeleder skal koordinere de mange entreprenører på pladsen.</p>
   <p>Fordelen er, at bygherren kan opnå konkurrencedygtige priser på hvert fag og har stor indflydelse på løsningerne. Ulempen er, at bygherren bærer risikoen for koordineringen. Hvis ét fag bliver forsinket, og det går ud over de andre, er det som udgangspunkt bygherrens problem. Fagentreprise kræver derfor en kompetent byggeledelse.</p>
 
@@ -153,7 +181,7 @@
   <p>I en hovedentreprise har bygherren én kontrakt med én hovedentreprenør, som udfører hele byggeriet, enten selv eller ved hjælp af underentreprenører. Projektet er stadig udarbejdet af bygherrens rådgivere, men koordineringen på byggepladsen er hovedentreprenørens ansvar.</p>
   <p>Hovedentreprise er en udbredt løsning, fordi den giver bygherren én samarbejdspartner at forholde sig til i udførelsen, samtidig med at bygherren bevarer kontrollen med projektet. Prisen er ofte lidt højere end ved fagentreprise, fordi hovedentreprenøren tager betaling for koordinering og risiko.</p>
 
-  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-briefcase"/></svg></span>Totalentreprise</h3>
+  <h3 class="h-ico"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-crane"/></svg></span>Totalentreprise</h3>
   <p>I en totalentreprise har bygherren én kontrakt med en totalentreprenør, som både står for projekteringen og udførelsen. Bygherren beskriver sine krav og ønsker i et byggeprogram, og totalentreprenøren sørger for resten, typisk med egne rådgivere.</p>
   <p>Fordelen er enkelhed og en klar ansvarsfordeling: totalentreprenøren har ansvaret for både projekt og udførelse, så bygherren skal ikke placere skylden mellem rådgiver og entreprenør, hvis noget går galt. Ulempen er, at bygherren får mindre indflydelse på detaljerne, når kontrakten først er indgået. Derfor er et grundigt byggeprogram afgørende. Mange bygherrer tilknytter en bygherrerådgiver, der hjælper med programmet og fører kontrol undervejs.</p>
 
@@ -184,9 +212,9 @@
   <h2 id="aftalegrundlag">Aftalegrundlaget: AB 18, ABT 18 og ABR 18</h2>
   <p>I Danmark bruges et sæt standardbetingelser, der er udarbejdet i samarbejde mellem byggeriets parter. De er ikke lov, men de bliver så godt som altid gjort til en del af aftalerne i professionelt byggeri, og de kan også bruges i mindre projekter.</p>
   <ul class="ilist">
-    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-contract"/></svg></span><div><strong>AB 18</strong><p>Almindelige betingelser for arbejder og leverancer i bygge- og anlægsvirksomhed. Bruges i fag- og hovedentrepriser mellem bygherre og entreprenør.</p></div></li>
-    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-contract"/></svg></span><div><strong>ABT 18</strong><p>Almindelige betingelser for totalentreprise. Bruges, når entreprenøren også står for projekteringen.</p></div></li>
-    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-contract"/></svg></span><div><strong>ABR 18</strong><p>Almindelige bestemmelser for rådgivning. Bruges i aftaler mellem bygherre og rådgiver, eller mellem totalentreprenør og rådgiver.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-helmet"/></svg></span><div><strong>AB 18</strong><p>Almindelige betingelser for arbejder og leverancer i bygge- og anlægsvirksomhed. Bruges i fag- og hovedentrepriser mellem bygherre og entreprenør.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-crane"/></svg></span><div><strong>ABT 18</strong><p>Almindelige betingelser for totalentreprise. Bruges, når entreprenøren også står for projekteringen.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-compass"/></svg></span><div><strong>ABR 18</strong><p>Almindelige bestemmelser for rådgivning. Bruges i aftaler mellem bygherre og rådgiver, eller mellem totalentreprenør og rådgiver.</p></div></li>
   </ul>
   <p>Betingelserne regulerer blandt andet tidsfrister, betaling, ændringer, forsinkelse, mangler, aflevering, sikkerhedsstillelse og tvisteløsning. Ved private byggerier for forbrugere kan man i stedet bruge de særlige forbrugerbetingelser, som er tilpasset privatpersoners situation.</p>
   <p>Det er vigtigt at læse betingelserne igennem og forholde sig til, om der skal laves fravigelser i den konkrete aftale. Fravigelser bør formuleres præcist, og ved større byggerier er det en god idé at få juridisk bistand.</p>

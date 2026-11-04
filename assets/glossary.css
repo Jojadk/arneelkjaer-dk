@@ -17,3 +17,7 @@
 .gl dd a{white-space:nowrap}
 .gl-empty{color:var(--muted)}
 .gl-letters .off{display:inline-flex;align-items:center;justify-content:center;min-width:44px;height:44px;border:1px dashed var(--line);border-radius:10px;color:#A3ACB8;font-weight:600}
+.gl dt{display:flex;align-items:center;gap:14px}
+.gl dt .ico-badge{width:44px;height:44px;border-radius:12px}
+.gl dd{margin:6px 0 0 58px}
+@media (max-width:420px){.gl dd{margin-left:0}}

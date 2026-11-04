@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
 <title>EU-taksonomien for bygninger og ejendomme – guide til kriterier og krav</title>
 <meta name="description" content="Hvad EU-taksonomien er, de seks miljømål, kriterierne for nybyggeri, renovering og ejerskab af bygninger, DNSH, rapportering efter CSRD og Omnibus, og hvordan du arbejder med den i praksis.">
 <link rel="canonical" href="https://arneelkjaer.dk/eu-taksonomi.html">
@@ -105,16 +106,43 @@
 <body>
 <a class="skip" href="#indhold">Spring til indhold</a>
 
-<div class="topbar">
+<header class="topbar">
   <div class="wrap">
     <a class="brand" href="/">Rådgiver<span>guiden</span></a>
-    <nav class="nav" aria-label="Hovedmenu">
-      <a href="/">Forside</a>
-      <a href="/#emner" aria-current="page">Artikler</a>
-      <a href="/ordbog.html">Ordbog</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mainnav">
+      <span class="mb-open"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-menu"/></svg></span><span class="mb-close"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-close"/></svg></span><span class="mb-label">Menu</span>
+    </button>
+    <nav class="mainnav" id="mainnav" aria-label="Hovedmenu">
+      <ul class="mn-top">
+        <li class="has-panel">
+          <button class="mn-trigger is-active" type="button" aria-expanded="false" aria-controls="mn-emner"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-folder"/></svg>Emner<svg class="ico chev" aria-hidden="true"><use href="/assets/icons.svg#i-chev"/></svg></button>
+          <div class="mn-panel" id="mn-emner">
+            <div class="mn-col">
+              <p class="mn-h">Fokusområder</p>
+              <ul>
+              <li><a class="mn-item" href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><span><strong>Commissioning</strong><small>Bygningen virker som bestilt</small></span></a></li>
+              <li><a class="mn-item" href="/bygherreraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-briefcase"/></svg></span><span><strong>Bygherrerådgivning</strong><small>Din uafhængige sparringspartner</small></span></a></li>
+              <li><a class="mn-item" href="/teknisk-due-diligence.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-search"/></svg></span><span><strong>Teknisk due diligence</strong><small>Kend ejendommen før køb</small></span></a></li>
+              <li><a class="mn-item" href="/eu-taksonomi.html" aria-current="page"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-eu"/></svg></span><span><strong>EU-taksonomi</strong><small>Hvornår er en bygning grøn?</small></span></a></li>
+              </ul>
+            </div>
+            <div class="mn-col">
+              <p class="mn-h">Flere artikler</p>
+              <ul>
+              <li><a class="mn-item" href="/klimakrav-lca.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cycle"/></svg></span><span><strong>Klimakrav og LCA</strong><small>Grænseværdier for nybyggeri</small></span></a></li>
+              <li><a class="mn-item" href="/entrepriseformer.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-handshake"/></svg></span><span><strong>Entrepriseformer</strong><small>Fag-, hoved- og totalentreprise</small></span></a></li>
+              <li><a class="mn-item" href="/brandraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flame"/></svg></span><span><strong>Brandrådgivning</strong><small>Brandklasser og brandrådgivere</small></span></a></li>
+              <li><a class="mn-item" href="/bygningssyn-vedligeholdelsesplan.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clip-check"/></svg></span><span><strong>Bygningssyn</strong><small>Vedligeholdelsesplaner</small></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a class="mn-link" href="/ordbog.html"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg>Ordbog</a></li>
+        <li><a class="mn-link" href="/#raadgivere"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg>Rådgiverne</a></li>
+      </ul>
     </nav>
   </div>
-</div>
+</header>
 
 <header class="hero">
   <div class="wrap">
@@ -145,12 +173,12 @@
 
   <h2 id="miljoemaal">De seks miljømål</h2>
   <div class="grid6">
-    <div class="mini"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-leaf"/></svg></span><strong>Modvirkning af klimaændringer</strong></div>
+    <div class="mini"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cloud"/></svg></span><strong>Modvirkning af klimaændringer</strong></div>
     <div class="mini"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-shield"/></svg></span><strong>Tilpasning til klimaændringer</strong></div>
-    <div class="mini"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-pipe"/></svg></span><strong>Vand og havressourcer</strong></div>
-    <div class="mini"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-key"/></svg></span><strong>Cirkulær økonomi</strong></div>
+    <div class="mini"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-shower"/></svg></span><strong>Vand og havressourcer</strong></div>
+    <div class="mini"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cycle"/></svg></span><strong>Cirkulær økonomi</strong></div>
     <div class="mini"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flask"/></svg></span><strong>Forebyggelse af forurening</strong></div>
-    <div class="mini"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-pin"/></svg></span><strong>Biodiversitet og økosystemer</strong></div>
+    <div class="mini"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-tree"/></svg></span><strong>Biodiversitet og økosystemer</strong></div>
   </div>
   <p>For bygninger er det typisk målet om modvirkning af klimaændringer, der bruges som det mål, aktiviteten bidrager væsentligt til. De øvrige mål indgår som krav om, at aktiviteten ikke må gøre væsentlig skade.</p>
 
@@ -194,9 +222,9 @@
   <h2 id="praksis">Sådan arbejder du med taksonomien i praksis</h2>
   <ul class="ilist">
     <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-bulb"/></svg></span><div><strong>Tag stilling tidligt</strong><p>Skal projektet være taksonomi-foreneligt, skal kravene skrives ind i byggeprogrammet og rådgiveraftalerne fra start.</p></div></li>
-    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><div><strong>Dokumentér energien</strong><p>Energiberegninger, energimærker og tæthedstest er centrale beviser. Commissioning hjælper med at sikre, at bygningen også præsterer i drift.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-energy-label"/></svg></span><div><strong>Dokumentér energien</strong><p>Energiberegninger, energimærker og tæthedstest er centrale beviser. Commissioning hjælper med at sikre, at bygningen også præsterer i drift.</p></div></li>
     <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-shield"/></svg></span><div><strong>Lav en klimarisikovurdering</strong><p>Kortlæg risikoen for oversvømmelse, skybrud og varme, og beskriv tilpasningerne.</p></div></li>
-    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-list"/></svg></span><div><strong>Saml dokumentationen løbende</strong><p>Affaldsdata, materialeoplysninger og vandforbrug er lettere at dokumentere undervejs end bagefter.</p></div></li>
+    <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-folder"/></svg></span><div><strong>Saml dokumentationen løbende</strong><p>Affaldsdata, materialeoplysninger og vandforbrug er lettere at dokumentere undervejs end bagefter.</p></div></li>
     <li><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-search"/></svg></span><div><strong>Brug den ved køb</strong><p>Ved køb af ejendomme kan taksonomien indgå i den tekniske due diligence, så du kender ejendommens grønne status.</p></div></li>
   </ul>
 

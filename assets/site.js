@@ -14,6 +14,37 @@
     try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
   });
 
+  /* Hovedmenu: mobilmenu og "Emner"-panel */
+  var btn = document.querySelector('.menu-btn'), mnav = document.getElementById('mainnav');
+  var trig = document.querySelector('.mn-trigger'), panel = document.getElementById('mn-emner');
+  var mq = window.matchMedia('(max-width:860px)');
+  function setMobile(open) {
+    if (!btn) return;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.querySelector('.mb-label').textContent = open ? 'Luk' : 'Menu';
+    mnav.classList.toggle('open', open);
+    document.body.classList.toggle('menu-open', open);
+  }
+  function setPanel(open) {
+    if (!trig) return;
+    trig.setAttribute('aria-expanded', open ? 'true' : 'false');
+    panel.classList.toggle('open', open);
+  }
+  if (btn) btn.addEventListener('click', function () { setMobile(btn.getAttribute('aria-expanded') !== 'true'); });
+  if (trig) trig.addEventListener('click', function (e) { e.stopPropagation(); setPanel(trig.getAttribute('aria-expanded') !== 'true'); });
+  document.addEventListener('click', function (e) {
+    if (panel && panel.classList.contains('open') && !panel.contains(e.target)) setPanel(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Escape') return;
+    if (panel && panel.classList.contains('open')) { setPanel(false); trig.focus(); }
+    if (mnav && mnav.classList.contains('open')) { setMobile(false); btn.focus(); }
+  });
+  if (mnav) mnav.addEventListener('click', function (e) {
+    if (e.target.closest('a')) { setMobile(false); setPanel(false); }
+  });
+  (mq.addEventListener ? mq.addEventListener.bind(mq, 'change') : mq.addListener.bind(mq))(function () { setMobile(false); setPanel(false); });
+
   /* Til toppen-knap og læse-fremskridt */
   var top = document.createElement('button');
   top.className = 'totop'; top.type = 'button'; top.setAttribute('aria-label', 'Til toppen af siden');

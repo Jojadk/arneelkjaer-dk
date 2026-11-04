@@ -3,27 +3,81 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
 <meta name="robots" content="noindex">
 <script src="/assets/analytics.js"></script>
 <title>Siden findes ikke · Rådgiverguiden</title>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/article.css">
+<link rel="stylesheet" href="/assets/ui.css">
 <style>
-  html{color-scheme:light}
-  body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#F4F7FB;color:#1A2332;font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif;padding:16px}
-  .box{max-width:480px;text-align:center}
-  .code{font:600 13px "IBM Plex Sans";letter-spacing:.08em;text-transform:uppercase;color:#1559B3}
-  h1{font:600 clamp(28px,5vw,40px)/1.15 "IBM Plex Serif",Georgia,serif;margin:8px 0 12px}
-  p{color:#55606F;margin:0 0 24px}
-  a{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;border-radius:10px;background:#1D6FD8;color:#fff;font-weight:600;text-decoration:none}
-  a:hover{background:#1559B3}
+  .nf{max-width:760px;margin:0 auto;padding:48px 16px 72px}
+  .nf .code{font:600 13px "IBM Plex Sans";letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink)}
+  .nf h1{max-width:none}
+  .nf .box{display:flex;gap:14px;align-items:flex-start;background:var(--accent-soft);border-radius:14px;padding:18px 20px;margin:24px 0 32px}
+  .nf .box .ico{color:var(--accent-ink);margin-top:3px}
+  .nf .box p{margin:0}
+  .lks{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+  .lk{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid var(--line);border-radius:12px;text-decoration:none;color:var(--ink);background:#fff}
+  .lk:hover{border-color:var(--accent);color:var(--ink)}
+  .lk strong{display:block} .lk small{display:block;color:var(--muted);font-size:14px}
+  .btn{display:inline-flex;align-items:center;gap:8px;min-height:46px;padding:0 20px;border-radius:10px;background:var(--accent);color:#fff;font-weight:600;text-decoration:none;margin-top:28px}
+  .btn:hover{background:var(--accent-ink);color:#fff}
 </style>
 </head>
 <body>
-  <div class="box">
-    <div class="code">Fejl 404</div>
-    <h1>Siden findes ikke</h1>
-    <p>Siden er flyttet eller har aldrig eksisteret. Find svarene i guiden til byggerådgivning.</p>
-    <a href="/">Gå til guiden</a>
+<a class="skip" href="#indhold">Spring til indhold</a>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/">Rådgiver<span>guiden</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mainnav">
+      <span class="mb-open"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-menu"/></svg></span><span class="mb-close"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-close"/></svg></span><span class="mb-label">Menu</span>
+    </button>
+    <nav class="mainnav" id="mainnav" aria-label="Hovedmenu">
+      <ul class="mn-top">
+        <li class="has-panel">
+          <button class="mn-trigger" type="button" aria-expanded="false" aria-controls="mn-emner"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-folder"/></svg>Emner<svg class="ico chev" aria-hidden="true"><use href="/assets/icons.svg#i-chev"/></svg></button>
+          <div class="mn-panel" id="mn-emner">
+            <div class="mn-col">
+              <p class="mn-h">Fokusområder</p>
+              <ul>
+              <li><a class="mn-item" href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><span><strong>Commissioning</strong><small>Bygningen virker som bestilt</small></span></a></li>
+              <li><a class="mn-item" href="/bygherreraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-briefcase"/></svg></span><span><strong>Bygherrerådgivning</strong><small>Din uafhængige sparringspartner</small></span></a></li>
+              <li><a class="mn-item" href="/teknisk-due-diligence.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-search"/></svg></span><span><strong>Teknisk due diligence</strong><small>Kend ejendommen før køb</small></span></a></li>
+              <li><a class="mn-item" href="/eu-taksonomi.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-eu"/></svg></span><span><strong>EU-taksonomi</strong><small>Hvornår er en bygning grøn?</small></span></a></li>
+              </ul>
+            </div>
+            <div class="mn-col">
+              <p class="mn-h">Flere artikler</p>
+              <ul>
+              <li><a class="mn-item" href="/klimakrav-lca.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cycle"/></svg></span><span><strong>Klimakrav og LCA</strong><small>Grænseværdier for nybyggeri</small></span></a></li>
+              <li><a class="mn-item" href="/entrepriseformer.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-handshake"/></svg></span><span><strong>Entrepriseformer</strong><small>Fag-, hoved- og totalentreprise</small></span></a></li>
+              <li><a class="mn-item" href="/brandraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flame"/></svg></span><span><strong>Brandrådgivning</strong><small>Brandklasser og brandrådgivere</small></span></a></li>
+              <li><a class="mn-item" href="/bygningssyn-vedligeholdelsesplan.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clip-check"/></svg></span><span><strong>Bygningssyn</strong><small>Vedligeholdelsesplaner</small></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a class="mn-link" href="/ordbog.html"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg>Ordbog</a></li>
+        <li><a class="mn-link" href="/#raadgivere"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg>Rådgiverne</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
+<main class="nf" id="indhold" tabindex="-1">
+  <div class="code">Fejl 404</div>
+  <h1>Siden findes ikke</h1>
+  <p class="lead">Adressen findes ikke på Rådgiverguiden. Den kan være flyttet, eller den kan stamme fra en tidligere hjemmeside på dette domæne.</p>
+  <div class="box"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-info"/></svg><p><strong>Leder du efter Arne Elkjær A/S?</strong><br>Denne hjemmeside er en uafhængig guide til byggerådgivning og har ingen tilknytning til Arne Elkjær A/S. Sider fra virksomhedens tidligere hjemmeside findes ikke her.</p></div>
+  <h2 style="font:600 22px/1.3 'IBM Plex Serif',Georgia,serif;margin:0 0 12px">Måske kan du bruge</h2>
+  <div class="lks">
+      <a class="lk" href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><span><strong>Commissioning</strong><small>Bygningen virker som bestilt</small></span></a>
+      <a class="lk" href="/bygherreraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-briefcase"/></svg></span><span><strong>Bygherrerådgivning</strong><small>Din uafhængige sparringspartner</small></span></a>
+      <a class="lk" href="/teknisk-due-diligence.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-search"/></svg></span><span><strong>Teknisk due diligence</strong><small>Kend ejendommen før køb</small></span></a>
+      <a class="lk" href="/eu-taksonomi.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-eu"/></svg></span><span><strong>EU-taksonomi</strong><small>Hvornår er en bygning grøn?</small></span></a>
+  </div>
+  <a class="btn" href="/">Gå til forsiden <svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-arrow-right"/></svg></a>
+</main>
+<script src="/assets/site.js"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
 <title>Ordbog over byggeord – byggeri og rådgivning fra A til Å</title>
 <meta name="description" content="Søgbar ordbog med forklaringer på de vigtigste ord i byggeri og rådgivning: AB 18, BBR, brandklasse, CTS, DGNB, LCA, U-værdi og mange flere.">
 <link rel="canonical" href="https://arneelkjaer.dk/ordbog.html">
@@ -426,16 +427,43 @@
 <body>
 <a class="skip" href="#indhold">Spring til indhold</a>
 
-<div class="topbar">
+<header class="topbar">
   <div class="wrap">
     <a class="brand" href="/">Rådgiver<span>guiden</span></a>
-    <nav class="nav" aria-label="Hovedmenu">
-      <a href="/">Forside</a>
-      <a href="/#emner">Artikler</a>
-      <a href="/ordbog.html" aria-current="page">Ordbog</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mainnav">
+      <span class="mb-open"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-menu"/></svg></span><span class="mb-close"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-close"/></svg></span><span class="mb-label">Menu</span>
+    </button>
+    <nav class="mainnav" id="mainnav" aria-label="Hovedmenu">
+      <ul class="mn-top">
+        <li class="has-panel">
+          <button class="mn-trigger" type="button" aria-expanded="false" aria-controls="mn-emner"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-folder"/></svg>Emner<svg class="ico chev" aria-hidden="true"><use href="/assets/icons.svg#i-chev"/></svg></button>
+          <div class="mn-panel" id="mn-emner">
+            <div class="mn-col">
+              <p class="mn-h">Fokusområder</p>
+              <ul>
+              <li><a class="mn-item" href="/commissioning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><span><strong>Commissioning</strong><small>Bygningen virker som bestilt</small></span></a></li>
+              <li><a class="mn-item" href="/bygherreraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-briefcase"/></svg></span><span><strong>Bygherrerådgivning</strong><small>Din uafhængige sparringspartner</small></span></a></li>
+              <li><a class="mn-item" href="/teknisk-due-diligence.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-search"/></svg></span><span><strong>Teknisk due diligence</strong><small>Kend ejendommen før køb</small></span></a></li>
+              <li><a class="mn-item" href="/eu-taksonomi.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-eu"/></svg></span><span><strong>EU-taksonomi</strong><small>Hvornår er en bygning grøn?</small></span></a></li>
+              </ul>
+            </div>
+            <div class="mn-col">
+              <p class="mn-h">Flere artikler</p>
+              <ul>
+              <li><a class="mn-item" href="/klimakrav-lca.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cycle"/></svg></span><span><strong>Klimakrav og LCA</strong><small>Grænseværdier for nybyggeri</small></span></a></li>
+              <li><a class="mn-item" href="/entrepriseformer.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-handshake"/></svg></span><span><strong>Entrepriseformer</strong><small>Fag-, hoved- og totalentreprise</small></span></a></li>
+              <li><a class="mn-item" href="/brandraadgivning.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flame"/></svg></span><span><strong>Brandrådgivning</strong><small>Brandklasser og brandrådgivere</small></span></a></li>
+              <li><a class="mn-item" href="/bygningssyn-vedligeholdelsesplan.html"><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clip-check"/></svg></span><span><strong>Bygningssyn</strong><small>Vedligeholdelsesplaner</small></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a class="mn-link" href="/ordbog.html" aria-current="page"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-book"/></svg>Ordbog</a></li>
+        <li><a class="mn-link" href="/#raadgivere"><svg class="ico mn-ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg>Rådgiverne</a></li>
+      </ul>
     </nav>
   </div>
-</div>
+</header>
 
 <header class="hero">
   <div class="wrap">
@@ -469,67 +497,67 @@
   <nav class="gl-letters" aria-label="Bogstaver" id="glletters"></nav>
 
   <dl class="gl" id="gl">
-    <div class="gl-item" id="ab18"><dt>AB 18</dt><dd>Almindelige betingelser for arbejder og leverancer i bygge- og anlægsvirksomhed. Standardvilkår for aftaler mellem bygherre og entreprenør. <a href="/entrepriseformer.html#aftalegrundlag">Læs mere</a></dd></div>
-    <div class="gl-item" id="abr18"><dt>ABR 18</dt><dd>Almindelige bestemmelser for rådgivning. Standardvilkår for aftaler mellem bygherre og rådgiver.</dd></div>
-    <div class="gl-item" id="abt18"><dt>ABT 18</dt><dd>Almindelige betingelser for totalentreprise, hvor entreprenøren både projekterer og udfører.</dd></div>
-    <div class="gl-item" id="aflevering"><dt>Aflevering</dt><dd>Tidspunktet, hvor entreprenøren overdrager byggeriet til bygherren. Mangler registreres typisk ved en afleveringsforretning.</dd></div>
-    <div class="gl-item" id="anvendelseskategori"><dt>Anvendelseskategori</dt><dd>Beskriver i bygningsreglementets brandregler, hvordan en bygning bruges, og hvem der opholder sig i den. <a href="/brandraadgivning.html#begreber">Læs mere</a></dd></div>
-    <div class="gl-item" id="bbr"><dt>BBR</dt><dd>Bygnings- og Boligregistret. Offentligt register med oplysninger om bygningers areal, anvendelse, opførelsesår, materialer og installationer.</dd></div>
-    <div class="gl-item" id="bim"><dt>BIM</dt><dd>Bygningsinformationsmodellering. Digitale 3D-modeller, der samler information om bygningens dele og bruges til projektering, koordinering og drift.</dd></div>
-    <div class="gl-item" id="br18"><dt>BR18</dt><dd>Bygningsreglementet fra 2018, der indeholder de danske krav til byggeri, fx konstruktioner, brand, energi, indeklima og klimapåvirkning.</dd></div>
-    <div class="gl-item" id="brandklasse"><dt>Brandklasse</dt><dd>Inddeling af byggerier i fire klasser efter brandrisiko. Afgør, om der skal bruges certificeret brandrådgiver. <a href="/brandraadgivning.html#brandklasser">Læs mere</a></dd></div>
-    <div class="gl-item" id="byggeprogram"><dt>Byggeprogram</dt><dd>Bygherrens beskrivelse af krav, ønsker, økonomi og tidsplan for et byggeri. Særligt vigtigt ved totalentreprise.</dd></div>
-    <div class="gl-item" id="byggetilladelse"><dt>Byggetilladelse</dt><dd>Kommunens tilladelse til at bygge. Søges digitalt via Byg og Miljø.</dd></div>
-    <div class="gl-item" id="bygherre"><dt>Bygherre</dt><dd>Den, der får opført eller ombygget en bygning og betaler for det. Bygherren er rådgivernes og entreprenørernes kunde.</dd></div>
-    <div class="gl-item" id="bygherreraadgiver"><dt>Bygherrerådgiver</dt><dd>Rådgiver, der varetager bygherrens interesser, fx med byggeprogram, udbud og kontrol af totalentreprenøren.</dd></div>
-    <div class="gl-item" id="bygningssyn"><dt>Bygningssyn</dt><dd>Systematisk gennemgang af en bygnings tilstand som grundlag for vedligeholdelsesplanen. <a href="/bygningssyn-vedligeholdelsesplan.html#bygningssyn">Læs mere</a></dd></div>
-    <div class="gl-item" id="commissioning"><dt>Commissioning (Cx)</dt><dd>Kvalitetssikringsproces, der sikrer, at bygningens tekniske systemer fungerer sammen og opfylder bygherrens krav. <a href="/commissioning.html">Læs mere</a></dd></div>
-    <div class="gl-item" id="co2e"><dt>CO₂-ækvivalent (CO₂e)</dt><dd>Fælles mål for drivhusgasser, hvor fx metan omregnes til den mængde CO₂, der har samme klimaeffekt.</dd></div>
-    <div class="gl-item" id="cts"><dt>CTS</dt><dd>Centralt Tekniske Styringssystem. Overvåger og styrer bygningens installationer som varme, ventilation og lys.</dd></div>
-    <div class="gl-item" id="dgnb"><dt>DGNB</dt><dd>Certificeringsordning for bæredygtigt byggeri, der vurderer miljø, økonomi, social kvalitet, teknik og proces.</dd></div>
-    <div class="gl-item" id="dispositionsforslag"><dt>Dispositionsforslag</dt><dd>Tidlig projektfase med skitser, der viser de overordnede løsninger og et første økonomisk overslag.</dd></div>
-    <div class="gl-item" id="dv"><dt>DV-plan</dt><dd>Drifts- og vedligeholdelsesplan. Beskriver, hvilke arbejder der skal udføres hvornår, og hvad de koster. <a href="/bygningssyn-vedligeholdelsesplan.html#plan">Læs mere</a></dd></div>
-    <div class="gl-item" id="energimaerke"><dt>Energimærke</dt><dd>Vurdering af en bygnings energiforbrug på en skala fra A til G med forslag til forbedringer. Kræves blandt andet ved salg.</dd></div>
-    <div class="gl-item" id="fagentreprise"><dt>Fagentreprise</dt><dd>Entrepriseform, hvor bygherren har en kontrakt med hver faggruppe. <a href="/entrepriseformer.html#former">Læs mere</a></dd></div>
-    <div class="gl-item" id="fagtilsyn"><dt>Fagtilsyn</dt><dd>Rådgiverens kontrol på byggepladsen af, at arbejdet udføres efter projektet og i den aftalte kvalitet.</dd></div>
-    <div class="gl-item" id="faerdigmelding"><dt>Færdigmelding</dt><dd>Meddelelse til kommunen om, at et byggeri er udført. Ved mange byggerier en forudsætning for ibrugtagningstilladelse.</dd></div>
-    <div class="gl-item" id="hovedentreprise"><dt>Hovedentreprise</dt><dd>Entrepriseform, hvor én hovedentreprenør udfører hele byggeriet efter bygherrens projekt. <a href="/entrepriseformer.html#former">Læs mere</a></dd></div>
-    <div class="gl-item" id="hovedprojekt"><dt>Hovedprojekt</dt><dd>Det færdige, detaljerede projekt, som bruges til udbud og udførelse.</dd></div>
-    <div class="gl-item" id="ibrugtagning"><dt>Ibrugtagningstilladelse</dt><dd>Kommunens tilladelse til at tage en bygning i brug efter færdigmelding.</dd></div>
-    <div class="gl-item" id="klimaskaerm"><dt>Klimaskærm</dt><dd>Bygningens ydre skal mod vejret: tag, facader, vinduer, døre og gulv mod jord.</dd></div>
-    <div class="gl-item" id="konstruktionsklasse"><dt>Konstruktionsklasse</dt><dd>Inddeling af byggerier i fire klasser efter konstruktionernes kompleksitet. Klasse 3 og 4 kræver certificeret statiker.</dd></div>
-    <div class="gl-item" id="lca"><dt>LCA</dt><dd>Livscyklusvurdering. Beregning af en bygnings samlede klimapåvirkning over 50 år. <a href="/klimakrav-lca.html">Læs mere</a></dd></div>
-    <div class="gl-item" id="lokalplan"><dt>Lokalplan</dt><dd>Kommunal plan, der fastlægger regler for et område, fx bebyggelsens højde, omfang, anvendelse og udseende.</dd></div>
-    <div class="gl-item" id="mangel"><dt>Mangel</dt><dd>Når det udførte arbejde ikke svarer til det aftalte, fx i kvalitet eller funktion.</dd></div>
-    <div class="gl-item" id="opp"><dt>OPP</dt><dd>Offentlig-privat partnerskab, hvor en privat partner projekterer, bygger, finansierer og driver en bygning. <a href="/entrepriseformer.html#samarbejde">Læs mere</a></dd></div>
-    <div class="gl-item" id="partnering"><dt>Partnering</dt><dd>Samarbejdsform med tidligt samarbejde, fælles mål og åben økonomi mellem byggeriets parter.</dd></div>
-    <div class="gl-item" id="pcb"><dt>PCB</dt><dd>Miljøskadeligt stof, der kan findes i fuger, termoruder og maling fra især 1950'erne til 1970'erne.</dd></div>
-    <div class="gl-item" id="projektforslag"><dt>Projektforslag</dt><dd>Projektfase, hvor løsningerne fastlægges, og der typisk søges byggetilladelse.</dd></div>
-    <div class="gl-item" id="risikoklasse"><dt>Risikoklasse</dt><dd>Beskriver bygningens brandrisiko ud fra anvendelse, højde, antal etager og personer.</dd></div>
-    <div class="gl-item" id="statiker"><dt>Certificeret statiker</dt><dd>Ingeniør, der er certificeret til at udarbejde eller kontrollere statisk dokumentation i konstruktionsklasse 3 og 4.</dd></div>
-    <div class="gl-item" id="servitut"><dt>Servitut</dt><dd>Tinglyst rettighed eller begrænsning på en ejendom, fx byggelinjer, vejret eller forbud mod bestemte anvendelser.</dd></div>
-    <div class="gl-item" id="tdd"><dt>Teknisk due diligence (TDD)</dt><dd>Teknisk undersøgelse af en ejendom før køb. <a href="/teknisk-due-diligence.html">Læs mere</a></dd></div>
-    <div class="gl-item" id="tilstandsrapport"><dt>Tilstandsrapport</dt><dd>Rapport om en privat boligs synlige skader udarbejdet af en beskikket byggesagkyndig ved salg.</dd></div>
-    <div class="gl-item" id="totalentreprise"><dt>Totalentreprise</dt><dd>Entrepriseform, hvor én totalentreprenør står for både projektering og udførelse. <a href="/entrepriseformer.html#former">Læs mere</a></dd></div>
-    <div class="gl-item" id="totalraadgiver"><dt>Totalrådgiver</dt><dd>Rådgiver, der påtager sig hele rådgivningen, fx både arkitekt- og ingeniørdelen.</dd></div>
-    <div class="gl-item" id="udbud"><dt>Udbud</dt><dd>Processen, hvor en opgave sendes ud til tilbudsgivere på et fælles grundlag.</dd></div>
-    <div class="gl-item" id="uvaerdi"><dt>U-værdi</dt><dd>Mål for, hvor meget varme der slipper igennem en bygningsdel. Jo lavere U-værdi, jo bedre isolerer den.</dd></div>
-    <div class="gl-item" id="aarseftersyn"><dt>Årseftersyn</dt><dd>Gennemgang af byggeriet et og fem år efter aflevering for at finde mangler, der er opstået eller opdaget siden.</dd></div>
-    <div class="gl-item" id="bygherreraadgivning-t"><dt>Bygherrerådgivning</dt><dd>Rådgivning, hvor rådgiveren varetager bygherrens interesser med krav, udbud, styring og kontrol. <a href="/bygherreraadgivning.html">Læs mere</a></dd></div>
-    <div class="gl-item" id="csrd"><dt>CSRD</dt><dd>EU-direktivet om virksomheders bæredygtighedsrapportering. Store virksomheder skal blandt andet rapportere efter EU-taksonomien.</dd></div>
-    <div class="gl-item" id="dnsh"><dt>DNSH</dt><dd>Do No Significant Harm, "ingen væsentlig skade". Krav i EU-taksonomien om, at en aktivitet ikke må skade de øvrige miljømål. <a href="/eu-taksonomi.html#betingelser">Læs mere</a></dd></div>
-    <div class="gl-item" id="energiramme"><dt>Energiramme</dt><dd>Bygningsreglementets grænse for, hvor meget energi en ny bygning må bruge til drift pr. m² pr. år.</dd></div>
-    <div class="gl-item" id="esg"><dt>ESG</dt><dd>Environmental, Social og Governance. Samlet betegnelse for miljø, sociale forhold og selskabsledelse i vurderingen af virksomheder og investeringer.</dd></div>
-    <div class="gl-item" id="eu-taksonomi"><dt>EU-taksonomi</dt><dd>EU-klassificeringssystem, der definerer, hvornår en aktivitet er miljømæssigt bæredygtig. <a href="/eu-taksonomi.html">Læs mere</a></dd></div>
-    <div class="gl-item" id="geoteknik"><dt>Geoteknisk undersøgelse</dt><dd>Boringer og analyser af jordbunden, der viser, hvordan en bygning skal funderes.</dd></div>
-    <div class="gl-item" id="jordforurening"><dt>Jordforurening</dt><dd>Forurening af jorden, fx med olie eller tungmetaller. Kortlagte grunde registreres af regionen og kan kræve særlig håndtering ved byggeri.</dd></div>
-    <div class="gl-item" id="nzeb"><dt>NZEB</dt><dd>Nearly Zero-Energy Building, næsten energineutral bygning. EU-standard for nye bygningers energiforbrug, som bruges i EU-taksonomien.</dd></div>
-    <div class="gl-item" id="vaadrum"><dt>Vådrum</dt><dd>Rum med vand på gulv og vægge, fx badeværelser. Skal udføres efter særlige krav til tætning og fald.</dd></div>
-    <div class="gl-item" id="well"><dt>WELL</dt><dd>Certificeringsordning, der vurderer, hvordan bygninger påvirker brugernes sundhed og trivsel, fx luft, lys og akustik.</dd></div>
-    <div class="gl-item" id="ydelsesbeskrivelse"><dt>Ydelsesbeskrivelse</dt><dd>Branchens beskrivelse af, hvilke opgaver en rådgiver løser i hver fase. Bruges til at aftale omfanget af rådgivningen.</dd></div>
-    <div class="gl-item" id="zonestatus"><dt>Zonestatus</dt><dd>Om en grund ligger i byzone, landzone eller sommerhusområde. Afgør, hvilke regler der gælder for byggeri.</dd></div>
-    <div class="gl-item" id="aendring"><dt>Ændringsarbejde</dt><dd>Arbejde, som bygherren kræver ændret eller tilføjet i forhold til aftalen. Afregnes normalt som ekstraarbejde.</dd></div>
-    <div class="gl-item" id="oekonomisk-overslag"><dt>Økonomisk overslag</dt><dd>Et tidligt skøn over byggeriets samlede udgifter, som bliver mere præcist gennem projektets faser.</dd></div>
+    <div class="gl-item" id="ab18"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-contract"/></svg></span><span class="t">AB 18</span></dt><dd>Almindelige betingelser for arbejder og leverancer i bygge- og anlægsvirksomhed. Standardvilkår for aftaler mellem bygherre og entreprenør. <a href="/entrepriseformer.html#aftalegrundlag">Læs mere</a></dd></div>
+    <div class="gl-item" id="abr18"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-compass"/></svg></span><span class="t">ABR 18</span></dt><dd>Almindelige bestemmelser for rådgivning. Standardvilkår for aftaler mellem bygherre og rådgiver.</dd></div>
+    <div class="gl-item" id="abt18"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-crane"/></svg></span><span class="t">ABT 18</span></dt><dd>Almindelige betingelser for totalentreprise, hvor entreprenøren både projekterer og udfører.</dd></div>
+    <div class="gl-item" id="aflevering"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-key"/></svg></span><span class="t">Aflevering</span></dt><dd>Tidspunktet, hvor entreprenøren overdrager byggeriet til bygherren. Mangler registreres typisk ved en afleveringsforretning.</dd></div>
+    <div class="gl-item" id="anvendelseskategori"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-users"/></svg></span><span class="t">Anvendelseskategori</span></dt><dd>Beskriver i bygningsreglementets brandregler, hvordan en bygning bruges, og hvem der opholder sig i den. <a href="/brandraadgivning.html#begreber">Læs mere</a></dd></div>
+    <div class="gl-item" id="bbr"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-database"/></svg></span><span class="t">BBR</span></dt><dd>Bygnings- og Boligregistret. Offentligt register med oplysninger om bygningers areal, anvendelse, opførelsesår, materialer og installationer.</dd></div>
+    <div class="gl-item" id="bim"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cube"/></svg></span><span class="t">BIM</span></dt><dd>Bygningsinformationsmodellering. Digitale 3D-modeller, der samler information om bygningens dele og bruges til projektering, koordinering og drift.</dd></div>
+    <div class="gl-item" id="br18"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-paragraph"/></svg></span><span class="t">BR18</span></dt><dd>Bygningsreglementet fra 2018, der indeholder de danske krav til byggeri, fx konstruktioner, brand, energi, indeklima og klimapåvirkning.</dd></div>
+    <div class="gl-item" id="brandklasse"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flame"/></svg></span><span class="t">Brandklasse</span></dt><dd>Inddeling af byggerier i fire klasser efter brandrisiko. Afgør, om der skal bruges certificeret brandrådgiver. <a href="/brandraadgivning.html#brandklasser">Læs mere</a></dd></div>
+    <div class="gl-item" id="byggeprogram"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clipboard"/></svg></span><span class="t">Byggeprogram</span></dt><dd>Bygherrens beskrivelse af krav, ønsker, økonomi og tidsplan for et byggeri. Særligt vigtigt ved totalentreprise.</dd></div>
+    <div class="gl-item" id="byggetilladelse"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-stamp"/></svg></span><span class="t">Byggetilladelse</span></dt><dd>Kommunens tilladelse til at bygge. Søges digitalt via Byg og Miljø.</dd></div>
+    <div class="gl-item" id="bygherre"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-owner"/></svg></span><span class="t">Bygherre</span></dt><dd>Den, der får opført eller ombygget en bygning og betaler for det. Bygherren er rådgivernes og entreprenørernes kunde.</dd></div>
+    <div class="gl-item" id="bygherreraadgiver"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-briefcase"/></svg></span><span class="t">Bygherrerådgiver</span></dt><dd>Rådgiver, der varetager bygherrens interesser, fx med byggeprogram, udbud og kontrol af totalentreprenøren.</dd></div>
+    <div class="gl-item" id="bygningssyn"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-clip-check"/></svg></span><span class="t">Bygningssyn</span></dt><dd>Systematisk gennemgang af en bygnings tilstand som grundlag for vedligeholdelsesplanen. <a href="/bygningssyn-vedligeholdelsesplan.html#bygningssyn">Læs mere</a></dd></div>
+    <div class="gl-item" id="commissioning"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-gauge"/></svg></span><span class="t">Commissioning (Cx)</span></dt><dd>Kvalitetssikringsproces, der sikrer, at bygningens tekniske systemer fungerer sammen og opfylder bygherrens krav. <a href="/commissioning.html">Læs mere</a></dd></div>
+    <div class="gl-item" id="co2e"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cloud"/></svg></span><span class="t">CO₂-ækvivalent (CO₂e)</span></dt><dd>Fælles mål for drivhusgasser, hvor fx metan omregnes til den mængde CO₂, der har samme klimaeffekt.</dd></div>
+    <div class="gl-item" id="cts"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-test"/></svg></span><span class="t">CTS</span></dt><dd>Centralt Tekniske Styringssystem. Overvåger og styrer bygningens installationer som varme, ventilation og lys.</dd></div>
+    <div class="gl-item" id="dgnb"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-medal"/></svg></span><span class="t">DGNB</span></dt><dd>Certificeringsordning for bæredygtigt byggeri, der vurderer miljø, økonomi, social kvalitet, teknik og proces.</dd></div>
+    <div class="gl-item" id="dispositionsforslag"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-sketch"/></svg></span><span class="t">Dispositionsforslag</span></dt><dd>Tidlig projektfase med skitser, der viser de overordnede løsninger og et første økonomisk overslag.</dd></div>
+    <div class="gl-item" id="dv"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-wrench"/></svg></span><span class="t">DV-plan</span></dt><dd>Drifts- og vedligeholdelsesplan. Beskriver, hvilke arbejder der skal udføres hvornår, og hvad de koster. <a href="/bygningssyn-vedligeholdelsesplan.html#plan">Læs mere</a></dd></div>
+    <div class="gl-item" id="energimaerke"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-energy-label"/></svg></span><span class="t">Energimærke</span></dt><dd>Vurdering af en bygnings energiforbrug på en skala fra A til G med forslag til forbedringer. Kræves blandt andet ved salg.</dd></div>
+    <div class="gl-item" id="fagentreprise"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-tools"/></svg></span><span class="t">Fagentreprise</span></dt><dd>Entrepriseform, hvor bygherren har en kontrakt med hver faggruppe. <a href="/entrepriseformer.html#former">Læs mere</a></dd></div>
+    <div class="gl-item" id="fagtilsyn"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-eye"/></svg></span><span class="t">Fagtilsyn</span></dt><dd>Rådgiverens kontrol på byggepladsen af, at arbejdet udføres efter projektet og i den aftalte kvalitet.</dd></div>
+    <div class="gl-item" id="faerdigmelding"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flag"/></svg></span><span class="t">Færdigmelding</span></dt><dd>Meddelelse til kommunen om, at et byggeri er udført. Ved mange byggerier en forudsætning for ibrugtagningstilladelse.</dd></div>
+    <div class="gl-item" id="hovedentreprise"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-helmet"/></svg></span><span class="t">Hovedentreprise</span></dt><dd>Entrepriseform, hvor én hovedentreprenør udfører hele byggeriet efter bygherrens projekt. <a href="/entrepriseformer.html#former">Læs mere</a></dd></div>
+    <div class="gl-item" id="hovedprojekt"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-blueprint"/></svg></span><span class="t">Hovedprojekt</span></dt><dd>Det færdige, detaljerede projekt, som bruges til udbud og udførelse.</dd></div>
+    <div class="gl-item" id="ibrugtagning"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-door"/></svg></span><span class="t">Ibrugtagningstilladelse</span></dt><dd>Kommunens tilladelse til at tage en bygning i brug efter færdigmelding.</dd></div>
+    <div class="gl-item" id="klimaskaerm"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-roof"/></svg></span><span class="t">Klimaskærm</span></dt><dd>Bygningens ydre skal mod vejret: tag, facader, vinduer, døre og gulv mod jord.</dd></div>
+    <div class="gl-item" id="konstruktionsklasse"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-beam"/></svg></span><span class="t">Konstruktionsklasse</span></dt><dd>Inddeling af byggerier i fire klasser efter konstruktionernes kompleksitet. Klasse 3 og 4 kræver certificeret statiker.</dd></div>
+    <div class="gl-item" id="lca"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cycle"/></svg></span><span class="t">LCA</span></dt><dd>Livscyklusvurdering. Beregning af en bygnings samlede klimapåvirkning over 50 år. <a href="/klimakrav-lca.html">Læs mere</a></dd></div>
+    <div class="gl-item" id="lokalplan"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-map"/></svg></span><span class="t">Lokalplan</span></dt><dd>Kommunal plan, der fastlægger regler for et område, fx bebyggelsens højde, omfang, anvendelse og udseende.</dd></div>
+    <div class="gl-item" id="mangel"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-crack"/></svg></span><span class="t">Mangel</span></dt><dd>Når det udførte arbejde ikke svarer til det aftalte, fx i kvalitet eller funktion.</dd></div>
+    <div class="gl-item" id="opp"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-handshake"/></svg></span><span class="t">OPP</span></dt><dd>Offentlig-privat partnerskab, hvor en privat partner projekterer, bygger, finansierer og driver en bygning. <a href="/entrepriseformer.html#samarbejde">Læs mere</a></dd></div>
+    <div class="gl-item" id="partnering"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-puzzle"/></svg></span><span class="t">Partnering</span></dt><dd>Samarbejdsform med tidligt samarbejde, fælles mål og åben økonomi mellem byggeriets parter.</dd></div>
+    <div class="gl-item" id="pcb"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-flask"/></svg></span><span class="t">PCB</span></dt><dd>Miljøskadeligt stof, der kan findes i fuger, termoruder og maling fra især 1950'erne til 1970'erne.</dd></div>
+    <div class="gl-item" id="projektforslag"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-ruler"/></svg></span><span class="t">Projektforslag</span></dt><dd>Projektfase, hvor løsningerne fastlægges, og der typisk søges byggetilladelse.</dd></div>
+    <div class="gl-item" id="risikoklasse"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-building"/></svg></span><span class="t">Risikoklasse</span></dt><dd>Beskriver bygningens brandrisiko ud fra anvendelse, højde, antal etager og personer.</dd></div>
+    <div class="gl-item" id="statiker"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-calculator"/></svg></span><span class="t">Certificeret statiker</span></dt><dd>Ingeniør, der er certificeret til at udarbejde eller kontrollere statisk dokumentation i konstruktionsklasse 3 og 4.</dd></div>
+    <div class="gl-item" id="servitut"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-scroll"/></svg></span><span class="t">Servitut</span></dt><dd>Tinglyst rettighed eller begrænsning på en ejendom, fx byggelinjer, vejret eller forbud mod bestemte anvendelser.</dd></div>
+    <div class="gl-item" id="tdd"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-search"/></svg></span><span class="t">Teknisk due diligence (TDD)</span></dt><dd>Teknisk undersøgelse af en ejendom før køb. <a href="/teknisk-due-diligence.html">Læs mere</a></dd></div>
+    <div class="gl-item" id="tilstandsrapport"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-report-house"/></svg></span><span class="t">Tilstandsrapport</span></dt><dd>Rapport om en privat boligs synlige skader udarbejdet af en beskikket byggesagkyndig ved salg.</dd></div>
+    <div class="gl-item" id="totalentreprise"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-crane"/></svg></span><span class="t">Totalentreprise</span></dt><dd>Entrepriseform, hvor én totalentreprenør står for både projektering og udførelse. <a href="/entrepriseformer.html#former">Læs mere</a></dd></div>
+    <div class="gl-item" id="totalraadgiver"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-compass"/></svg></span><span class="t">Totalrådgiver</span></dt><dd>Rådgiver, der påtager sig hele rådgivningen, fx både arkitekt- og ingeniørdelen.</dd></div>
+    <div class="gl-item" id="udbud"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-megaphone"/></svg></span><span class="t">Udbud</span></dt><dd>Processen, hvor en opgave sendes ud til tilbudsgivere på et fælles grundlag.</dd></div>
+    <div class="gl-item" id="uvaerdi"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-thermo"/></svg></span><span class="t">U-værdi</span></dt><dd>Mål for, hvor meget varme der slipper igennem en bygningsdel. Jo lavere U-værdi, jo bedre isolerer den.</dd></div>
+    <div class="gl-item" id="aarseftersyn"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-cal-check"/></svg></span><span class="t">Årseftersyn</span></dt><dd>Gennemgang af byggeriet et og fem år efter aflevering for at finde mangler, der er opstået eller opdaget siden.</dd></div>
+    <div class="gl-item" id="bygherreraadgivning-t"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-briefcase"/></svg></span><span class="t">Bygherrerådgivning</span></dt><dd>Rådgivning, hvor rådgiveren varetager bygherrens interesser med krav, udbud, styring og kontrol. <a href="/bygherreraadgivning.html">Læs mere</a></dd></div>
+    <div class="gl-item" id="csrd"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-report"/></svg></span><span class="t">CSRD</span></dt><dd>EU-direktivet om virksomheders bæredygtighedsrapportering. Store virksomheder skal blandt andet rapportere efter EU-taksonomien.</dd></div>
+    <div class="gl-item" id="dnsh"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-shield"/></svg></span><span class="t">DNSH</span></dt><dd>Do No Significant Harm, "ingen væsentlig skade". Krav i EU-taksonomien om, at en aktivitet ikke må skade de øvrige miljømål. <a href="/eu-taksonomi.html#betingelser">Læs mere</a></dd></div>
+    <div class="gl-item" id="energiramme"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-bolt"/></svg></span><span class="t">Energiramme</span></dt><dd>Bygningsreglementets grænse for, hvor meget energi en ny bygning må bruge til drift pr. m² pr. år.</dd></div>
+    <div class="gl-item" id="esg"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-scale"/></svg></span><span class="t">ESG</span></dt><dd>Environmental, Social og Governance. Samlet betegnelse for miljø, sociale forhold og selskabsledelse i vurderingen af virksomheder og investeringer.</dd></div>
+    <div class="gl-item" id="eu-taksonomi"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-eu"/></svg></span><span class="t">EU-taksonomi</span></dt><dd>EU-klassificeringssystem, der definerer, hvornår en aktivitet er miljømæssigt bæredygtig. <a href="/eu-taksonomi.html">Læs mere</a></dd></div>
+    <div class="gl-item" id="geoteknik"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-drill"/></svg></span><span class="t">Geoteknisk undersøgelse</span></dt><dd>Boringer og analyser af jordbunden, der viser, hvordan en bygning skal funderes.</dd></div>
+    <div class="gl-item" id="jordforurening"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-soil"/></svg></span><span class="t">Jordforurening</span></dt><dd>Forurening af jorden, fx med olie eller tungmetaller. Kortlagte grunde registreres af regionen og kan kræve særlig håndtering ved byggeri.</dd></div>
+    <div class="gl-item" id="nzeb"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-house-bolt"/></svg></span><span class="t">NZEB</span></dt><dd>Nearly Zero-Energy Building, næsten energineutral bygning. EU-standard for nye bygningers energiforbrug, som bruges i EU-taksonomien.</dd></div>
+    <div class="gl-item" id="vaadrum"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-shower"/></svg></span><span class="t">Vådrum</span></dt><dd>Rum med vand på gulv og vægge, fx badeværelser. Skal udføres efter særlige krav til tætning og fald.</dd></div>
+    <div class="gl-item" id="well"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-heart"/></svg></span><span class="t">WELL</span></dt><dd>Certificeringsordning, der vurderer, hvordan bygninger påvirker brugernes sundhed og trivsel, fx luft, lys og akustik.</dd></div>
+    <div class="gl-item" id="ydelsesbeskrivelse"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-list"/></svg></span><span class="t">Ydelsesbeskrivelse</span></dt><dd>Branchens beskrivelse af, hvilke opgaver en rådgiver løser i hver fase. Bruges til at aftale omfanget af rådgivningen.</dd></div>
+    <div class="gl-item" id="zonestatus"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-tree"/></svg></span><span class="t">Zonestatus</span></dt><dd>Om en grund ligger i byzone, landzone eller sommerhusområde. Afgør, hvilke regler der gælder for byggeri.</dd></div>
+    <div class="gl-item" id="aendring"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-swap"/></svg></span><span class="t">Ændringsarbejde</span></dt><dd>Arbejde, som bygherren kræver ændret eller tilføjet i forhold til aftalen. Afregnes normalt som ekstraarbejde.</dd></div>
+    <div class="gl-item" id="oekonomisk-overslag"><dt><span class="ico-badge"><svg class="ico" aria-hidden="true"><use href="/assets/icons.svg#i-coins"/></svg></span><span class="t">Økonomisk overslag</span></dt><dd>Et tidligt skøn over byggeriets samlede udgifter, som bliver mere præcist gennem projektets faser.</dd></div>
   </dl>
   <p class="gl-empty" id="glempty" hidden>Ingen ord matcher din søgning.</p>
 
@@ -537,9 +565,9 @@
 (function(){
   var items=[].slice.call(document.querySelectorAll('#gl .gl-item'));
   var coll=new Intl.Collator('da');
-  items.sort(function(a,b){return coll.compare(a.querySelector('dt').textContent,b.querySelector('dt').textContent);});
+  items.sort(function(a,b){return coll.compare(a.querySelector('dt .t').textContent,b.querySelector('dt .t').textContent);});
   var gl=document.getElementById('gl'); items.forEach(function(i){gl.appendChild(i);});
-  function first(el){var t=el.querySelector('dt').textContent.trim().charAt(0).toUpperCase();return t;}
+  function first(el){var t=el.querySelector('dt .t').textContent.trim().charAt(0).toUpperCase();return t;}
   var letters={}; items.forEach(function(i){var l=first(i); if(!letters[l]){letters[l]=i; i.setAttribute('data-first',l);} });
   var nav=document.getElementById('glletters');
   'ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ'.split('').forEach(function(l){
