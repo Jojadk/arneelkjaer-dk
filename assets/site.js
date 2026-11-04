@@ -9,8 +9,23 @@
     if (a.hasAttribute('data-show')) a.textContent = m;
   });
 
-  /* Aktiver AdSense-pladser */
-  document.querySelectorAll('ins.adsbygoogle').forEach(function () {
+  /*
+    AdSense-pladser
+    ---------------
+    Indsæt slot-ID'er fra AdSense (Annoncer > Efter annonceenhed) herunder.
+    Så længe et felt er tomt, fjernes de pladser, og Googles Auto-annoncer
+    placerer i stedet selv annoncerne på siden.
+      top     = vandret banner under sidehovedet
+      inline  = annoncer inde i teksten
+      sidebar = annonce i højre side (under indholdsfortegnelsen)
+  */
+  var AD_SLOTS = { top: '', inline: '', sidebar: '' };
+  document.querySelectorAll('ins.adsbygoogle').forEach(function (ins) {
+    var pos = ins.closest('aside') ? 'sidebar' : (ins.getAttribute('data-ad-format') === 'horizontal' ? 'top' : 'inline');
+    var slot = AD_SLOTS[pos];
+    var box = ins.closest('.ad') || ins;
+    if (!/^\d{6,}$/.test(slot || '')) { box.parentNode && box.parentNode.removeChild(box); return; }
+    ins.setAttribute('data-ad-slot', slot);
     try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
   });
 
