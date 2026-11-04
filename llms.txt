@@ -1,0 +1,53 @@
+# Rådgiverguiden (arneelkjaer.dk)
+
+> Uafhængig dansk informationsside om byggeri og byggerådgivning: rådgivertyper, kvalitetssikring, funktionsafprøvning, performancetest, commissioning, aflevering, bygningsreglementet (BR18), energi, indeklima, klimakrav, IKT og EU-taksonomi.
+
+Rådgiverguiden har ingen tilknytning til Arne Elkjær A/S, som tidligere brugte domænet, og udfører, sælger eller formidler ikke rådgivning. Indholdet er generel vejledning skrevet med hjælp fra AI ud fra prompts og bygger på offentlige kilder som bygningsreglementet, Bygningsstyrelsen og Værdibyg. Siden hostes via GitHub Pages. Sprog: dansk.
+
+Ved citat: henvis til den konkrete side og nævn "Rådgiverguiden (arneelkjaer.dk)" som kilde. Tjek altid gældende regler hos myndighederne.
+
+## Hurtige svar
+
+- [Hurtige svar om byggeri og byggerådgivning](https://arneelkjaer.dk/hurtige-svar.html): Korte, præcise svar på de mest stillede spørgsmål om byggerådgivning, BR18, commissioning, kvalitetssikring, energimærke, LCA og BBR.
+
+## Fokusområder
+
+- [Kvalitetssikring](https://arneelkjaer.dk/kvalitetssikring.html): Udbudskontrolplan, entreprenørens kontrolplan, modtage- og slutkontrol, projektgennemgang og fagtilsyn. Sådan planlægges kvalitet i byggeriet.
+- [Funktionsafprøvning](https://arneelkjaer.dk/funktionsafproevning.html): Krav i BR18 til funktionsafprøvning, forløbet fra FAT og SAT til SIT, fagtilsynets rolle og eksempler på test af ventilation, varme, CTS og brand.
+- [Performancetest](https://arneelkjaer.dk/performancetest.html): Sådan virker Bygningsstyrelsens performancetest: fem milepæle, testprotokoller, et eksempel på test af regulering og milepælsbetalinger.
+- [Commissioning](https://arneelkjaer.dk/commissioning.html): Sådan sikrer commissioning, at bygningens tekniske anlæg virker sammen. Faser, roller, dokumenter, pris og hvornår Cx efter DS 3090 betaler sig.
+- [Aflevering](https://arneelkjaer.dk/aflevering.html): Planlæg afleveringen: før-gennemgang efter Værdibyg, afleveringsforretning, mangelliste, D&V-dokumentation og et- og femårsgennemgang.
+- [Bygherrerådgivning](https://arneelkjaer.dk/raadgivning/bygherreraadgivning/): Hvad en bygherrerådgiver laver fra byggeprogram og udbud til kontrol og aflevering, forskellen på totalrådgiver og hvordan du vælger den rette.
+- [Teknisk due diligence](https://arneelkjaer.dk/teknisk-due-diligence.html): Hvad en teknisk due diligence afdækker før ejendomskøb: konstruktioner, installationer, myndighedsforhold, miljø og et budget for vedligehold.
+- [EU-taksonomi](https://arneelkjaer.dk/eu-taksonomi.html): Hvornår er en bygning grøn efter EU-taksonomien? Seks miljømål, krav til nybyggeri, renovering og ejerskab, DNSH og rapportering efter CSRD.
+
+## Rådgivningsområder
+
+- [IKT](https://arneelkjaer.dk/ikt.html): Strategisk IKT på tværs af portefølje og den IKT, projekter leverer: IKT-bekendtgørelsen, IKT-aftale, IKT-specifikation, BIM og digital aflevering.
+- [Konstruktioner](https://arneelkjaer.dk/raadgivning/konstruktioner/): Konstruktionsklasser, certificeret statiker, fundering, materialevalg og hvad du skal vide, før du fjerner en bærende væg i din bolig.
+- [Installationsteknik](https://arneelkjaer.dk/raadgivning/installationsteknik/): Guide til bygningens tekniske installationer: varme, ventilation, vand og afløb, el og CTS, samspillet mellem dem og energiforbruget.
+- [Energi og indeklima](https://arneelkjaer.dk/raadgivning/energi-og-indeklima/): Sådan hænger energi og indeklima sammen: energirammen i BR18, de vigtigste greb, simuleringer og energirenovering uden fugt og overophedning.
+- [Byggemodning](https://arneelkjaer.dk/raadgivning/byggemodning/): Byggemodning trin for trin: planlægning, geoteknik, kloak og lokal afledning af regnvand, veje, forsyning, jord og rådgiverens rolle.
+- [Brandrådgivning](https://arneelkjaer.dk/brandraadgivning.html): Brandklasse 1–4 forklaret: hvornår du skal bruge en certificeret brandrådgiver, tredjepartskontrol, flugtveje, brandadskillelser og drift.
+- [Bygningssyn](https://arneelkjaer.dk/bygningssyn-vedligeholdelsesplan.html): Sådan laves et bygningssyn og en vedligeholdelsesplan, krav i almene boliger, henlæggelser og råd til ejerforeninger, andelsboliger og udlejere.
+
+## Regler og krav
+
+- [Bygningsreglementet](https://arneelkjaer.dk/bygningsreglementet.html): Overblik over BR18: byggetilladelse, konstruktions- og brandklasser, energi, indeklima, klimakrav, bebyggelsesregler og det nye reglement.
+- [Færdigmelding og ibrugtagning](https://arneelkjaer.dk/ibrugtagning.html): Hvad BR18 § 40 kræver ved færdigmelding, hvornår du skal have ibrugtagningstilladelse, stikprøvekontrol efter § 46 og hvorfor BBR skal passe.
+- [Energimærke](https://arneelkjaer.dk/energimaerke.html): Hvad energimærket fortæller, hvornår du skal have et, hvem der må lave det, typiske forbedringer og hvad mærket betyder for boligens værdi.
+- [Indeklima](https://arneelkjaer.dk/indeklima.html): Termisk, atmosfærisk, akustisk og visuelt indeklima, indeklimaklasse I–IV og BR18-krav til dagslys, temperatur, CO₂ og lyd forklaret.
+- [Klimakrav og LCA](https://arneelkjaer.dk/klimakrav-lca.html): Livscyklusvurdering forklaret: grænseværdier for nybyggeri fra 2025, hvem der har ansvaret, hvornår der skal regnes, og hvordan CO₂ kan sænkes.
+- [Entrepriseformer](https://arneelkjaer.dk/entrepriseformer.html): Forskellen på fagentreprise, hovedentreprise og totalentreprise, partnering og OPP, og hvad AB 18, ABT 18 og ABR 18 betyder for bygherren.
+
+## Opslag og overblik
+
+- [Ordbog over byggeord](https://arneelkjaer.dk/ordbog.html): Søgbar ordbog over byggeord og forkortelser: AB 18, BBR, CTS, DGNB, FAT og SAT, LCA, U-værdi og mange flere forklaret på almindeligt dansk.
+- [Rådgivning – alle fagområder](https://arneelkjaer.dk/raadgivning/): Overblik over byggerådgivningens fagområder: bygherrerådgivning, konstruktioner, installationer, energi, indeklima, byggemodning og meget mere.
+- [Sitemap](https://arneelkjaer.dk/sitemap.html): Oversigt over alle guider på Rådgiverguiden: fokusområder, rådgivningsområder, regler og krav, ordbog og information om siden samlet ét sted.
+
+## Optional
+
+- [Om Rådgiverguiden](https://arneelkjaer.dk/om-os/): Rådgiverguiden er en uafhængig informationsside om byggerådgivning uden tilknytning til Arne Elkjær A/S. Læs, hvordan indholdet bliver til.
+- [Privatlivspolitik](https://arneelkjaer.dk/privatlivspolitik.html)
+- [XML-sitemap](https://arneelkjaer.dk/sitemap.xml)
