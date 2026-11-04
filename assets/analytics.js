@@ -9,7 +9,7 @@
   besøgende giver samtykke via Googles samtykkebesked (slås til i AdSense under
   "Privatliv og beskeder"). Uden samtykke sendes kun anonyme, cookiefri signaler.
 */
-var GA_MEASUREMENT_ID = '';
+var GA_MEASUREMENT_ID = 'G-T2BTK8DHCR';
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){ dataLayer.push(arguments); }
